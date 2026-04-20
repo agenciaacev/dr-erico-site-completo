@@ -1,0 +1,56 @@
+import { Link } from 'react-router-dom'
+
+export default function CirurgiaRoboticaHighlight() {
+  return (
+    <section className="bg-brand-beige-light py-16 md:py-20">
+      <div className="container-site">
+        <div className="text-center mb-12" data-aos="fade-up">
+          <p className="eyebrow">Conheça a</p>
+          <h2 className="section-title mt-2">
+            Cirurgia Robótica, <span className="text-brand-gold">o método mais eficaz para câncer de próstata, rins e bexiga.</span>
+          </h2>
+          <Link
+            to="/cirurgia-robotica"
+            className="inline-block mt-5 text-brand-gold font-medium hover:underline"
+          >
+            Quero saber mais →
+          </Link>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-10 items-center">
+          <div data-aos="fade-right">
+            <h3 className="font-display text-2xl md:text-3xl text-brand-navy">
+              Cuidado revolucionário <span className="text-brand-gold">com a saúde masculina</span>
+            </h3>
+            <ul className="mt-6 space-y-3">
+              {[
+                'Alta precisão na remoção da próstata',
+                'Menos dor e desconforto no pós-operatório',
+                'Retorno mais rápido às atividades normais',
+                'Menor risco de disfunção erétil quando comparado a técnicas tradicionais',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <span className="mt-1 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-green text-white text-xs">
+                    ✓
+                  </span>
+                  <span className="text-brand-muted">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <Link to="/cirurgia-robotica" className="btn-primary mt-8">
+              Saiba mais
+            </Link>
+          </div>
+
+          <div className="relative" data-aos="fade-left">
+            <img
+              src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?q=80&w=1200&auto=format&fit=crop"
+              alt="Sala de cirurgia robótica"
+              className="rounded-3xl shadow-soft w-full aspect-[4/3] object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
