@@ -56,3 +56,27 @@
 .floating-wa {
   @apply fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-brand-green text-white shadow-lg transition hover:scale-110;
 }
+
+/* Silver shimmer button */
+@keyframes silver-shimmer {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+.btn-silver {
+  @apply inline-flex items-center gap-2 rounded-full px-6 py-3 font-medium transition-transform hover:scale-105;
+  color: #1a1a2e;
+  background: linear-gradient(
+    105deg,
+    #7a7a7a 0%,
+    #b8b8b8 20%,
+    #e8e8e8 35%,
+    #ffffff 50%,
+    #e8e8e8 65%,
+    #b8b8b8 80%,
+    #7a7a7a 100%
+  );
+  background-size: 300% auto;
+  animation: silver-shimmer 2.5s linear infinite;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.6);
+}

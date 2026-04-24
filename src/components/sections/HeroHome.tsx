@@ -19,7 +19,7 @@ export default function HeroHome() {
               tecnologia avançada e cuidado humanizado.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link to="/dr-erico-diogenes" className="btn-primary">
+              <Link to="/dr-erico-diogenes" className="btn-silver">
                 Saiba mais
               </Link>
             </div>
