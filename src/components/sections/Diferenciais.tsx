@@ -59,7 +59,7 @@ export default function Diferenciais() {
               <div className="p-6 flex-1 flex flex-col">
                 <h3 className="font-display text-xl text-brand-navy">{card.title}</h3>
                 <p className="text-sm text-brand-muted mt-3 flex-1">{card.description}</p>
-                <Link to={card.to} className="btn-primary mt-5 justify-center">
+                <Link to={card.to} className="btn-silver mt-5 justify-center">
                   {card.cta}
                 </Link>
               </div>
