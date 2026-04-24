@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function LaserHighlight() {
   return (
-    <section className="bg-brand-navy-deep text-white py-16 md:py-20 relative overflow-hidden">
+    <section className="bg-brand-navy text-white py-16 md:py-20 relative overflow-hidden">
       <div className="container-site grid lg:grid-cols-2 gap-10 items-center">
         <div className="relative" data-aos="fade-right">
           <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-soft max-w-md">

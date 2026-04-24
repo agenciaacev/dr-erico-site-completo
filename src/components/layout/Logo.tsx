@@ -1,4 +1,4 @@
-import logoImg from '../../assets/img/logo_1.png'
+import logoImg from '../../assets/img/logo_1.webp'
 
 type Props = {
   variant?: 'light' | 'dark'

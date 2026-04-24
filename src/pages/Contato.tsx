@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Phone, Mail, MessageCircle } from 'lucide-react'
 import { site } from '../data/site'
-
+import drEricoFoto from '../assets/img/dr-erico-foto-3.webp'
 export default function Contato() {
   const [sent, setSent] = useState(false)
 
@@ -62,7 +62,7 @@ export default function Contato() {
           <div className="relative" data-aos="fade-left">
             <div className="aspect-[4/5] max-w-md ml-auto rounded-full overflow-hidden shadow-soft">
               <img
-                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=1000&auto=format&fit=crop"
+                src={drEricoFoto}
                 alt="Dr. Érico Diógenes"
                 className="w-full h-full object-cover"
               />
