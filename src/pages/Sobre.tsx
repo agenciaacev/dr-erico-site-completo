@@ -1,6 +1,6 @@
 import CtaBanner from '../components/ui/CtaBanner'
 import drEricoFoto from '../assets/img/dr-erico-foto-1.jpg'
-import drEricoFoto2 from '../assets/img/dr-erico-foto-3.png'
+import drEricoFoto2 from '../assets/img/dr-erico-foto-4.png'
 
 const formacao = [
   'Graduação em Medicina pela Universidade Federal do Ceará UFC. 2005.',
