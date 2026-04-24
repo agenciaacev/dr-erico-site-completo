@@ -38,7 +38,7 @@ export default function CirurgiaRoboticaHighlight() {
                 </li>
               ))}
             </ul>
-            <Link to="/cirurgia-robotica" className="btn-primary mt-8">
+            <Link to="/cirurgia-robotica" className="btn-silver mt-8">
               Saiba mais
             </Link>
           </div>
