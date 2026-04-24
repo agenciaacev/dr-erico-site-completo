@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import drEricoFoto from '../../assets/img/dr-erico-foto-5.jpg'
 
 export default function CirurgiaRoboticaHighlight() {
   return (
@@ -44,7 +45,7 @@ export default function CirurgiaRoboticaHighlight() {
 
           <div className="relative" data-aos="fade-left">
             <img
-              src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?q=80&w=1200&auto=format&fit=crop"
+              src={drEricoFoto}
               alt="Sala de cirurgia robótica"
               className="rounded-3xl shadow-soft w-full aspect-[4/3] object-cover"
             />
