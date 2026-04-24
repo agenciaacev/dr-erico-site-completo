@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import drEricoFoto1 from '../../assets/img/dr-erico-foto-2.png'
 
 export default function HeroHome() {
   return (
@@ -23,7 +24,7 @@ export default function HeroHome() {
         <div className="relative" data-aos="fade-left">
           <div className="aspect-[4/5] max-w-md ml-auto rounded-[40%_60%_40%_60%/50%_40%_60%_50%] overflow-hidden shadow-soft">
             <img
-              src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1200&auto=format&fit=crop"
+              src={drEricoFoto1}
               alt="Dr. Érico Diógenes"
               className="w-full h-full object-cover"
             />
