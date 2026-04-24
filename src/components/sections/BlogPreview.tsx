@@ -21,7 +21,7 @@ export default function BlogPreview() {
         </div>
 
         <div className="text-center mt-10">
-          <Link to="/blog" className="btn-outline">
+          <Link to="/blog" className="btn-silver">
             Ver todas as notícias
           </Link>
         </div>

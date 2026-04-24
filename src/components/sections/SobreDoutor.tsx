@@ -23,7 +23,7 @@ export default function SobreDoutor() {
             na França, oferece tecnologia de ponta e atendimento humanizado para garantir mais
             segurança, conforto e recuperação rápida.
           </p>
-          <Link to="/dr-erico-diogenes" className="btn-primary mt-8">
+          <Link to="/dr-erico-diogenes" className="btn-silver mt-8">
             Conheça
           </Link>
         </div>

@@ -29,7 +29,7 @@ export default function LaserHighlight() {
             sangramento, menos dor e uma recuperação mais rápida em comparação às cirurgias
             convencionais.
           </p>
-          <Link to="/holep" className="btn-primary mt-8">
+          <Link to="/holep" className="btn-silver mt-8">
             Saiba Mais
           </Link>
         </div>
