@@ -1,4 +1,6 @@
 import CtaBanner from '../components/ui/CtaBanner'
+import drEricoFoto from '../assets/img/dr-erico-foto-1.jpg'
+import drEricoFoto2 from '../assets/img/dr-erico-foto-3.png'
 
 const formacao = [
   'Graduação em Medicina pela Universidade Federal do Ceará UFC. 2005.',
@@ -26,7 +28,7 @@ export default function Sobre() {
         <div className="container-site mt-10" data-aos="fade-up" data-aos-delay="120">
           <div className="max-w-5xl mx-auto aspect-[16/9] rounded-3xl overflow-hidden shadow-soft">
             <img
-              src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1800&auto=format&fit=crop"
+              src={drEricoFoto}
               alt="Dr. Érico Diógenes"
               className="w-full h-full object-cover"
             />
@@ -39,7 +41,7 @@ export default function Sobre() {
           <div className="relative" data-aos="fade-right">
             <div className="aspect-[4/5] max-w-md rounded-[40%_60%_40%_60%/50%_40%_60%_50%] overflow-hidden shadow-soft">
               <img
-                src="https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=1200&auto=format&fit=crop"
+                src={drEricoFoto2}
                 alt="Dr. Érico Diógenes"
                 className="w-full h-full object-cover"
               />
