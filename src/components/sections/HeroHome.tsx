@@ -27,7 +27,7 @@ export default function HeroHome() {
         </div>
 
         {/* RIGHT — foto preenche a altura da seção */}
-        <div className="relative overflow-hidden min-h-[320px]" data-aos="fade-left">
+        <div className="relative overflow-hidden min-h-[320px] order-first lg:order-last" data-aos="fade-left">
           <img
             src={drEricoFoto}
             alt="Dr. Érico Diógenes"

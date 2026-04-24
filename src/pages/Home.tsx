@@ -12,11 +12,11 @@ export default function Home() {
   return (
     <>
       <HeroHome />
-      <VideoSection />
       <CirurgiaRoboticaHighlight />
       <Diferenciais />
       <LaserHighlight />
       <SobreDoutor />
+      <VideoSection />
       <BlogPreview />
       <CtaBanner />
       <ContactMini />
