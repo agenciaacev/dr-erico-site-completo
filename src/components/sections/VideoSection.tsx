@@ -267,6 +267,7 @@ function FeaturedVideo({ video, onClick }: { video: Video; onClick: () => void }
 
   return (
     <div
+      className="featured-grid"
       style={{
         display: "grid",
         gridTemplateColumns: "1fr 1fr",
@@ -337,7 +338,7 @@ function FeaturedVideo({ video, onClick }: { video: Video; onClick: () => void }
       </div>
 
       {/* Info */}
-      <div style={{ padding: "32px 40px 32px 0" }}>
+      <div className="featured-info" style={{ padding: "32px 40px 32px 0" }}>
         <p
           className="font-display"
           style={{
@@ -474,6 +475,14 @@ export default function VideoSection() {
         }
         @keyframes spin {
           to { transform: rotate(360deg); }
+        }
+        @media (max-width: 767px) {
+          .featured-grid {
+            grid-template-columns: 1fr !important;
+          }
+          .featured-info {
+            padding: 24px !important;
+          }
         }
       `}</style>
 
@@ -659,12 +668,13 @@ export default function VideoSection() {
                   animation: "fadeUp 0.5s ease both",
                 }}
               >
-                {videos.slice(1).map((video) => (
-                  <VideoCard
-                    key={video.id}
-                    video={video}
-                    onClick={() => setActiveVideo(video)}
-                  />
+                {videos.slice(1).map((video, i) => (
+                  <div key={video.id} className={i >= 3 ? 'hidden md:block' : ''}>
+                    <VideoCard
+                      video={video}
+                      onClick={() => setActiveVideo(video)}
+                    />
+                  </div>
                 ))}
               </div>
 
