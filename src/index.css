@@ -76,7 +76,13 @@
     #b8b8b8 80%,
     #7a7a7a 100%
   );
+  background-size: 100% auto;
+  background-position: center;
+  animation: none;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+.btn-silver:hover {
   background-size: 300% auto;
   animation: silver-shimmer 5s linear infinite;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.6);
 }

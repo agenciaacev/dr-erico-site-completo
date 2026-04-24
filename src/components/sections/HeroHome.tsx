@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import drEricoFoto from '../../assets/img/dr-erico-foto-6.png'
+import drEricoFoto from '../../assets/img/dr-erico-foto-6.webp'
 
 export default function HeroHome() {
   return (

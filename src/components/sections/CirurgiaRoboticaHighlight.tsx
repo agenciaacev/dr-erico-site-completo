@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import drEricoFoto from '../../assets/img/dr-erico-foto-5.jpg'
+import drEricoFoto from '../../assets/img/dr-erico-foto-5.webp'
 
 export default function CirurgiaRoboticaHighlight() {
   return (
