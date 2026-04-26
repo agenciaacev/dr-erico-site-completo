@@ -1,131 +1,139 @@
-# Dr. Érico Diógenes — Site
+# Dr. Érico Diógenes, Site em Next.js
 
-Reestruturação do site do Dr. Érico Diógenes (urologista em Fortaleza) em stack moderna, mantendo layout, paleta e tipografia do site original.
-
-## Stack
-
-- **Vite** + **React 18** + **TypeScript**
-- **Tailwind CSS** (paleta e fontes customizadas)
-- **React Router DOM v6** (roteamento entre páginas)
-- **AOS** (animações de scroll)
-- **Lucide React** (ícones)
+Versão migrada do projeto original (Vite + React + react-router-dom) para
+**Next.js 15 com App Router**. Todas as funcionalidades foram preservadas.
 
 ## Como rodar
 
 ```bash
 npm install
+cp .env.local.example .env.local
 npm run dev
 ```
 
-Abrir em http://localhost:5173.
+Acesse http://localhost:3000
 
-Outros scripts:
+Para build de produção:
 
 ```bash
-npm run build      # build de produção (dist/)
-npm run preview    # preview do build
-npm run lint       # lint
+npm run build
+npm run start
 ```
 
-## Estrutura
+## O que mudou na migração
+
+### Roteamento: react-router-dom -> Next.js App Router
+
+| Antes (Vite + react-router-dom)                | Agora (Next.js App Router)                 |
+| ---------------------------------------------- | ------------------------------------------ |
+| `<BrowserRouter>` em `main.tsx`                | Removido. App Router cuida disso           |
+| `<Routes>` e `<Route>` em `App.tsx`            | Pastas em `app/` (file-based routing)      |
+| `<Layout>` com `<Outlet />`                    | `app/layout.tsx` com `{children}`          |
+| `<Link to="/blog">`                            | `<Link href="/blog">` de `next/link`       |
+| `<NavLink>` com `isActive`                     | `<Link>` + `usePathname()` de `next/navigation` |
+| `useLocation().pathname`                       | `usePathname()`                            |
+| `useParams<{ slug: string }>()`                | `params: Promise<{ slug: string }>` recebido como prop |
+| Rota `*` para 404                              | `app/not-found.tsx` (convenção)            |
+
+### Estrutura de pastas
 
 ```
-src/
-├── App.tsx                  # Rotas principais + init do AOS
-├── main.tsx                 # Entry point
-├── index.css                # Tailwind + classes utilitárias customizadas
-├── components/
-│   ├── layout/
-│   │   ├── Layout.tsx       # Wrapper com Navbar, Footer e WA flutuante
-│   │   ├── TopBar.tsx       # Barra superior escura
-│   │   ├── Navbar.tsx       # Navbar responsivo com menu mobile
-│   │   ├── Footer.tsx       # Footer em 5 colunas
-│   │   ├── FloatingWhatsapp.tsx
-│   │   └── Logo.tsx         # Logo SVG inline (light/dark)
-│   ├── sections/            # Seções reutilizáveis (Home)
-│   │   ├── HeroHome.tsx
-│   │   ├── CirurgiaRoboticaHighlight.tsx
-│   │   ├── Diferenciais.tsx
-│   │   ├── LaserHighlight.tsx
-│   │   ├── SobreDoutor.tsx
-│   │   ├── BlogPreview.tsx
-│   │   └── ContactMini.tsx
-│   └── ui/
-│       ├── PostCard.tsx
-│       ├── CtaBanner.tsx
-│       └── PageHeader.tsx
-├── pages/                   # Uma página por rota
-│   ├── Home.tsx
-│   ├── Sobre.tsx            # /dr-erico-diogenes
-│   ├── HoLEP.tsx            # /holep
-│   ├── CirurgiaRobotica.tsx # /cirurgia-robotica
-│   ├── Blog.tsx             # /blog (listagem com filtro e paginação)
-│   ├── BlogPost.tsx         # /blog/:slug
-│   ├── Contato.tsx          # /contato
-│   └── NotFound.tsx         # 404
-├── data/
-│   ├── posts.ts             # Mock dos posts do blog (9 posts completos)
-│   └── site.ts              # Contato, endereço, redes sociais
-└── types/
-    └── post.ts              # Tipos Post e PostCategory
+app/
+  layout.tsx                  # Substitui App.tsx + main.tsx + index.html
+  page.tsx                    # Home (rota /)
+  globals.css                 # Era src/index.css
+  not-found.tsx               # Era src/pages/NotFound.tsx (rota *)
+  dr-erico-diogenes/page.tsx  # Era src/pages/Sobre.tsx
+  holep/page.tsx              # Era src/pages/HoLEP.tsx
+  cirurgia-robotica/page.tsx  # Era src/pages/CirurgiaRobotica.tsx
+  blog/page.tsx               # Era src/pages/Blog.tsx
+  blog/[slug]/page.tsx        # Era src/pages/BlogPost.tsx
+  contato/page.tsx            # Era src/pages/Contato.tsx
+components/
+  layout/                     # TopBar, Navbar, Footer, Logo, FloatingWhatsapp
+  layout/AosProvider.tsx      # Encapsula AOS.init() (era useEffect no App.tsx)
+  layout/ScrollToTop.tsx      # Era ScrollToTop dentro do App.tsx
+  sections/                   # HeroHome, VideoSection, etc.
+  ui/                         # CtaBanner, PageHeader, PostCard
+data/                         # site.ts, posts.ts (sem mudanças de lógica)
+types/                        # post.ts
+public/img/                   # Era src/assets/img/
 ```
 
-## Rotas
+### Imagens
 
-| Rota                    | Página            |
-| ----------------------- | ----------------- |
-| `/`                     | Home              |
-| `/dr-erico-diogenes`    | Sobre             |
-| `/holep`                | HoLEP             |
-| `/cirurgia-robotica`    | Cirurgia Robótica |
-| `/blog`                 | Blog (listagem)   |
-| `/blog/:slug`           | Post individual   |
-| `/contato`              | Contato           |
+`import logoImg from '../../assets/img/logo_1.webp'` virou
+`<Image src="/img/logo_1.webp" />` usando o componente `next/image`. Os arquivos
+estão agora em `public/img/`.
 
-## Paleta (Tailwind)
+Imagens externas (Unsplash, i.ytimg.com) estão liberadas em
+`next.config.js` -> `images.remotePatterns`. As demais `<img>` de URLs
+externas foram mantidas como `<img>` para não exigir configuração adicional.
 
-Disponível via `brand-*`:
+### Server vs. Client Components
 
-- `brand-navy` `#0B2239` (navbar, footer)
-- `brand-navy-deep` `#1E3A3A` (CTA escuro)
-- `brand-gold` `#C9A961` (destaques, botões primários)
-- `brand-green` `#9DC74A` (WhatsApp, tags)
-- `brand-beige` `#EFE8D8` (hero)
-- `brand-beige-light` `#F4F1EA` (seções alternadas)
+O App Router usa **server components por padrão**. Componentes que precisam de
+estado, efeitos ou eventos do navegador receberam a diretiva `'use client'`:
 
-## Tipografia
+* `Navbar`, `AosProvider`, `ScrollToTop`
+* `VideoSection` (fetch + estado)
+* `app/holep/page.tsx`, `app/blog/page.tsx`, `app/contato/page.tsx`
+  (todas usam `useState`)
 
-- **Sans**: Inter (corpo)
-- **Display/Serif**: Cormorant Garamond (títulos)
+`app/blog/[slug]/page.tsx` ficou como server component e agora pré-renderiza
+todos os posts em build com `generateStaticParams`.
 
-Carregadas via Google Fonts no `index.html`.
+### Variáveis de ambiente (YouTube)
 
-## Blog — estrutura preparada para CMS
+A `API_KEY` do YouTube estava hardcoded no `VideoSection`. Foi movida para
+variáveis públicas do Next.js:
 
-Os posts vivem em `src/data/posts.ts` como um array tipado (`Post[]`). Toda a UI consome esse array por funções utilitárias (`getPostBySlug`, `getRecentPosts`). Para ligar um CMS depois, basta substituir essas funções por chamadas HTTP/Supabase/etc., mantendo o mesmo shape do tipo `Post` em `src/types/post.ts`.
-
-Sugestão de próxima etapa:
-
-1. Criar endpoint/CMS (Supabase, Strapi, Sanity, WordPress headless, etc.).
-2. Trocar `posts.ts` por um client (`fetchPosts`, `fetchPostBySlug`).
-3. Adicionar área `/admin` protegida para o doutor criar/editar posts.
-
-## Substituições recomendadas antes de ir pra produção
-
-- **Fotos**: hoje usam Unsplash como placeholders. Trocar pelas fotos oficiais do Dr. Érico e sala de cirurgia. Buscar `images.unsplash.com` no código pra localizar rápido.
-- **WhatsApp**: número `5585981781020` está em `src/data/site.ts` e também no `Navbar`/`FloatingWhatsapp`. Centralizar usando `site.whatsapp` caso queira mudar em um lugar só.
-- **Mapa**: o `mapEmbed` em `src/data/site.ts` é genérico, substituir pela URL real do Google Maps do consultório.
-- **Formulário de contato**: hoje só simula envio. Conectar a um serviço (Formspree, EmailJS, API própria).
-- **SEO**: adicionar `react-helmet-async` para meta tags dinâmicas por página.
-
-## AOS
-
-Inicializado em `App.tsx` com `duration: 700, once: true`. Usar em qualquer elemento via atributos:
-
-```tsx
-<div data-aos="fade-up" data-aos-delay="100">...</div>
+```
+NEXT_PUBLIC_YOUTUBE_API_KEY=...
+NEXT_PUBLIC_YOUTUBE_CHANNEL_ID=...
 ```
 
-## Licença
+O componente lê de `process.env.NEXT_PUBLIC_*` e cai nos valores originais como
+fallback se elas não estiverem definidas, mantendo o comportamento idêntico ao
+projeto antigo.
 
-Projeto privado. Todos os direitos reservados a Dr. Érico Diógenes.
+### Metadata e SEO
+
+`<title>`, `<meta name="description">` e o favicon que estavam no `index.html`
+agora ficam na exportação `metadata` em `app/layout.tsx` (Metadata API do
+Next.js). A página de post dinâmica (`app/blog/[slug]/page.tsx`) define
+`generateMetadata` para gerar título e descrição por post.
+
+### Configuração
+
+* `vite.config.ts` -> `next.config.js`
+* `tsconfig.json`: `jsx: "preserve"`, `paths: { "@/*": ["./*"] }`,
+  plugin do Next adicionado
+* `tailwind.config.js`: paths atualizados para `app/**` e `components/**`
+* `postcss.config.js`: convertido para CommonJS
+
+### Imports com alias
+
+Todos os imports passaram a usar `@/` em vez de caminhos relativos. Exemplo:
+
+```ts
+// Antes
+import PostCard from '../components/ui/PostCard'
+
+// Agora
+import PostCard from '@/components/ui/PostCard'
+```
+
+## Funcionalidades preservadas
+
+* AOS (animações de scroll), inicializadas em `AosProvider`
+* Scroll-to-top em mudança de rota, agora com `usePathname()`
+* Menu mobile responsivo
+* Navegação ativa no menu (lógica `end` reproduzida via `usePathname()`)
+* Filtros de categoria e paginação no Blog
+* Página de post dinâmica `/blog/[slug]`
+* Modal de vídeo do YouTube
+* Formulário de contato (mock, igual ao original)
+* FAQ acordeão na página HoLEP
+* Footer com newsletter, redes sociais, links de agendamento
+* Botão flutuante de WhatsApp
