@@ -6,32 +6,99 @@ export const posts: Post[] = [
     slug: 'cirurgia-robotica-o-que-e-indicacoes-beneficios',
     title: 'Cirurgia Robótica: O Que é, Indicações, Benefícios e Onde Fazer',
     excerpt:
-      'Por Dr. Érico Diógenes, Especialista em Urologia e Cirurgia Robótica. A medicina tem evoluído de forma extraordinária nas últimas décadas.',
+      'Por Dr. Érico Diógenes, Especialista em Urologia e Cirurgia Robótica.',
     content: `
-A medicina tem evoluído de forma extraordinária nas últimas décadas, e a cirurgia robótica representa um dos maiores avanços tecnológicos nesse campo. Combinando precisão, segurança e recuperação rápida, essa técnica tem transformado o tratamento de diversas condições urológicas.
+A medicina tem evoluído de forma extraordinária nas últimas décadas, e um dos avanços mais impressionantes é, sem dúvida, a cirurgia robótica. Utilizada em diversas especialidades, mas com destaque especial na urologia, essa técnica representa um salto em termos de precisão, segurança e recuperação pós-operatória.
+Se você está em busca de informações sobre cirurgia robótica em Fortaleza, este artigo é para você. Aqui, explico tudo o que você precisa saber sobre essa tecnologia, para quais casos ela é indicada, como funciona, quais são os seus benefícios e onde realizar com segurança.
 
 ## O que é a Cirurgia Robótica?
 
-A cirurgia robótica é um procedimento minimamente invasivo realizado com o auxílio do robô cirúrgico Da Vinci. O cirurgião controla os braços robóticos a partir de um console, com movimentos extremamente precisos.
+A cirurgia robótica é uma técnica minimamente invasiva, onde o cirurgião realiza o procedimento com o auxílio de um robô de alta precisão. Apesar do nome, é importante frisar que não é o robô quem opera sozinho: o médico controla todos os movimentos a partir de um console, que traduz seus gestos em ações precisas e delicadas.
+O sistema mais utilizado mundialmente é o robô Da Vinci, que possui uma câmera 3D de alta definição e instrumentos que giram em todos os eixos, alcançando regiões com extrema precisão.
 
-## Principais Indicações
+## Para que serve a Cirurgia Robótica?
+A cirurgia robótica tem diversas aplicações, sendo especialmente comum na urologia, mas também é usada em cirurgias ginecológicas, digestivas, torácicas e oncológicas. Veja algumas das principais indicações:
 
-- Câncer de próstata (prostatectomia radical)
-- Câncer de rim (nefrectomia parcial)
-- Câncer de bexiga
-- Hiperplasia prostática benigna
-- Refluxo vesicoureteral
+- Câncer de próstata (prostatectomia robótica)
+- Hiperplasia Prostática Benigna (casos com indicação cirúrgica)
+- Câncer de rim ou bexiga
+- Endometriose profunda
+- Miomectomia
+- Cirurgia bariátrica
+- Cirurgias oncológicas complexas
 
-## Benefícios
+## Como funciona a Cirurgia Robótica?
+O procedimento é realizado em centro cirúrgico equipado com o sistema robótico. Após o preparo do paciente e anestesia, são feitas pequenas incisões por onde são inseridos os instrumentos robóticos.
 
-- Alta precisão na remoção do tecido doente
-- Menor sangramento durante a cirurgia
-- Retorno rápido às atividades diárias
-- Menor risco de disfunção erétil e incontinência
+O cirurgião, sentado em um console, visualiza em 3D e em alta definição a região operada, controlando com precisão milimétrica os movimentos dos braços robóticos. O robô filtra tremores naturais das mãos humanas, possibilitando um procedimento mais seguro e delicado.
+
+## Quais são os benefícios da Cirurgia Robótica?
+Os benefícios da cirurgia robótica são muitos, tanto para o paciente quanto para o médico:
+### 1. Menor trauma cirúrgico
+As incisões são menores, o que reduz sangramentos e dores no pós-operatório.
+### 2. Recuperação mais rápida
+O tempo de internação costuma ser menor, assim como a volta às atividades normais.
+### 3. Menos dor e uso de analgésicos
+Devido ao menor trauma cirúrgico, o desconforto é reduzido.
+### 4. Mais precisão
+A tecnologia permite acessar regiões difíceis com delicadeza, essencial em órgãos como a próstata.
+### 5. Menor risco de complicações
+Com melhor visualização e maior controle, o risco de lesões em tecidos saudáveis é reduzido.
+### 6. Resultados funcionais superiores
+Em cirurgias de próstata, por exemplo, há menos impacto na continência urinária e na função erétil.
+
+## Cirurgia Robótica para Próstata Aumentada e Câncer de Próstata
+Na urologia, a cirurgia robótica é um divisor de águas no tratamento de condições como:
+### Prostatectomia Robótica
+Indicada para retirada total da próstata em casos de câncer, permite uma abordagem precisa, com menos sangramento e maior preservação de nervos, o que impacta positivamente na função sexual e urinária.
+### Tratamento cirúrgico da Hiperplasia Prostática Benigna
+Em casos mais graves de próstata aumentada, quando medicamentos não são eficazes, a cirurgia robótica também pode ser indicada, proporcionando remoção segura do excesso de tecido prostático.
+
+## Cirurgia Robótica em Fortaleza
+A cidade de Fortaleza conta com centros de referência em cirurgia robótica, com estrutura moderna e equipes treinadas nos principais sistemas do mundo.
+
+O Dr. Erico Diógenes, especialista em urologia e cirurgia minimamente invasiva, atua com foco em tecnologias de ponta como o sistema Da Vinci. Seu compromisso é oferecer um tratamento individualizado, seguro e com o que há de mais avançado na medicina.
+
+Pacientes do Ceará e de outros estados do Nordeste têm buscado a cidade para realizar procedimentos com robô, justamente pelos resultados positivos e pela experiência das equipes médicas locais.
+
+##Como saber se você é um candidato ideal para cirurgia robótica?
+Nem todos os casos exigem cirurgia robótica. Por isso, é essencial uma avaliação médica detalhada, considerando:
+
+- Seu histórico de saúde
+- Resultados de exames de imagem e laboratório
+- Estágio da doença (em casos de câncer)
+- Anatomia da região a ser operada
+- Preferências e expectativas do paciente
+A decisão é feita de forma conjunta, com todas as informações em mãos para garantir o melhor resultado possível.
+
+## Mitos sobre Cirurgia Robótica
+### “O robô opera sozinho”
+Mito. O robô é 100% controlado pelo cirurgião. Ele apenas amplifica os movimentos com maior precisão.
+
+### “É mais arriscado do que a cirurgia aberta”
+Errado. A cirurgia robótica tem mostrado menor índice de complicações em vários estudos.
+
+### “Demora mais para operar”
+A duração pode ser semelhante ou menor, com vantagens no pós-operatório.
+
+## Futuro da Cirurgia Robótica
+O uso de robôs em cirurgias é uma tendência que veio para ficar. Com o avanço da inteligência artificial e da integração de dados em tempo real, a medicina se prepara para procedimentos ainda mais seguros, personalizados e eficazes.
+
+A expectativa é que, nos próximos anos, a cirurgia robótica se torne ainda mais acessível e seja incorporada como padrão em várias especialidades.
+
+## Conclusão: Vale a pena considerar a cirurgia robótica?
+Sim. Se você busca um procedimento menos invasivo, com recuperação rápida, maior segurança e precisão, a cirurgia robótica pode ser a melhor opção.
+
+O importante é contar com uma equipe experiente, que ofereça uma abordagem individualizada e acesso à tecnologia de ponta.
+
+## Agende sua avaliação com o Dr. Erico Diógenes
+Se você está avaliando a possibilidade de realizar cirurgia robótica em Fortaleza, entre em contato e agende sua consulta com o Dr. Erico Diógenes. Através de uma avaliação detalhada, vamos definir juntos o melhor caminho para sua saúde.
+
     `.trim(),
     category: 'Cirurgia Robótica',
-    coverImage:
-      'https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1600&auto=format&fit=crop',
+    coverImage: '/img/post/imgid01_01.webp',
+    image2:
+      '/img/post/imgid01_02.webp',
     author: 'Dr. Érico Diógenes',
     publishedAt: '2026-01-22',
     readingTime: 6,
