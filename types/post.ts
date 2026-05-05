@@ -15,6 +15,7 @@ export type Post = {
   category: PostCategory
   categories?: PostCategory[]
   coverImage: string
+  image2?: string
   author: string
   publishedAt: string // ISO date
   readingTime?: number

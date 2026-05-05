@@ -31,7 +31,7 @@ export default function CirurgiaRoboticaHighlight() {
                 'Menor risco de disfunção erétil quando comparado a técnicas tradicionais',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <span className="mt-1 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-green text-white text-xs">
+                  <span className="mt-1 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-gold text-white text-xs">
                     ✓
                   </span>
                   <span className="text-brand-muted">{item}</span>
