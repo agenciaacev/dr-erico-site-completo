@@ -216,7 +216,7 @@ export default async function BlogPostPage({ params }: Props) {
                 alt={post.title}
                 className="w-full aspect-[16/9] object-cover rounded-2xl shadow-card mb-2"
               />
-              <p className="text-xs text-brand-muted text-right mb-8">Dr. Érico Diógenes — Urologista</p>
+              <p className="text-xs text-brand-muted text-right mb-8">Dr. Érico Diógenes Urologista</p>
 
               {/* Blocks with image2 injection */}
               {blocks.map((block, i) => (

@@ -110,28 +110,110 @@ Se você está avaliando a possibilidade de realizar cirurgia robótica em Forta
     excerpt:
       'O câncer de próstata é o tipo de câncer mais comum entre os homens brasileiros (após o de pele não melanoma). Em muitos casos, ele é silencioso.',
     content: `
-O câncer de próstata é o tipo de câncer mais comum entre os homens brasileiros, excluindo os casos de pele não melanoma. Por ser silencioso em sua fase inicial, o acompanhamento urológico é essencial.
+O câncer de próstata é o tipo de câncer mais comum entre os homens brasileiros (após o de pele não melanoma). Em muitos casos, ele se desenvolve de forma silenciosa, sem sintomas nos estágios iniciais. Por isso, a prevenção e o acompanhamento regular com um urologista são fundamentais.
 
-## Sintomas
+Se você é homem, mora em Fortaleza e tem mais de 45 anos, esse guia completo é para você. Aqui você vai entender:
+- O que é o câncer de próstata
+- Fatores de risco
+- Sintomas comuns
+- Como é feito o diagnóstico
+- Tipos de tratamento
+- Onde buscar atendimento em Fortaleza
+Vamos tirar todas as suas dúvidas de forma clara e confiável.
+## O Que é o Câncer de Próstata?
+A próstata é uma pequena glândula localizada abaixo da bexiga, que participa da produção do líquido seminal. O câncer de próstata acontece quando células da próstata crescem de forma descontrolada, formando um tumor.
 
-Na fase inicial, geralmente não há sintomas. Quando surgem, podem incluir:
+Em muitos casos, o câncer cresce lentamente e não oferece risco imediato. Mas há casos em que ele se torna agressivo e pode se espalhar para outros órgãos, como ossos e linfonodos.
+## Fatores de Risco
+Alguns homens têm maior probabilidade de desenvolver câncer de próstata. Os principais fatores são:
+
+- Idade: risco aumenta a partir dos 50 anos (ou 45, se houver histórico familiar)
+- Histórico familiar: pai ou irmão com câncer de próstata aumentam o risco
+- Raça: homens negros têm maior incidência e mortalidade
+- Obesidade: está relacionada a casos mais agressivos
+- Alimentação inadequada: dieta rica em gordura animal e processados
+Se você está em um ou mais desses grupos, o ideal é iniciar os exames de rotina aos 45 anos.
+## Sintomas do Câncer de Próstata
+Nos estágios iniciais, o câncer de próstata costuma não apresentar sintomas. Quando aparecem, eles podem ser parecidos com os da próstata aumentada:
 
 - Dificuldade para urinar
-- Jato urinário fraco
-- Vontade frequente de urinar
-- Sangue na urina
-- Dor pélvica
+- Jato urinário fraco ou interrompido
+- Vontade frequente de urinar (principalmente à noite)
+- Sensação de bexiga cheia mesmo após urinar
+- Sangue na urina ou no sémen (em estágios mais avançados)
+- Dor óssea (caso o tumor tenha se espalhado)
+A presença desses sintomas não significa que você tem câncer, mas é um alerta para procurar um urologista.
+## Diagnóstico: Como Saber se Você Tem Câncer de Próstata
+### 1. Toque Retal
+Permite ao urologista avaliar o tamanho, forma e textura da próstata. Detecta irregularidades e endurecimentos que podem indicar tumor.
 
-## Como Prevenir
+### 2. PSA (Antígeno Prostático Específico)
+Exame de sangue que mede o nível do PSA. Valores altos não confirmam câncer, mas indicam necessidade de investigação.
 
-- Consultas anuais com urologista a partir dos 50 anos (ou 45 em grupos de risco)
-- Exames: PSA e toque retal
-- Hábitos saudáveis: alimentação, atividade física, controle de peso
+### 3. Ressonância Magnética da Próstata
+Ajuda a visualizar melhor a próstata e identificar áreas suspeitas.
+
+### 4. Biópsia Prostática
+É o exame que confirma o diagnóstico. Pequenos fragmentos da próstata são coletados e analisados em laboratório.
+
+## Estadiamento: Saber em Que Nível Está a Doença
+Depois de confirmado o diagnóstico, o próximo passo é determinar o estágio do câncer, ou seja, o quanto ele se espalhou:
+
+- Localizado: câncer limitado à próstata
+- Localmente avançado: atingiu tecidos próximos
+- Metastático: espalhou-se para outros órgãos
+Esse estadiamento ajuda a definir o melhor tratamento.
+## Tratamentos Disponíveis
+O tratamento depende do estágio da doença, idade, condição de saúde e preferências do paciente. Os principais são:
+
+### 1. Vigilância Ativa
+Para tumores pequenos, sem agressividade, o médico pode optar por acompanhar com exames regulares, sem intervenção imediata.
+
+### 2. Cirurgia (Prostatectomia Radical)
+Remove completamente a próstata. Pode ser feita por via aberta, laparoscópica ou robôtica.
+
+### 3. Radioterapia
+Usa radiação para destruir as células cancerígenas. Pode ser externa ou interna (braquiterapia).
+
+### 4. Hormonioterapia
+Bloqueia a ação dos hormônios masculinos, que alimentam o câncer.
+
+### 5. Quimioterapia
+Indicada para casos mais avançados, com metástases. Usa medicamentos para eliminar células cancerosas.
+
+## Efeitos Colaterais Possíveis
+Cada tratamento pode ter efeitos diferentes. Os mais comuns são:
+
+- Incontinência urinária
+- Disfunção erétil
+- Cansaço
+- Alterações hormonais
+O acompanhamento com equipe multiprofissional é essencial para minimizar impactos e recuperar a qualidade de vida.
+
+## Alimentação e Prevenção
+Uma boa alimentação ajuda tanto na prevenção quanto no tratamento:
+
+- Prefira alimentos ricos em licopeno (tomate, goiaba)
+- Consuma peixes ricos em ômega-3
+- Reduza gordura animal, embutidos e refrigerantes
+- Beba bastante água
+- Mantenha um peso saudável
+## Cuidar da Próstata é Cuidar da Vida
+O câncer de próstata, quando detectado precocemente, tem altas chances de cura. O segredo é perder o medo, vencer o preconceito e buscar informação de qualidade.
+
+Se você mora em Fortaleza, tem mais de 45 anos ou apresenta sintomas urinários, marque uma consulta com um urologista. Não espere os sintomas piorarem.
+
+A saúde do homem começa com prevenção, e você merece viver com tranquilidade, vitalidade e bem-estar.
+## Por que escolher o Dr. Érico Diógenes
+O Dr. Érico Diógenes é referência em urologia minimamente invasiva em Fortaleza, com ampla experiência em tratamentos a laser, cirurgia robótica e doenças da próstata. Sua atuação alia tecnologia, precisão e atendimento humanizado, garantindo resultados seguros e conforto total para o paciente.
+📍 Atendimento em Fortaleza – CE
     `.trim(),
     category: 'Próstata',
     coverImage:
-      'https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?q=80&w=1600&auto=format&fit=crop',
-    author: 'Dr. Érico Diógenes',
+      '/img/post/imgid02_01.webp',
+    image2:
+      '/img/post/imgid02_02.webp',
+      author: 'Dr. Érico Diógenes',
     publishedAt: '2026-01-20',
     readingTime: 5,
   },
