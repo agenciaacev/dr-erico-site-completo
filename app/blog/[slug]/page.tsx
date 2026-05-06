@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString('pt-BR', {
+  return new Date(iso + 'T12:00:00').toLocaleDateString('pt-BR', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
@@ -35,6 +35,7 @@ type Block =
   | { type: 'h3'; text: string }
   | { type: 'p'; text: string }
   | { type: 'ul'; items: string[] }
+  | { type: 'table'; headers: string[]; rows: string[][] }
 
 function parseContent(raw: string): Block[] {
   const lines = raw.split('\n')
@@ -48,9 +49,29 @@ function parseContent(raw: string): Block[] {
     }
   }
 
+  let tableRows: string[][] | null = null
+
+  const flushTable = () => {
+    if (tableRows && tableRows.length >= 2) {
+      const [headers, , ...rows] = tableRows
+      blocks.push({ type: 'table', headers, rows })
+    }
+    tableRows = null
+  }
+
   for (const line of lines) {
     const t = line.trim()
-    if (!t) { flushList(); continue }
+    if (!t) { flushList(); flushTable(); continue }
+
+    if (t.startsWith('|')) {
+      flushList()
+      const cells = t.split('|').slice(1, -1).map((c) => c.trim())
+      if (!tableRows) tableRows = []
+      tableRows.push(cells)
+      continue
+    }
+
+    flushTable()
 
     if (t.startsWith('## ')) {
       flushList()
@@ -69,6 +90,7 @@ function parseContent(raw: string): Block[] {
     }
   }
   flushList()
+  flushTable()
   return blocks
 }
 
@@ -107,6 +129,33 @@ function renderBlock(block: Block, index: number) {
           ))}
         </ul>
       )
+    case 'table':
+      return (
+        <div key={index} className="mt-6 overflow-x-auto rounded-xl border border-brand-beige">
+          <table className="w-full text-sm text-left">
+            <thead className="bg-brand-beige">
+              <tr>
+                {block.headers.map((h, j) => (
+                  <th key={j} className="px-4 py-3 font-semibold text-brand-navy whitespace-nowrap">
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {block.rows.map((row, j) => (
+                <tr key={j} className="border-t border-brand-beige even:bg-brand-beige/30">
+                  {row.map((cell, k) => (
+                    <td key={k} className="px-4 py-3 text-brand-muted">
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )
   }
 }
 
@@ -135,13 +184,17 @@ export default async function BlogPostPage({ params }: Props) {
             <span className="opacity-40">/</span>
             <Link href="/blog" className="hover:text-brand-gold transition-colors">Blog</Link>
             <span className="opacity-40">/</span>
-            <span className="text-brand-navy font-medium">{post.category}</span>
+            <span className="text-brand-navy font-medium">{(post.categories ?? [post.category]).join(' · ')}</span>
           </nav>
 
           <div data-aos="fade-up">
-            <span className="inline-block bg-brand-gold/15 text-brand-gold-dark text-xs uppercase tracking-widest px-3 py-1 rounded-full font-semibold mb-5">
-              {post.category}
-            </span>
+            <div className="flex flex-wrap gap-2 mb-5">
+              {(post.categories ?? [post.category]).map((cat) => (
+                <span key={cat} className="inline-block bg-brand-gold/15 text-brand-gold-dark text-xs uppercase tracking-widest px-3 py-1 rounded-full font-semibold">
+                  {cat}
+                </span>
+              ))}
+            </div>
             <h1 className="font-display text-3xl md:text-4xl lg:text-[2.75rem] text-brand-navy leading-tight max-w-3xl">
               {post.title}
             </h1>

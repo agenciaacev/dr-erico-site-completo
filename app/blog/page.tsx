@@ -31,6 +31,46 @@ export default function Blog() {
     'Cirurgia a Laser',
   ]
 
+  const goToPage = (n: number) => {
+    setPage(n)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const renderPagination = () => {
+    if (totalPages <= 1) return null
+    return (
+      <div className="flex items-center justify-center gap-2">
+        <button
+          onClick={() => goToPage(Math.max(page - 1, 1))}
+          disabled={page === 1}
+          className="h-10 w-10 rounded-full bg-brand-navy text-white disabled:opacity-40 transition"
+        >
+          ←
+        </button>
+        {Array.from({ length: totalPages }).map((_, i) => (
+          <button
+            key={i}
+            onClick={() => goToPage(i + 1)}
+            className={`h-10 w-10 rounded-full font-medium text-sm transition ${
+              page === i + 1
+                ? 'bg-brand-green text-white'
+                : 'bg-brand-beige-light text-brand-muted hover:bg-brand-beige'
+            }`}
+          >
+            {i + 1}
+          </button>
+        ))}
+        <button
+          onClick={() => goToPage(Math.min(page + 1, totalPages))}
+          disabled={page === totalPages}
+          className="h-10 w-10 rounded-full bg-brand-navy text-white disabled:opacity-40 transition"
+        >
+          →
+        </button>
+      </div>
+    )
+  }
+
   return (
     <>
       <PageHeader title="Nossas Notícias" breadcrumb="Nossas Notícias" />
@@ -56,6 +96,8 @@ export default function Blog() {
             ))}
           </div>
 
+          <div className="mb-8">{renderPagination()}</div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {pageItems.map((post, i) => (
               <div key={post.id} data-aos="fade-up" data-aos-delay={i * 60}>
@@ -70,30 +112,7 @@ export default function Blog() {
             </p>
           )}
 
-          {totalPages > 1 && (
-            <div className="flex items-center justify-center gap-2 mt-12">
-              {Array.from({ length: totalPages }).map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setPage(i + 1)}
-                  className={`h-10 w-10 rounded-full font-medium text-sm transition ${
-                    page === i + 1
-                      ? 'bg-brand-green text-white'
-                      : 'bg-brand-beige-light text-brand-muted hover:bg-brand-beige'
-                  }`}
-                >
-                  {i + 1}
-                </button>
-              ))}
-              <button
-                onClick={() => setPage(Math.min(page + 1, totalPages))}
-                disabled={page === totalPages}
-                className="h-10 w-10 rounded-full bg-brand-navy text-white disabled:opacity-40"
-              >
-                →
-              </button>
-            </div>
-          )}
+          <div className="mt-12">{renderPagination()}</div>
         </div>
       </section>
     </>
