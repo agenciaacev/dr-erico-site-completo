@@ -8,7 +8,7 @@ type Props = {
 }
 
 function formatDate(iso: string) {
-  const d = new Date(iso)
+  const d = new Date(iso + 'T12:00:00')
   return d.toLocaleDateString('pt-BR', {
     day: 'numeric',
     month: 'long',
@@ -31,9 +31,11 @@ export default function PostCard({ post, compact = false }: Props) {
 
       <div className="p-5 flex-1 flex flex-col">
         <div className="flex flex-wrap gap-2 items-center text-xs">
-          <span className="bg-brand-green/20 text-brand-green-dark uppercase tracking-wide px-2 py-1 rounded-md font-semibold">
-            {post.category}
-          </span>
+          {(post.categories ?? [post.category]).map((cat) => (
+            <span key={cat} className="bg-brand-green/20 text-brand-green-dark uppercase tracking-wide px-2 py-1 rounded-md font-semibold">
+              {cat}
+            </span>
+          ))}
           <span className="text-brand-muted">{formatDate(post.publishedAt)}</span>
         </div>
 
