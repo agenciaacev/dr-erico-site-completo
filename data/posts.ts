@@ -1615,6 +1615,172 @@ O Dr. Érico Diógenes é urologista especialista em próstata, cirurgia robóti
     publishedAt: '2025-11-12',
     readingTime: 5,
   },
+  {
+    id: '18',
+    slug: 'exame-de-prostata-o-que-e',
+    title: 'Exame de Próstata: o que é, quando fazer e por que ele salva vidas',
+    excerpt: 'O exame de próstata é uma avaliação simples e rápida que permite ao urologista analisar o tamanho, a consistência e possíveis alterações na glândula prostática, responsável por produzir parte do líquido seminal.',
+    content: `
+  ## O que é o exame de próstata?
+O exame de próstata é uma avaliação simples e rápida que permite ao urologista analisar o tamanho, a consistência e possíveis alterações na glândula prostática, responsável por produzir parte do líquido seminal.
+O procedimento é essencial para detectar doenças da próstata, como o câncer, a hiperplasia prostática benigna (HPB) e inflamações (prostatites).
+
+Muitos homens ainda têm receio ou vergonha de realizá-lo, mas é importante lembrar que prevenir é sempre mais seguro do que tratar. O exame é feito com total sigilo e respeito, e pode literalmente salvar vidas quando realizado no momento certo.
+## Quando fazer o exame de próstata?
+A Sociedade Brasileira de Urologia (SBU) recomenda que o exame de próstata seja feito anualmente por homens a partir dos 45 anos.
+Para aqueles com histórico familiar de câncer de próstata (pai, avô ou irmão diagnosticado) ou fatores de risco, como homens negros, a prevenção deve começar aos 40 anos.
+
+Além do exame de toque retal, o acompanhamento inclui a dosagem do PSA (Antígeno Prostático Específico) — um exame de sangue que ajuda a identificar alterações nos níveis da proteína produzida pela próstata.
+
+⏱️ Em resumo: o exame é rápido, seguro e, quando feito com regularidade, aumenta as chances de cura em mais de 90% dos casos detectados precocemente.
+
+## Por que o exame de próstata é tão importante?
+O câncer de próstata é o segundo tipo de câncer mais comum entre os homens brasileiros, ficando atrás apenas do de pele não melanoma.
+A grande questão é que, nas fases iniciais, ele quase nunca apresenta sintomas.
+Quando o diagnóstico é feito tardiamente, o tratamento torna-se mais complexo e a taxa de sucesso diminui.
+
+Realizar o exame periodicamente permite identificar alterações antes que elas se tornem graves, o que torna o tratamento mais eficaz, menos invasivo e com maior preservação da qualidade de vida.
+## Quais são os tipos de exames realizados?
+O acompanhamento da próstata é composto por dois exames principais:
+
+Toque retal: realizado pelo urologista, avalia diretamente o tamanho e a textura da glândula.
+PSA (Antígeno Prostático Específico): exame de sangue que mede a quantidade dessa proteína no organismo.
+Dependendo dos resultados, o médico pode solicitar exames complementares, como ultrassonografia, biópsia ou ressonância magnética multiparamétrica, para investigar alterações com mais precisão.
+
+## Mitos que ainda afastam os homens do cuidado
+- “O exame de toque é doloroso.”
+➜ Não é verdade. É um procedimento rápido, feito com lubrificante e técnica adequada.
+- “Se o PSA estiver normal, não preciso fazer o toque.”
+➜ O PSA é importante, mas não substitui o exame físico — ambos se completam.
+- “Não tenho sintomas, então não preciso ir ao urologista.”
+➜ O câncer de próstata é silencioso; esperar sintomas é arriscado.
+## Como é feito o diagnóstico?
+O diagnóstico é clínico e laboratorial.
+Durante a consulta, o médico avalia histórico, sintomas e fatores de risco.
+O exame físico e o PSA são os primeiros passos.
+Se houver alteração, são solicitados exames de imagem e, em alguns casos, biópsia da próstata para confirmar o diagnóstico.
+
+Graças à tecnologia, exames como a ressonância magnética multiparamétrica e o ultrassom transretal têm aumentado a precisão diagnóstica e reduzido a necessidade de procedimentos invasivos.
+
+## E se for preciso tratar?
+Quando o câncer é detectado, o tratamento pode envolver cirurgia robótica, radioterapia ou acompanhamento ativo, dependendo do estágio da doença.
+
+O Dr. Érico é referência em cirurgia robótica e a laser, técnicas que oferecem:
+
+- Recuperação mais rápida
+- Menor dor pós-operatória
+- Menos sangramento
+- Preservação da função sexual e urinária
+Essas abordagens modernas permitem ao paciente retomar sua rotina com mais conforto e segurança.
+## 💙 Novembro Azul: o mês da conscientização
+Durante o mês de novembro, a campanha Novembro Azul reforça a importância da prevenção e do diagnóstico precoce do câncer de próstata.
+O Dr. Érico participa ativamente dessa iniciativa, conscientizando a população masculina e oferecendo atendimento voltado à prevenção.
+
+## Quando procurar o urologista?
+Procure o especialista se você:
+
+- Tem mais de 40 anos
+- Possui histórico familiar de câncer de próstata
+- Apresenta dificuldade para urinar
+- Observa sangue na urina ou no sêmen
+- Sente dor lombar, pélvica ou perineal persistente
+Mesmo sem sintomas, consultar o urologista uma vez ao ano é o caminho mais seguro para manter a saúde em dia.
+
+## Agende sua consulta
+📍 Fortaleza – CE
+🕐 Atendimento de segunda a sexta, das 8h às 18h
+
+💙 “A saúde do homem começa com um simples passo: o cuidado com a própria vida.”
+
+    `.trim(),
+    category: 'Próstata',
+    categories: ['Próstata'],
+    coverImage: '/img/post/imgid13_01.webp',
+    image2: '/img/post/imgid13_02.webp',
+    author: 'Dr. Érico Diógenes',
+    publishedAt: '2025-11-12',
+    readingTime: 5,
+  },
+  {
+    id: '19',
+    slug: 'cirurgia-robotica-de-prostata-vantagens-indicacoes-e-recuperacao',
+    title: 'Cirurgia Robótica de Próstata: Vantagens, Indicações e Recuperação',
+    excerpt: 'A cirurgia robótica de próstata é hoje um dos avanços mais significativos no tratamento de doenças como o câncer de próstata e a hiperplasia prostática benigna em casos selecionados.',
+    content: `
+A cirurgia robótica de próstata é hoje um dos avanços mais significativos no tratamento de doenças como o câncer de próstata e a hiperplasia prostática benigna em casos selecionados.
+Com tecnologia de ponta, o procedimento garante mais precisão, menos dor e uma recuperação mais rápida para o paciente.
+
+Neste artigo, você vai entender o que é, como funciona, para quem é indicada e quais são as vantagens dessa técnica inovadora, disponível em Fortaleza com o Dr. Érico Diógenes.
+## O que é a cirurgia robótica de próstata
+A cirurgia robótica de próstata é realizada com o auxílio de um sistema chamado robô cirúrgico Da Vinci.
+O equipamento não substitui o médico, mas amplia sua visão e precisão dos movimentos, permitindo cortes mais delicados e preservando ao máximo estruturas importantes, como nervos e vasos sanguíneos.
+
+## Diferença entre cirurgia robótica e cirurgia aberta
+Na cirurgia aberta, o corte é maior, o sangramento costuma ser mais intenso e o tempo de recuperação é prolongado.
+Já na cirurgia robótica, as incisões são pequenas e o controle dos instrumentos é feito a partir de um console, com visão tridimensional ampliada.
+
+Essa tecnologia resulta em:
+
+- Menos dor no pós-operatório
+
+- Menor risco de complicações
+
+- Tempo reduzido de internação
+## Quais pacientes podem se beneficiar do procedimento
+A cirurgia robótica de próstata é indicada principalmente para:
+
+- Câncer de próstata localizado
+
+- Casos selecionados de hiperplasia prostática benigna que necessitam cirurgia
+
+- Situações onde a preservação da função sexual e urinária é prioridade
+
+A indicação depende de avaliação médica detalhada, exames de imagem e histórico do paciente.
+## Vantagens da cirurgia robótica
+Os principais benefícios incluem:
+
+- Alta precisão na remoção da próstata
+
+- Menor sangramento durante a cirurgia
+
+- Menos dor e desconforto no pós-operatório
+
+- Retorno mais rápido às atividades normais
+
+- Maior preservação da continência urinária
+
+- Menor risco de disfunção erétil quando comparado a técnicas tradicionais
+## Como é a recuperação após a cirurgia robótica de próstata
+- Primeiras 24 horas: internação com monitoramento
+
+- De 1 a 3 dias: alta hospitalar e orientações de cuidado
+
+- Primeiras semanas: retorno gradual às atividades leves
+
+- A partir de 4 a 6 semanas: possível liberação para atividades físicas mais intensas
+
+Cada paciente evolui em seu próprio ritmo, e o acompanhamento médico é essencial para uma recuperação segura.
+
+## Onde realizar cirurgia robótica de próstata em Fortaleza
+O Dr. Érico Diógenes é urologista e referência em cirurgia robótica no Ceará, atuando em hospitais equipados com tecnologia de ponta e oferecendo atendimento humanizado em todas as etapas do tratamento.
+
+💡 Prevenção e diagnóstico precoce fazem toda a diferença no sucesso do tratamento.
+Se você recebeu indicação para cirurgia ou quer saber se a cirurgia robótica é a melhor opção para o seu caso:
+
+ 
+
+📞 Agende sua consulta com o Dr. Érico Diógenes
+📍 Fortaleza – CE
+
+    `.trim(),
+    category: 'Cirurgia Robótica',
+    categories: ['Cirurgia Robótica'],
+    coverImage: '/img/post/imgid13_01.webp',
+    image2: '/img/post/imgid13_02.webp',
+    author: 'Dr. Érico Diógenes',
+    publishedAt: '2025-11-12',
+    readingTime: 5,
+  },
 ]
 
 export function getPostBySlug(slug: string): Post | undefined {
