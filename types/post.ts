@@ -5,6 +5,8 @@ export type PostCategory =
   | 'Cálculo Renal'
   | 'Tratamento a Laser'
   | 'Cirurgia a Laser'
+  | 'Urologista'
+  | 'Exames'
 
 export type Post = {
   id: string

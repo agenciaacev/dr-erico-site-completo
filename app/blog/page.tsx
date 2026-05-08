@@ -29,6 +29,8 @@ export default function Blog() {
     'Cálculo Renal',
     'Tratamento a Laser',
     'Cirurgia a Laser',
+    'Urologista',
+    'Exames',
   ]
 
   const goToPage = (n: number) => {
