@@ -1607,8 +1607,8 @@ O acompanhamento anual é o caminho mais seguro para detectar alterações preco
 O Dr. Érico Diógenes é urologista especialista em próstata, cirurgia robótica e a laser, com ampla experiência em procedimentos minimamente invasivos e acompanhamento preventivo masculino. Seu atendimento é pautado na humanização, sigilo e tecnologia, sempre com o objetivo de oferecer o melhor diagnóstico e tratamento para cada paciente
 
     `.trim(),
-    category: 'Próstata',
-    categories: ['Próstata'],
+    category: 'Urologista',
+    categories: ['Urologista'],
     coverImage: '/img/post/imgid13_01.webp',
     image2: '/img/post/imgid13_02.webp',
     author: 'Dr. Érico Diógenes',
