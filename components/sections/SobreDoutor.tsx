@@ -4,12 +4,12 @@ export default function SobreDoutor() {
   return (
     <section className="bg-brand-beige-light py-16 md:py-20">
       <div className="container-site grid lg:grid-cols-2 gap-10 items-center">
-        <div className="relative" data-aos="fade-right">
+        <div className="relative flex justify-center" data-aos="fade-right">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=1200&auto=format&fit=crop"
+            src="/img/dr-erico-foto-4.webp"
             alt="Dr. Érico Diógenes em cirurgia"
-            className="rounded-3xl shadow-soft w-full aspect-[4/3] object-cover"
+            className="rounded-3xl shadow-soft w-full aspect-square object-cover object-[center_35%]"
           />
         </div>
 

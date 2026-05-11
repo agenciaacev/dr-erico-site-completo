@@ -46,7 +46,7 @@ export default function CirurgiaRoboticaHighlight() {
           <div className="relative" data-aos="fade-left">
             <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-soft">
               <Image
-                src="/img/dr-erico-foto-5.webp"
+                src="/img/post/imgid10_02.webp"
                 alt="Sala de cirurgia robótica"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
