@@ -1,5 +1,6 @@
 import { Check } from 'lucide-react'
 import CtaBanner from '@/components/ui/CtaBanner'
+import Image from 'next/image'
 
 const passos = [
   {
@@ -57,37 +58,45 @@ const depoimentos = [
 export default function CirurgiaRobotica() {
   return (
     <>
-      <section className="bg-brand-beige py-14 md:py-20">
-        <div className="container-site grid lg:grid-cols-2 gap-10 items-center">
-          <div data-aos="fade-right">
-            <h1 className="section-title">
-              Cirurgia Robótica de Próstata: mais precisão, menos dor e recuperação rápida
-            </h1>
-            <p className="mt-5 text-brand-muted">
-              Se você procura Urologista em Fortaleza, o Dr. Érico Diógenes é referência no Ceará em
-              cirurgia minimamente invasiva com tecnologia robótica Da Vinci, proporcionando mais
-              segurança, recuperação mais rápida e melhor qualidade de vida.
-            </p>
-            <a
-              href="https://wa.me/5585981781020"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary mt-8"
-            >
-              Agendar consulta
-            </a>
-          </div>
+      <section className="relative bg-brand-navy overflow-hidden">
+        <div className="grid lg:grid-cols-2 items-stretch min-h-[70vh]">
 
-          <div data-aos="fade-left">
-            <div className="aspect-square max-w-md ml-auto rounded-[45%_55%_45%_55%/45%_55%_45%_55%] overflow-hidden shadow-soft">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?q=80&w=1200&auto=format&fit=crop"
-                alt="Cirurgia robótica"
-                className="w-full h-full object-cover"
-              />
+          <div className="flex items-center px-6 md:px-12 lg:px-16 xl:px-20 py-14 lg:py-20" data-aos="fade-right">
+            <div>
+              <h1 className="font-display text-3xl md:text-4xl lg:text-5xl text-brand-beige leading-tight">
+                Cirurgia Robótica de Próstata: mais precisão, menos dor e recuperação rápida
+              </h1>
+              <p className="mt-5 text-brand-beige/60 text-base md:text-lg max-w-xl">
+                Se você procura Urologista em Fortaleza, o Dr. Érico Diógenes é referência no Ceará em
+                cirurgia minimamente invasiva com tecnologia robótica Da Vinci, proporcionando mais
+                segurança, recuperação mais rápida e melhor qualidade de vida.
+              </p>
+              <div className="mt-8">
+                <a
+                  href="https://wa.me/5585981781020"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-silver"
+                >
+                  Agendar consulta
+                </a>
+              </div>
             </div>
           </div>
+
+          <div className="relative overflow-hidden min-h-[320px] order-first lg:order-last" data-aos="fade-left">
+            <Image
+              src="/img/dr-erico-foto-1.webp"
+              alt="Cirurgia robótica"
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+            />
+            <div className="absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-brand-navy to-transparent" />
+            <div className="absolute bottom-0 inset-x-0 h-1/3 bg-gradient-to-t from-brand-navy to-transparent" />
+          </div>
+
         </div>
       </section>
 
@@ -128,17 +137,17 @@ export default function CirurgiaRobotica() {
               {
                 title: 'Alta precisão na retirada da próstata',
                 desc: 'A técnica permite alta precisão na retirada de tumores e da próstata, aumentando as taxas de sucesso do tratamento.',
-                img: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=800&auto=format&fit=crop',
+                img: '/img/post/imgid12_01.webp',
               },
               {
                 title: 'Maior preservação da continência urinária',
                 desc: 'Resultados mais eficientes para o tratamento, garantindo melhor qualidade de vida para o paciente em relação à cirurgia convencional.',
-                img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop',
+                img: '/img/post/imgid02_01.webp',
               },
               {
                 title: 'Retorno rápido às atividades diárias',
                 desc: 'A tecnologia robótica minimamente invasiva permite uma recuperação mais rápida e menores cicatrizes.',
-                img: 'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=800&auto=format&fit=crop',
+                img: '/img/post/imgid03_02.webp',
               },
             ].map((card, i) => (
               <div
@@ -185,7 +194,7 @@ export default function CirurgiaRobotica() {
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-soft">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?q=80&w=1200&auto=format&fit=crop"
+                src="/img/post/imgid10_01.webp"
                 alt="Robô Da Vinci"
                 className="w-full h-full object-cover"
               />

@@ -16,7 +16,7 @@ const cards: Card[] = [
     cta: 'Agendar Consulta',
     to: '/contato',
     image:
-      'https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1000&auto=format&fit=crop',
+      '/img/post/imgid14_02.webp',
   },
   {
     title: 'Tratamento a Laser HoLEP para Próstata',
@@ -34,7 +34,7 @@ const cards: Card[] = [
     cta: 'Saiba mais',
     to: '/cirurgia-robotica',
     image:
-      'https://images.unsplash.com/photo-1584362917165-526a968579e8?q=80&w=1000&auto=format&fit=crop',
+      '/img/dr-erico-foto-5b.webp',
   },
 ]
 

@@ -8,7 +8,7 @@ export default function LaserHighlight() {
           <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-soft max-w-md">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=1200&auto=format&fit=crop"
+              src="/img/post/imgid09_01.webp"
               alt="Dr. Érico Diógenes"
               className="w-full h-full object-cover"
             />

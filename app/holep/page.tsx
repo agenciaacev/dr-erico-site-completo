@@ -132,33 +132,40 @@ export default function HoLEP() {
 
   return (
     <>
-      <section className="bg-brand-beige py-14 md:py-20">
-        <div className="container-site grid lg:grid-cols-2 gap-10 items-center">
-          <div data-aos="fade-right">
-            <p className="eyebrow">HoLEP Cirurgia a Laser Avançada para Hiperplasia Prostática Benigna</p>
-            <h1 className="section-title mt-2">
-              <span className="text-brand-gold">Pioneirismo, precisão e tecnologia</span> para o
-              tratamento moderno da próstata aumentada.
-            </h1>
-            <a
-              href="https://wa.me/5585981781020"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary mt-8"
-            >
-              Agendar Consulta
-            </a>
-          </div>
-          <div data-aos="fade-left">
-            <div className="aspect-square max-w-md ml-auto rounded-full overflow-hidden shadow-soft">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=1200&auto=format&fit=crop"
-                alt="HoLEP laser"
-                className="w-full h-full object-cover"
-              />
+      <section className="relative bg-brand-beige overflow-hidden">
+        <div className="grid lg:grid-cols-2 items-stretch min-h-[70vh]">
+
+          <div className="flex items-center px-6 md:px-12 lg:px-16 xl:px-20 py-14 lg:py-20" data-aos="fade-right">
+            <div>
+              <p className="eyebrow">HoLEP Cirurgia a Laser Avançada para Hiperplasia Prostática Benigna</p>
+              <h1 className="section-title mt-2">
+                <span className="text-brand-gold">Pioneirismo, precisão e tecnologia</span> para o
+                tratamento moderno da próstata aumentada.
+              </h1>
+              <div className="mt-8">
+                <a
+                  href="https://wa.me/5585981781020"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-silver"
+                >
+                  Agendar Consulta
+                </a>
+              </div>
             </div>
           </div>
+
+          <div className="relative overflow-hidden min-h-[320px] order-first lg:order-last" data-aos="fade-left">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/img/dr-erico-foto-7.webp"
+              alt="HoLEP laser"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-brand-beige to-transparent" />
+            <div className="absolute bottom-0 inset-x-0 h-1/3 bg-gradient-to-t from-brand-beige to-transparent" />
+          </div>
+
         </div>
       </section>
 
