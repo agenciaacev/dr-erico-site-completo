@@ -12,13 +12,35 @@ export async function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }))
 }
 
+const SITE_URL = 'https://drericodiogenes.com.br'
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const post = getPostBySlug(slug)
   if (!post) return { title: 'Post não encontrado' }
   return {
-    title: `${post.title} | Dr. Érico Diógenes`,
+    title: post.title,
     description: post.excerpt,
+    alternates: { canonical: `/blog/${post.slug}` },
+    openGraph: {
+      type: 'article',
+      title: post.title,
+      description: post.excerpt,
+      url: `/blog/${post.slug}`,
+      publishedTime: post.publishedAt,
+      authors: ['Dr. Érico Diógenes'],
+      images: post.coverImage.startsWith('http')
+        ? [{ url: post.coverImage, alt: post.title }]
+        : [{ url: `${SITE_URL}${post.coverImage}`, alt: post.title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+      images: post.coverImage.startsWith('http')
+        ? [post.coverImage]
+        : [`${SITE_URL}${post.coverImage}`],
+    },
   }
 }
 
@@ -174,8 +196,49 @@ export default async function BlogPostPage({ params }: Props) {
   )
   const image2After = h2Indices[1] ?? h2Indices[0] ?? Math.floor(blocks.length / 2)
 
+  const coverUrl = post.coverImage.startsWith('http')
+    ? post.coverImage
+    : `${SITE_URL}${post.coverImage}`
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt,
+    image: coverUrl,
+    datePublished: post.publishedAt,
+    dateModified: post.publishedAt,
+    url: `${SITE_URL}/blog/${post.slug}`,
+    author: {
+      '@type': 'Person',
+      name: 'Dr. Érico Diógenes',
+      url: `${SITE_URL}/dr-erico-diogenes`,
+    },
+    publisher: {
+      '@type': 'Person',
+      name: 'Dr. Érico Diógenes',
+      url: SITE_URL,
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${SITE_URL}/blog/${post.slug}`,
+    },
+  }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Início', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE_URL}/blog` },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `${SITE_URL}/blog/${post.slug}` },
+    ],
+  }
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero */}
       <section className="bg-brand-beige pt-12 pb-10">
         <div className="container-site max-w-5xl">

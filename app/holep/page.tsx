@@ -1,9 +1,21 @@
-'use client'
-
+import type { Metadata } from 'next'
 import Link from 'next/link'
-import { useState } from 'react'
-import { Plus, Minus, Check, X as XIcon } from 'lucide-react'
+import { Check, X as XIcon } from 'lucide-react'
 import CtaBanner from '@/components/ui/CtaBanner'
+import HolepFaq from '@/components/holep/HolepFaq'
+
+export const metadata: Metadata = {
+  title: 'HoLEP — Cirurgia a Laser para Próstata Aumentada em Fortaleza',
+  description:
+    'HoLEP em Fortaleza com o Dr. Érico Diógenes. Cirurgia a laser minimamente invasiva para próstata aumentada. Sem cortes, menor sangramento, alta em 24h. Agende sua avaliação.',
+  alternates: { canonical: '/holep' },
+  openGraph: {
+    title: 'HoLEP — Cirurgia a Laser para Próstata | Dr. Érico Diógenes',
+    description:
+      'Cirurgia HoLEP a laser para próstata aumentada. Padrão ouro mundial, sem cortes, recuperação rápida.',
+    url: '/holep',
+  },
+}
 
 const indicacoes = [
   'Hiperplasia Prostática Benigna (HPB)',
@@ -127,11 +139,23 @@ function Row({
   )
 }
 
-export default function HoLEP() {
-  const [openFaq, setOpenFaq] = useState<number | null>(0)
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+}
 
+export default function HoLEP() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <section className="relative bg-brand-beige overflow-hidden">
         <div className="grid lg:grid-cols-2 items-stretch min-h-[70vh]">
 
@@ -327,27 +351,7 @@ export default function HoLEP() {
           <h2 className="section-title text-center" data-aos="fade-up">
             PERGUNTAS FREQUENTES (FAQ)
           </h2>
-          <div className="mt-10 space-y-3">
-            {faq.map((item, i) => (
-              <div
-                key={i}
-                className="bg-brand-beige-light rounded-2xl overflow-hidden"
-                data-aos="fade-up"
-                data-aos-delay={i * 40}
-              >
-                <button
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full flex items-center justify-between gap-4 p-5 text-left"
-                >
-                  <span className="font-medium text-brand-navy">{item.q}</span>
-                  {openFaq === i ? <Minus size={18} /> : <Plus size={18} />}
-                </button>
-                {openFaq === i && (
-                  <div className="px-5 pb-5 text-sm text-brand-muted">{item.a}</div>
-                )}
-              </div>
-            ))}
-          </div>
+          <HolepFaq faq={faq} />
         </div>
       </section>
 
