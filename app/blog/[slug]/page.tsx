@@ -9,7 +9,9 @@ import CtaBanner from '@/components/ui/CtaBanner'
 type Props = { params: Promise<{ slug: string }> }
 
 export async function generateStaticParams() {
-  return posts.map((p) => ({ slug: p.slug }))
+  return posts
+    .filter((p) => p.content.length > 200)
+    .map((p) => ({ slug: p.slug }))
 }
 
 const SITE_URL = 'https://drericodiogenes.com.br'

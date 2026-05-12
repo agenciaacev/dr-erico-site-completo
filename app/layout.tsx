@@ -139,9 +139,6 @@ export const metadata: Metadata = {
     shortcut: '/img/logo_1.webp',
     apple: '/img/logo_1.webp',
   },
-  verification: {
-    google: '',
-  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -154,8 +151,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
-      </head>
-      <body>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianSchema) }}
@@ -164,6 +159,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicSchema) }}
         />
+      </head>
+      <body>
         <AosProvider>
           <ScrollToTop />
           <div className="min-h-screen flex flex-col">

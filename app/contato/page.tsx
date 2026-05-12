@@ -17,9 +17,22 @@ export const metadata: Metadata = {
   },
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://drericodiogenes.com.br' },
+    { '@type': 'ListItem', position: 2, name: 'Contato', item: 'https://drericodiogenes.com.br/contato' },
+  ],
+}
+
 export default function Contato() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="bg-brand-beige-light py-14 md:py-20">
         <div className="container-site grid lg:grid-cols-2 gap-10 items-center">
           <div data-aos="fade-right">

@@ -22,9 +22,22 @@ const formacao = [
   'Especialização em Uro-Oncologia com professor Miguel Srougi pela Universidade de São Paulo (USP) e Hospital Sírio Libanês. 2014.',
 ]
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://drericodiogenes.com.br' },
+    { '@type': 'ListItem', position: 2, name: 'Dr. Érico Diógenes', item: 'https://drericodiogenes.com.br/dr-erico-diogenes' },
+  ],
+}
+
 export default function Sobre() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="bg-brand-beige py-14 md:py-20">
         <div className="container-site text-center">
           <h1

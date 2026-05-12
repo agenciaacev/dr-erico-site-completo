@@ -69,9 +69,22 @@ const depoimentos = [
   },
 ]
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://drericodiogenes.com.br' },
+    { '@type': 'ListItem', position: 2, name: 'Cirurgia Robótica', item: 'https://drericodiogenes.com.br/cirurgia-robotica' },
+  ],
+}
+
 export default function CirurgiaRobotica() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="relative bg-brand-navy overflow-hidden">
         <div className="grid lg:grid-cols-2 items-stretch min-h-[70vh]">
 
