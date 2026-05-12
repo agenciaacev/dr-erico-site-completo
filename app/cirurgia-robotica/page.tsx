@@ -1,6 +1,20 @@
+import type { Metadata } from 'next'
 import { Check } from 'lucide-react'
 import CtaBanner from '@/components/ui/CtaBanner'
 import Image from 'next/image'
+
+export const metadata: Metadata = {
+  title: 'Cirurgia Robótica de Próstata em Fortaleza',
+  description:
+    'Cirurgia Robótica de Próstata em Fortaleza com o Dr. Érico Diógenes. Tecnologia Da Vinci, menor sangramento, recuperação rápida e mais precisão. Agende sua consulta.',
+  alternates: { canonical: '/cirurgia-robotica' },
+  openGraph: {
+    title: 'Cirurgia Robótica de Próstata em Fortaleza | Dr. Érico Diógenes',
+    description:
+      'Tecnologia robótica Da Vinci para tratamento da próstata. Menos dor, recuperação rápida e maior precisão.',
+    url: '/cirurgia-robotica',
+  },
+}
 
 const passos = [
   {

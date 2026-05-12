@@ -1,4 +1,7 @@
+export const SITE_URL = 'https://drericodiogenes.com.br'
+
 export const site = {
+  siteUrl: SITE_URL,
   name: 'Dr. Érico Diógenes',
   role: 'Urologista em Fortaleza',
   phone: '(85) 98178-1020',

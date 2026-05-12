@@ -1,20 +1,23 @@
-'use client'
-
-import { useState } from 'react'
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Phone, Mail, MessageCircle } from 'lucide-react'
 import { site } from '@/data/site'
+import ContatoForm from '@/components/contato/ContatoForm'
+
+export const metadata: Metadata = {
+  title: 'Contato — Agendar Consulta em Fortaleza',
+  description:
+    'Entre em contato com o Dr. Érico Diógenes para agendar sua consulta em Fortaleza. Atendimento via WhatsApp, telefone e e-mail. Pátio Dom Luís, Fortaleza – CE.',
+  alternates: { canonical: '/contato' },
+  openGraph: {
+    title: 'Contato | Dr. Érico Diógenes — Urologista em Fortaleza',
+    description:
+      'Agende sua consulta com o Dr. Érico Diógenes. Clínica localizada no Pátio Dom Luís, Fortaleza, CE.',
+    url: '/contato',
+  },
+}
 
 export default function Contato() {
-  const [sent, setSent] = useState(false)
-
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    setSent(true)
-    // TODO: integrar com backend/e-mail quando disponível
-    setTimeout(() => setSent(false), 4000)
-  }
-
   return (
     <>
       <section className="bg-brand-beige-light py-14 md:py-20">
@@ -30,7 +33,7 @@ export default function Contato() {
 
             <ul className="mt-8 space-y-4">
               <li className="flex items-center gap-4">
-                <span className="h-12 w-12 rounded-full bg-brand-navy text-white flex items-center justify-center">
+                <span className="h-12 w-12 rounded-full bg-brand-navy text-white flex items-center justify-center" aria-hidden>
                   <Phone size={18} />
                 </span>
                 <span className="text-brand-text">{site.phone}</span>
@@ -40,9 +43,10 @@ export default function Contato() {
                   href={site.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Fale pelo WhatsApp"
                   className="h-12 w-12 rounded-full bg-brand-navy text-white flex items-center justify-center"
                 >
-                  <MessageCircle size={18} />
+                  <MessageCircle size={18} aria-hidden />
                 </a>
                 <a
                   href={site.whatsapp}
@@ -54,7 +58,7 @@ export default function Contato() {
                 </a>
               </li>
               <li className="flex items-center gap-4">
-                <span className="h-12 w-12 rounded-full bg-brand-navy text-white flex items-center justify-center">
+                <span className="h-12 w-12 rounded-full bg-brand-navy text-white flex items-center justify-center" aria-hidden>
                   <Mail size={18} />
                 </span>
                 <span className="text-brand-text">{site.email}</span>
@@ -66,7 +70,7 @@ export default function Contato() {
             <div className="aspect-[4/5] max-w-md ml-auto rounded-full overflow-hidden shadow-soft relative">
               <Image
                 src="/img/dr-erico-foto-3.webp"
-                alt="Dr. Érico Diógenes"
+                alt="Dr. Érico Diógenes — Urologista em Fortaleza"
                 fill
                 sizes="(max-width: 1024px) 100vw, 28rem"
                 className="object-cover"
@@ -85,7 +89,7 @@ export default function Contato() {
                 className="w-full h-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Localização"
+                title={`Localização do consultório de ${site.name} em ${site.address.city}`}
               />
             </div>
           </div>
@@ -108,43 +112,7 @@ export default function Contato() {
               </div>
             </div>
 
-            <form
-              onSubmit={handleSubmit}
-              className="mt-10 grid sm:grid-cols-2 gap-4 bg-brand-beige-light rounded-2xl p-6"
-            >
-              <input
-                type="text"
-                required
-                placeholder="Nome"
-                className="sm:col-span-2 rounded-xl border border-black/10 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold"
-              />
-              <input
-                type="email"
-                required
-                placeholder="E-mail"
-                className="rounded-xl border border-black/10 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold"
-              />
-              <input
-                type="tel"
-                required
-                placeholder="Telefone"
-                className="rounded-xl border border-black/10 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold"
-              />
-              <textarea
-                rows={5}
-                placeholder="Como podemos ajudar?"
-                className="sm:col-span-2 rounded-xl border border-black/10 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold"
-              />
-              <button type="submit" className="btn-primary sm:col-span-2 justify-center">
-                Enviar mensagem
-              </button>
-
-              {sent && (
-                <p className="sm:col-span-2 text-center text-sm text-brand-green-dark">
-                  Mensagem enviada! Em breve retornaremos.
-                </p>
-              )}
-            </form>
+            <ContatoForm />
           </div>
         </div>
       </section>
