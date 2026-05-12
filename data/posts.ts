@@ -873,7 +873,7 @@ Atua com cirurgia robótica, laparoscópica e a laser, unindo experiência, prec
   },
   {
     id: '10',
-    slug: 'como-Funciona-e-quando-e-indicada-para-prostata-ou-calculo-Renal',
+    slug: 'como-funciona-e-quando-e-indicada-para-prostata-ou-calculo-renal',
     title: 'Cirurgia Robótica: Como Funciona e Quando é Indicada para Próstata ou Cálculo Renal',
     excerpt: 'A cirurgia robótica é um dos maiores avanços da medicina moderna uma fusão entre tecnologia, precisão e experiência humana',
     content: `
