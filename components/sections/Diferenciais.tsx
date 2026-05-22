@@ -44,7 +44,7 @@ export default function Diferenciais() {
       <div className="container-site">
         <div className="text-center mb-12" data-aos="fade-up">
           <p className="eyebrow">Conheça nossos</p>
-          <h2 className="section-title mt-2">diferenciais</h2>
+          <h2 className="section-title mt-2">Tratamentos</h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
