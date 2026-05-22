@@ -34,7 +34,8 @@ export default function HeroHome() {
             fill
             priority
             sizes="(max-width: 1024px) 100vw, 50vw"
-            className="object-cover object-[center_20%]"
+            className="object-cover"
+            style={{ objectPosition: 'center calc(20% + 25px)' }}
           />
           {/* degradê esquerda, funde com o navy */}
           <div className="absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-brand-navy to-transparent" />
