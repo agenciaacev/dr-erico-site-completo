@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import CtaBanner from '@/components/ui/CtaBanner'
+import ContactMini from '@/components/sections/ContactMini'
 
 export const metadata: Metadata = {
   title: 'Dr. Érico Diógenes — Urologista em Fortaleza',
@@ -138,6 +139,7 @@ export default function Sobre() {
         </div>
       </section>
 
+      <ContactMini />
       <CtaBanner title="Agende agora sua consulta com o Dr. Érico Diógenes" />
     </>
   )

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Check } from 'lucide-react'
 import CtaBanner from '@/components/ui/CtaBanner'
 import Image from 'next/image'
+import ContactMini from '@/components/sections/ContactMini'
 
 export const metadata: Metadata = {
   title: 'Cirurgia Robótica de Próstata em Fortaleza',
@@ -287,6 +288,7 @@ export default function CirurgiaRobotica() {
         </div>
       </section>
 
+      <ContactMini />
       <CtaBanner title="Marque agora sua consulta com o Dr. Érico Diógenes" />
     </>
   )

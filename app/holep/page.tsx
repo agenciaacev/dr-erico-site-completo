@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Check, X as XIcon } from 'lucide-react'
 import CtaBanner from '@/components/ui/CtaBanner'
 import HolepFaq from '@/components/holep/HolepFaq'
+import ContactMini from '@/components/sections/ContactMini'
 
 export const metadata: Metadata = {
   title: 'HoLEP — Cirurgia a Laser para Próstata Aumentada em Fortaleza',
@@ -368,6 +369,7 @@ export default function HoLEP() {
         </div>
       </section>
 
+      <ContactMini />
       <CtaBanner title="Marque agora sua consulta" />
     </>
   )

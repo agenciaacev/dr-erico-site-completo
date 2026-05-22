@@ -5,6 +5,7 @@ import PageHeader from '@/components/ui/PageHeader'
 import PostCard from '@/components/ui/PostCard'
 import { posts } from '@/data/posts'
 import type { PostCategory } from '@/types/post'
+import ContactMini from '@/components/sections/ContactMini'
 
 const PAGE_SIZE = 9
 
@@ -117,6 +118,8 @@ export default function Blog() {
           <div className="mt-12">{renderPagination()}</div>
         </div>
       </section>
+
+      <ContactMini />
     </>
   )
 }

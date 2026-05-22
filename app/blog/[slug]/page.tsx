@@ -5,6 +5,7 @@ import { ArrowLeft, Calendar, Clock, User } from 'lucide-react'
 import { getPostBySlug, getRecentPosts, posts } from '@/data/posts'
 import PostCard from '@/components/ui/PostCard'
 import CtaBanner from '@/components/ui/CtaBanner'
+import ContactMini from '@/components/sections/ContactMini'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -396,6 +397,7 @@ export default async function BlogPostPage({ params }: Props) {
         </section>
       )}
 
+      <ContactMini />
       <CtaBanner />
     </>
   )
