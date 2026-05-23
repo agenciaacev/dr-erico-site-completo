@@ -218,7 +218,7 @@ export default async function BlogPostPage({ params }: Props) {
       url: `${SITE_URL}/dr-erico-diogenes`,
     },
     publisher: {
-      '@type': 'Person',
+      '@type': 'Organization',
       name: 'Dr. Érico Diógenes',
       url: SITE_URL,
     },

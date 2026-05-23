@@ -36,6 +36,29 @@ const nextConfig = {
         permanent: true,
       },
 
+      // ─── Páginas de contato / agendamento WordPress ────────────────────
+      { source: '/agendamento',         destination: '/contato', permanent: true },
+      { source: '/agenda',              destination: '/contato', permanent: true },
+      { source: '/agendar',             destination: '/contato', permanent: true },
+      { source: '/agendar-consulta',    destination: '/contato', permanent: true },
+      { source: '/marcar-consulta',     destination: '/contato', permanent: true },
+
+      // ─── Páginas de serviços WordPress ─────────────────────────────────
+      { source: '/servicos',            destination: '/', permanent: true },
+      { source: '/services',            destination: '/', permanent: true },
+      { source: '/urologista',          destination: '/dr-erico-diogenes', permanent: true },
+      { source: '/urologista-fortaleza', destination: '/dr-erico-diogenes', permanent: true },
+      { source: '/prostata',            destination: '/holep', permanent: true },
+      { source: '/holep-laser',         destination: '/holep', permanent: true },
+      { source: '/cirurgia-robotica-prostata', destination: '/cirurgia-robotica', permanent: true },
+
+      // ─── URLs com barra final (trailing slash) → sem barra ─────────────
+      { source: '/cirurgia-robotica/',  destination: '/cirurgia-robotica', permanent: true },
+      { source: '/holep/',              destination: '/holep', permanent: true },
+      { source: '/dr-erico-diogenes/',  destination: '/dr-erico-diogenes', permanent: true },
+      { source: '/contato/',            destination: '/contato', permanent: true },
+      { source: '/blog/',               destination: '/blog', permanent: true },
+
       // ─── Posts WordPress na raiz (sem /blog/) → /blog/slug ─────────────
       { source: '/cirurgia-robotica-o-que-e-indicacoes-beneficios',                         destination: '/blog/cirurgia-robotica-o-que-e-indicacoes-beneficios',                         permanent: true },
       { source: '/cancer-de-prostata-sintomas-tratamentos-e-como-prevenir',                 destination: '/blog/cancer-de-prostata-sintomas-tratamentos-e-como-prevenir',                 permanent: true },
