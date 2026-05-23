@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Phone, Mail, MessageCircle } from 'lucide-react'
 import { site } from '@/data/site'
-import ContatoForm from '@/components/contato/ContatoForm'
 
 export const metadata: Metadata = {
   title: 'Contato — Agendar Consulta em Fortaleza',
@@ -124,8 +123,6 @@ export default function Contato() {
                 <p className="text-brand-muted text-sm mt-2">{site.address.hours}</p>
               </div>
             </div>
-
-            <ContatoForm />
           </div>
         </div>
       </section>

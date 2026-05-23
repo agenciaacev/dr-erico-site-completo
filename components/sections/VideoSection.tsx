@@ -441,16 +441,7 @@ export default function VideoSection() {
           </div>
 
           {loading && (
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                gap: '1rem',
-                padding: '4rem 0',
-                color: '#6B6B6B',
-              }}
-            >
+            <div className="flex flex-col items-center gap-4 py-16 text-brand-muted">
               <div
                 style={{
                   width: '36px',
@@ -461,46 +452,22 @@ export default function VideoSection() {
                   animation: 'spin 0.75s linear infinite',
                 }}
               />
-              <p style={{ fontSize: '0.875rem' }}>Carregando vídeos...</p>
+              <p className="text-sm">Carregando vídeos...</p>
             </div>
           )}
 
           {error && !loading && (
-            <div
-              style={{
-                textAlign: 'center',
-                padding: '4rem 0',
-                color: '#6B6B6B',
-              }}
-            >
-              <p style={{ marginBottom: '1rem', fontSize: '0.9rem' }}>
+            <div className="text-center py-16">
+              <p className="text-sm text-brand-muted mb-3">
                 Não foi possível carregar os vídeos.
               </p>
-              <p
-                style={{
-                  fontSize: '0.78rem',
-                  color: '#9B9B9B',
-                  marginBottom: '1.5rem',
-                  maxWidth: '360px',
-                  margin: '0 auto 1.5rem',
-                  lineHeight: 1.6,
-                }}
-              >
+              <p className="text-xs text-brand-muted max-w-sm mx-auto leading-relaxed mb-6">
                 {error}
               </p>
               <button
                 onClick={fetchVideos}
-                style={{
-                  background: '#0B2239',
-                  color: '#f5f0e8',
-                  border: 'none',
-                  padding: '10px 24px',
-                  borderRadius: '8px',
-                  fontSize: '0.85rem',
-                  fontWeight: 600,
-                  cursor: 'pointer',
-                  fontFamily: 'inherit',
-                }}
+                className="text-sm font-semibold px-6 py-2.5 rounded-lg cursor-pointer border-none text-white"
+                style={{ background: '#0B2239' }}
               >
                 Tentar novamente
               </button>
@@ -529,35 +496,12 @@ export default function VideoSection() {
                 ))}
               </div>
 
-              <div style={{ textAlign: 'center', marginTop: '48px' }}>
+              <div className="text-center mt-12">
                 <a
                   href={`https://www.youtube.com/channel/${CHANNEL_ID}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-display"
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '8px',
-                    background: 'transparent',
-                    color: '#0B2239',
-                    border: '1.5px solid #0B2239',
-                    padding: '12px 28px',
-                    borderRadius: '8px',
-                    fontSize: '0.875rem',
-                    fontWeight: 600,
-                    textDecoration: 'none',
-                    letterSpacing: '0.3px',
-                    transition: 'background 0.2s, color 0.2s',
-                  }}
-                  onMouseEnter={(e) => {
-                    ;(e.currentTarget as HTMLAnchorElement).style.background = '#0B2239'
-                    ;(e.currentTarget as HTMLAnchorElement).style.color = '#f5f0e8'
-                  }}
-                  onMouseLeave={(e) => {
-                    ;(e.currentTarget as HTMLAnchorElement).style.background = 'transparent'
-                    ;(e.currentTarget as HTMLAnchorElement).style.color = '#0B2239'
-                  }}
+                  className="inline-flex items-center gap-2 font-display text-sm font-semibold text-brand-navy no-underline rounded-lg px-7 py-3 border border-brand-navy transition-colors hover:bg-brand-navy hover:text-white"
                 >
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 0 0 .5 6.19C0 8.03 0 12 0 12s0 3.97.5 5.81a3.02 3.02 0 0 0 2.12 2.14C4.46 20.5 12 20.5 12 20.5s7.54 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14C24 15.97 24 12 24 12s0-3.97-.5-5.81zM9.75 15.52V8.48L15.5 12l-5.75 3.52z" />

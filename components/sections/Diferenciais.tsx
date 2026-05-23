@@ -22,8 +22,8 @@ const cards: Card[] = [
     title: 'Tratamento a Laser HoLEP para Próstata',
     description:
       'Tratamento inovador com tecnologia a laser para Hiperplasia Prostática Benigna (HPB), ou próstata aumentada.',
-    cta: 'Saiba mais',
-    to: '/holep',
+    cta: 'Agendar Consulta',
+    to: '/contato',
     image:
       'https://images.unsplash.com/photo-1551190822-a9333d879b1f?q=80&w=1000&auto=format&fit=crop',
   },
@@ -31,8 +31,8 @@ const cards: Card[] = [
     title: 'Cirurgia Robótica em Urologia',
     description:
       'Tratamento inovador e tecnológico para câncer e tumores da próstata, rins, bexiga e uretra.',
-    cta: 'Saiba mais',
-    to: '/cirurgia-robotica',
+    cta: 'Agendar Consulta',
+    to: '/contato',
     image:
       '/img/dr-erico-foto-5b.webp',
   },
@@ -40,7 +40,7 @@ const cards: Card[] = [
     title: 'Cálculos Urinários',
     description:
       'Avaliação completa, tratamento com técnicas minimamente invasivas e orientação para prevenção da recorrência, sempre conforme a necessidade clínica.',
-    cta: 'Saiba mais',
+    cta: 'Agendar Consulta',
     to: '/contato',
     image:
       '/img/post/imgid08_01.webp',
@@ -49,7 +49,7 @@ const cards: Card[] = [
     title: 'Uro-Oncologia',
     description:
       'Atendimento individualizado para câncer de próstata, rim, bexiga e testículo, com condutas baseadas em evidências e práticas atualizadas, priorizando acolhimento, segurança e tomada de decisão compartilhada.',
-    cta: 'Saiba mais',
+    cta: 'Agendar Consulta',
     to: '/contato',
     image:
       '/img/post/imgid02_01.webp',
@@ -58,7 +58,7 @@ const cards: Card[] = [
     title: 'Andrologia e Saúde Sexual Masculina',
     description:
       'Avaliação integral da saúde do homem, incluindo disfunção erétil, alterações hormonais, infertilidade masculina e planejamento familiar, como vasectomia. Também realiza reversão de vasectomia conforme avaliação clínica.',
-    cta: 'Saiba mais',
+    cta: 'Agendar Consulta',
     to: '/contato',
     image:
       '/img/post/imgid11_01.webp',
