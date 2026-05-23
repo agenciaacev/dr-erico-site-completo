@@ -10,9 +10,9 @@ type Card = {
 
 const cards: Card[] = [
   {
-    title: 'Acompanhamento Clínico em Urologia',
+    title: 'Check-Up Urológico',
     description:
-      'Acompanhamento urológico para casos de alta, média ou baixa complexidade, com estrutura completa de exames e expertise em oncologia.',
+      'Rastreamento, prevenção e avaliação periódica voltados para homens que buscam atenção preventiva, acompanhamento individualizado e cuidado contínuo com a saúde urológica.',
     cta: 'Agendar Consulta',
     to: '/contato',
     image:
@@ -35,6 +35,33 @@ const cards: Card[] = [
     to: '/cirurgia-robotica',
     image:
       '/img/dr-erico-foto-5b.webp',
+  },
+  {
+    title: 'Cálculos Urinários',
+    description:
+      'Avaliação completa, tratamento com técnicas minimamente invasivas e orientação para prevenção da recorrência, sempre conforme a necessidade clínica.',
+    cta: 'Saiba mais',
+    to: '/contato',
+    image:
+      '/img/post/imgid08_01.webp',
+  },
+  {
+    title: 'Uro-Oncologia',
+    description:
+      'Atendimento individualizado para câncer de próstata, rim, bexiga e testículo, com condutas baseadas em evidências e práticas atualizadas, priorizando acolhimento, segurança e tomada de decisão compartilhada.',
+    cta: 'Saiba mais',
+    to: '/contato',
+    image:
+      '/img/post/imgid02_01.webp',
+  },
+  {
+    title: 'Andrologia e Saúde Sexual Masculina',
+    description:
+      'Avaliação integral da saúde do homem, incluindo disfunção erétil, alterações hormonais, infertilidade masculina e planejamento familiar, como vasectomia. Também realiza reversão de vasectomia conforme avaliação clínica.',
+    cta: 'Saiba mais',
+    to: '/contato',
+    image:
+      '/img/post/imgid11_01.webp',
   },
 ]
 

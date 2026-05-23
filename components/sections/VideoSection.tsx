@@ -71,58 +71,26 @@ function VideoModal({ video, onClose }: { video: Video; onClose: () => void }) {
             src={`https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0&modestbranding=1`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            style={{
-              position: 'absolute',
-              inset: 0,
-              width: '100%',
-              height: '100%',
-              border: 'none',
-            }}
+            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 'none' }}
           />
         </div>
 
-        <div
-          style={{
-            padding: '1rem 1.25rem',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            gap: '1rem',
-          }}
-        >
+        <div className="flex items-center justify-between gap-4 px-5 py-4">
           <div>
-            <p
-              className="font-display"
-              style={{
-                fontSize: '1rem',
-                fontWeight: 600,
-                color: '#0B2239',
-                margin: 0,
-                lineHeight: 1.35,
-              }}
-            >
+            <p className="font-display text-base font-semibold text-brand-navy leading-snug">
               {video.titulo}
             </p>
-            <p style={{ fontSize: '0.75rem', color: '#6B6B6B', margin: '4px 0 0' }}>
+            <p className="text-xs text-brand-muted mt-1">
               {formatDate(video.publicadoEm)}
             </p>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexShrink: 0 }}>
+          <div className="flex items-center gap-3 shrink-0">
             <a
               href={`https://www.youtube.com/watch?v=${video.id}`}
               target="_blank"
               rel="noopener noreferrer"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '6px',
-                color: '#0B2239',
-                fontSize: '0.75rem',
-                fontWeight: 600,
-                textDecoration: 'none',
-                letterSpacing: '0.3px',
-              }}
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-navy no-underline"
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 0 0 .5 6.19C0 8.03 0 12 0 12s0 3.97.5 5.81a3.02 3.02 0 0 0 2.12 2.14C4.46 20.5 12 20.5 12 20.5s7.54 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14C24 15.97 24 12 24 12s0-3.97-.5-5.81zM9.75 15.52V8.48L15.5 12l-5.75 3.52z" />
@@ -132,19 +100,8 @@ function VideoModal({ video, onClose }: { video: Video; onClose: () => void }) {
 
             <button
               onClick={onClose}
-              style={{
-                background: '#e8e2d4',
-                border: 'none',
-                color: '#0B2239',
-                width: '32px',
-                height: '32px',
-                borderRadius: '8px',
-                fontSize: '1rem',
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
+              className="flex items-center justify-center w-8 h-8 rounded-lg text-brand-navy cursor-pointer border-none text-base"
+              style={{ background: '#e8e2d4' }}
             >
               ✕
             </button>
@@ -224,15 +181,10 @@ function VideoCard({ video, onClick }: { video: Video; onClick: () => void }) {
         </div>
       </div>
 
-      <div style={{ padding: '14px 16px 18px' }}>
+      <div className="p-4 pb-5">
         <p
-          className="font-display"
+          className="font-display text-sm font-semibold text-brand-navy leading-snug mb-2"
           style={{
-            fontSize: '0.9rem',
-            fontWeight: 600,
-            color: '#0B2239',
-            lineHeight: 1.45,
-            margin: '0 0 8px',
             display: '-webkit-box',
             WebkitLineClamp: 2,
             WebkitBoxOrient: 'vertical',
@@ -241,7 +193,7 @@ function VideoCard({ video, onClick }: { video: Video; onClick: () => void }) {
         >
           {video.titulo}
         </p>
-        <p style={{ fontSize: '0.72rem', color: '#6B6B6B', margin: 0, letterSpacing: '0.2px' }}>
+        <p className="text-xs text-brand-muted">
           {formatDate(video.publicadoEm)}
         </p>
       </div>
@@ -328,37 +280,20 @@ function FeaturedVideo({ video, onClick }: { video: Video; onClick: () => void }
       </div>
 
       <div className="featured-info" style={{ padding: '32px 40px 32px 0' }}>
-        <p
-          className="font-display"
-          style={{
-            fontSize: '0.7rem',
-            letterSpacing: '3px',
-            textTransform: 'uppercase',
-            color: '#0B2239',
-            marginBottom: '12px',
-          }}
-        >
+        <p className="eyebrow not-italic text-xs tracking-widest uppercase text-brand-navy mb-3">
           Mais recente
         </p>
-        <p
-          className="font-display"
+        <h3
+          className="font-display text-2xl md:text-3xl font-bold text-brand-navy leading-snug mb-3 cursor-pointer"
           onClick={onClick}
-          style={{
-            fontSize: 'clamp(1.2rem, 2vw, 1.6rem)',
-            fontWeight: 700,
-            color: '#0B2239',
-            lineHeight: 1.3,
-            margin: '0 0 12px',
-            cursor: 'pointer',
-          }}
         >
           {video.titulo}
-        </p>
-        <p style={{ fontSize: '0.75rem', color: '#6B6B6B', marginBottom: '16px' }}>
+        </h3>
+        <p className="text-xs text-brand-muted mb-4">
           {formatDate(video.publicadoEm)}
         </p>
         {descricaoTruncada && (
-          <p style={{ fontSize: '0.875rem', color: '#6B6B6B', lineHeight: 1.7, marginBottom: '24px' }}>
+          <p className="text-sm text-brand-muted leading-relaxed mb-6">
             {descricaoTruncada}
           </p>
         )}
@@ -366,24 +301,8 @@ function FeaturedVideo({ video, onClick }: { video: Video; onClick: () => void }
           href={`https://www.youtube.com/watch?v=${video.id}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="font-display"
-          style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '8px',
-            background: '#0B2239',
-            color: '#C9A961',
-            border: 'none',
-            padding: '12px 24px',
-            borderRadius: '8px',
-            fontSize: '0.875rem',
-            fontWeight: 600,
-            textDecoration: 'none',
-            letterSpacing: '0.3px',
-            transition: 'opacity 0.2s',
-          }}
-          onMouseEnter={(e) => ((e.currentTarget as HTMLAnchorElement).style.opacity = '0.85')}
-          onMouseLeave={(e) => ((e.currentTarget as HTMLAnchorElement).style.opacity = '1')}
+          className="inline-flex items-center gap-2 font-display text-sm font-semibold text-brand-gold no-underline rounded-lg px-6 py-3 transition-opacity hover:opacity-85"
+          style={{ background: '#0B2239' }}
         >
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
             <path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 0 0 .5 6.19C0 8.03 0 12 0 12s0 3.97.5 5.81a3.02 3.02 0 0 0 2.12 2.14C4.46 20.5 12 20.5 12 20.5s7.54 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14C24 15.97 24 12 24 12s0-3.97-.5-5.81zM9.75 15.52V8.48L15.5 12l-5.75 3.52z" />
@@ -506,55 +425,17 @@ export default function VideoSection() {
             position: 'relative',
           }}
         >
-          <div style={{ textAlign: 'center', marginBottom: '56px' }}>
-            <p
-              className="font-display"
-              style={{
-                fontSize: '0.8rem',
-                fontWeight: 400,
-                letterSpacing: '3px',
-                textTransform: 'uppercase',
-                color: '#0B2239',
-                marginBottom: '12px',
-              }}
-            >
-              Conteúdo exclusivo
-            </p>
-
-            <h2
-              className="font-display"
-              style={{
-                fontSize: 'clamp(2rem, 4vw, 2.8rem)',
-                fontWeight: 700,
-                color: '#0B2239',
-                lineHeight: 1.2,
-                margin: '0 0 16px',
-              }}
-            >
-              <span style={{ color: '#0B2239' }}>Vídeos do{' '}</span>
-              <em style={{ fontStyle: 'italic', color: '#C9A961' }}>Dr. Érico Diógenes</em>
+          <div className="text-center mb-14">
+            <p className="eyebrow">Conteúdo exclusivo</p>
+            <h2 className="section-title mt-2">
+              Vídeos do{' '}
+              <em className="italic text-brand-gold">Dr. Érico Diógenes</em>
             </h2>
-
             <div
-              style={{
-                width: '48px',
-                height: '2px',
-                background: '#0B2239',
-                margin: '0 auto 20px',
-                borderRadius: '2px',
-              }}
+              className="mx-auto mt-4 mb-5 rounded-sm"
+              style={{ width: '48px', height: '2px', background: '#0B2239' }}
             />
-
-            <p
-              style={{
-                fontFamily: 'inherit',
-                fontSize: '1rem',
-                color: '#6B6B6B',
-                maxWidth: '500px',
-                margin: '0 auto',
-                lineHeight: 1.7,
-              }}
-            >
+            <p className="text-brand-muted text-base max-w-lg mx-auto leading-relaxed">
               Informações sobre saúde masculina, cirurgia robótica e tratamentos avançados em urologia.
             </p>
           </div>
