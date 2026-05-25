@@ -4,6 +4,7 @@ import { Check, X as XIcon } from 'lucide-react'
 import CtaBanner from '@/components/ui/CtaBanner'
 import HolepFaq from '@/components/holep/HolepFaq'
 import ContactMini from '@/components/sections/ContactMini'
+import { MedicalWebPageSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'HoLEP — Cirurgia a Laser para Próstata Aumentada em Fortaleza',
@@ -162,6 +163,12 @@ const breadcrumbSchema = {
 export default function HoLEP() {
   return (
     <>
+      <MedicalWebPageSchema
+        name="HoLEP — Cirurgia a Laser para Próstata Aumentada em Fortaleza"
+        description="HoLEP em Fortaleza com o Dr. Érico Diógenes. Cirurgia a laser minimamente invasiva para próstata aumentada. Sem cortes, menor sangramento, alta em 24h. Agende sua avaliação."
+        url="https://drericodiogenes.com.br/holep"
+        specialty="Urology"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

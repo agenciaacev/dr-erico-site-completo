@@ -3,6 +3,7 @@ import { Check } from 'lucide-react'
 import CtaBanner from '@/components/ui/CtaBanner'
 import Image from 'next/image'
 import ContactMini from '@/components/sections/ContactMini'
+import { MedicalWebPageSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Cirurgia Robótica de Próstata em Fortaleza',
@@ -82,6 +83,12 @@ const breadcrumbSchema = {
 export default function CirurgiaRobotica() {
   return (
     <>
+      <MedicalWebPageSchema
+        name="Cirurgia Robótica de Próstata em Fortaleza"
+        description="Cirurgia Robótica de Próstata em Fortaleza com o Dr. Érico Diógenes. Tecnologia Da Vinci, menor sangramento, recuperação rápida e mais precisão. Agende sua consulta."
+        url="https://drericodiogenes.com.br/cirurgia-robotica"
+        specialty="Urology"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
