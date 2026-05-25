@@ -25,6 +25,9 @@ const nextConfig = {
       { source: '/categoria/:slug*', destination: '/blog', permanent: true },
       { source: '/tag/:slug*',       destination: '/blog', permanent: true },
 
+      // ─── Paginação WordPress (/page/2/, /page/3/ …) ────────────────────
+      { source: '/page/:num*',   destination: '/blog', permanent: true },
+
       // ─── Feed WordPress ────────────────────────────────────────────────
       { source: '/feed',  destination: '/sitemap.xml', permanent: true },
       { source: '/feed/', destination: '/sitemap.xml', permanent: true },
@@ -44,13 +47,34 @@ const nextConfig = {
       { source: '/marcar-consulta',     destination: '/contato', permanent: true },
 
       // ─── Páginas de serviços WordPress ─────────────────────────────────
-      { source: '/servicos',            destination: '/', permanent: true },
-      { source: '/services',            destination: '/', permanent: true },
-      { source: '/urologista',          destination: '/dr-erico-diogenes', permanent: true },
+      { source: '/servicos',             destination: '/', permanent: true },
+      { source: '/services',             destination: '/', permanent: true },
+      { source: '/urologista',           destination: '/dr-erico-diogenes', permanent: true },
       { source: '/urologista-fortaleza', destination: '/dr-erico-diogenes', permanent: true },
-      { source: '/prostata',            destination: '/holep', permanent: true },
-      { source: '/holep-laser',         destination: '/holep', permanent: true },
+      { source: '/prostata',             destination: '/holep', permanent: true },
+      { source: '/holep-laser',          destination: '/holep', permanent: true },
       { source: '/cirurgia-robotica-prostata', destination: '/cirurgia-robotica', permanent: true },
+
+      // ─── URLs /tratamento/* específicas (antes do curinga) ─────────────
+      { source: '/tratamento/orquiectomia',                            destination: '/cirurgia-robotica', permanent: true },
+      { source: '/tratamento/orquiectomia/',                           destination: '/cirurgia-robotica', permanent: true },
+      { source: '/tratamento/nefrectomia-radical-ou-parcial-robotica', destination: '/cirurgia-robotica', permanent: true },
+      { source: '/tratamento/nefrectomia-radical-ou-parcial-robotica/', destination: '/cirurgia-robotica', permanent: true },
+      { source: '/tratamento/cancer-de-prostata',  destination: '/blog/cancer-de-prostata-sintomas-tratamentos-e-como-prevenir', permanent: true },
+      { source: '/tratamento/cancer-de-prostata/', destination: '/blog/cancer-de-prostata-sintomas-tratamentos-e-como-prevenir', permanent: true },
+      { source: '/tratamento/holep',               destination: '/holep', permanent: true },
+      { source: '/tratamento/holep/',              destination: '/holep', permanent: true },
+      { source: '/tratamento/cirurgia-robotica',   destination: '/cirurgia-robotica', permanent: true },
+      { source: '/tratamento/cirurgia-robotica/',  destination: '/cirurgia-robotica', permanent: true },
+      { source: '/tratamento/calculo-renal',       destination: '/blog/tratamento-a-laser-para-calculo-renal', permanent: true },
+      { source: '/tratamento/calculo-renal/',      destination: '/blog/tratamento-a-laser-para-calculo-renal', permanent: true },
+
+      // ─── Curinga: qualquer /tratamento/* não mapeado → home ─────────────
+      { source: '/tratamento/:slug*', destination: '/', permanent: true },
+
+      // ─── Pedra nos rins / cálculo renal (URL antiga WP) ────────────────
+      { source: '/calculo-renal-pedra-nos-rins',  destination: '/blog/tratamento-a-laser-para-calculo-renal', permanent: true },
+      { source: '/calculo-renal-pedra-nos-rins/', destination: '/blog/tratamento-a-laser-para-calculo-renal', permanent: true },
 
       // ─── URLs com barra final (trailing slash) → sem barra ─────────────
       { source: '/cirurgia-robotica/',  destination: '/cirurgia-robotica', permanent: true },
@@ -59,26 +83,48 @@ const nextConfig = {
       { source: '/contato/',            destination: '/contato', permanent: true },
       { source: '/blog/',               destination: '/blog', permanent: true },
 
+      // ─── Blog: trailing slash em qualquer post ──────────────────────────
+      { source: '/blog/:slug/', destination: '/blog/:slug', permanent: true },
+
       // ─── Posts WordPress na raiz (sem /blog/) → /blog/slug ─────────────
-      { source: '/cirurgia-robotica-o-que-e-indicacoes-beneficios',                         destination: '/blog/cirurgia-robotica-o-que-e-indicacoes-beneficios',                         permanent: true },
-      { source: '/cancer-de-prostata-sintomas-tratamentos-e-como-prevenir',                 destination: '/blog/cancer-de-prostata-sintomas-tratamentos-e-como-prevenir',                 permanent: true },
-      { source: '/exames-da-prostata-tipos-finalidade',                                     destination: '/blog/exames-da-prostata-tipos-finalidade',                                     permanent: true },
-      { source: '/prostata-aumentada-sintomas-e-quando-procurar-urologista',                destination: '/blog/prostata-aumentada-sintomas-e-quando-procurar-urologista',                permanent: true },
-      { source: '/prostata-aumentada-quando-e-hora-de-fazer-cirurgia',                      destination: '/blog/prostata-aumentada-quando-e-hora-de-fazer-cirurgia',                      permanent: true },
-      { source: '/cirurgia-holep-para-prostata-aumentada',                                  destination: '/blog/cirurgia-holep-para-prostata-aumentada',                                  permanent: true },
-      { source: '/o-que-e-holep-tecnica-a-laser',                                           destination: '/blog/o-que-e-holep-tecnica-a-laser',                                           permanent: true },
-      { source: '/tratamento-a-laser-para-calculo-renal',                                   destination: '/blog/tratamento-a-laser-para-calculo-renal',                                   permanent: true },
-      { source: '/cirurgia-a-laser-para-prostata-aumentada',                                destination: '/blog/cirurgia-a-laser-para-prostata-aumentada',                                permanent: true },
-      { source: '/como-funciona-e-quando-e-indicada-para-prostata-ou-calculo-renal',        destination: '/blog/como-funciona-e-quando-e-indicada-para-prostata-ou-calculo-renal',        permanent: true },
-      { source: '/recuperacao-apos-cirurgia-robotica',                                      destination: '/blog/recuperacao-apos-cirurgia-robotica',                                      permanent: true },
-      { source: '/5-motivos-para-escolher-a-cirurgia-robotica',                             destination: '/blog/5-motivos-para-escolher-a-cirurgia-robotica',                             permanent: true },
-      { source: '/cirurgia-robotica-x-laparoscopia',                                        destination: '/blog/cirurgia-robotica-x-laparoscopia',                                        permanent: true },
-      { source: '/por-que-o-homem-deve-consultar-o-urologista-todo-ano',                    destination: '/blog/por-que-o-homem-deve-consultar-o-urologista-todo-ano',                    permanent: true },
-      { source: '/psa-alterado-o-que-significa',                                            destination: '/blog/psa-alterado-o-que-significa',                                            permanent: true },
-      { source: '/cancer-de-prostata-sintomas-diagnostico',                                 destination: '/blog/cancer-de-prostata-sintomas-diagnostico',                                 permanent: true },
-      { source: '/7-sinais-que-indicam-que-voce-deve-procurar-um-urologista',               destination: '/blog/7-sinais-que-indicam-que-voce-deve-procurar-um-urologista',               permanent: true },
-      { source: '/exame-de-prostata-o-que-e',                                               destination: '/blog/exame-de-prostata-o-que-e',                                               permanent: true },
-      { source: '/cirurgia-robotica-de-prostata-vantagens-indicacoes-e-recuperacao',        destination: '/blog/cirurgia-robotica-de-prostata-vantagens-indicacoes-e-recuperacao',        permanent: true },
+      { source: '/cirurgia-robotica-o-que-e-indicacoes-beneficios',                  destination: '/blog/cirurgia-robotica-o-que-e-indicacoes-beneficios',                  permanent: true },
+      { source: '/cirurgia-robotica-o-que-e-indicacoes-beneficios/',                 destination: '/blog/cirurgia-robotica-o-que-e-indicacoes-beneficios',                  permanent: true },
+      { source: '/cancer-de-prostata-sintomas-tratamentos-e-como-prevenir',          destination: '/blog/cancer-de-prostata-sintomas-tratamentos-e-como-prevenir',          permanent: true },
+      { source: '/cancer-de-prostata-sintomas-tratamentos-e-como-prevenir/',         destination: '/blog/cancer-de-prostata-sintomas-tratamentos-e-como-prevenir',          permanent: true },
+      { source: '/exames-da-prostata-tipos-finalidade',                              destination: '/blog/exames-da-prostata-tipos-finalidade',                              permanent: true },
+      { source: '/exames-da-prostata-tipos-finalidade/',                             destination: '/blog/exames-da-prostata-tipos-finalidade',                              permanent: true },
+      { source: '/prostata-aumentada-sintomas-e-quando-procurar-urologista',         destination: '/blog/prostata-aumentada-sintomas-e-quando-procurar-urologista',         permanent: true },
+      { source: '/prostata-aumentada-sintomas-e-quando-procurar-urologista/',        destination: '/blog/prostata-aumentada-sintomas-e-quando-procurar-urologista',         permanent: true },
+      { source: '/prostata-aumentada-quando-e-hora-de-fazer-cirurgia',               destination: '/blog/prostata-aumentada-quando-e-hora-de-fazer-cirurgia',               permanent: true },
+      { source: '/prostata-aumentada-quando-e-hora-de-fazer-cirurgia/',              destination: '/blog/prostata-aumentada-quando-e-hora-de-fazer-cirurgia',               permanent: true },
+      { source: '/cirurgia-holep-para-prostata-aumentada',                           destination: '/blog/cirurgia-holep-para-prostata-aumentada',                           permanent: true },
+      { source: '/cirurgia-holep-para-prostata-aumentada/',                          destination: '/blog/cirurgia-holep-para-prostata-aumentada',                           permanent: true },
+      { source: '/o-que-e-holep-tecnica-a-laser',                                   destination: '/blog/o-que-e-holep-tecnica-a-laser',                                   permanent: true },
+      { source: '/o-que-e-holep-tecnica-a-laser/',                                  destination: '/blog/o-que-e-holep-tecnica-a-laser',                                   permanent: true },
+      { source: '/tratamento-a-laser-para-calculo-renal',                            destination: '/blog/tratamento-a-laser-para-calculo-renal',                            permanent: true },
+      { source: '/tratamento-a-laser-para-calculo-renal/',                           destination: '/blog/tratamento-a-laser-para-calculo-renal',                            permanent: true },
+      { source: '/cirurgia-a-laser-para-prostata-aumentada',                         destination: '/blog/cirurgia-a-laser-para-prostata-aumentada',                         permanent: true },
+      { source: '/cirurgia-a-laser-para-prostata-aumentada/',                        destination: '/blog/cirurgia-a-laser-para-prostata-aumentada',                         permanent: true },
+      { source: '/como-funciona-e-quando-e-indicada-para-prostata-ou-calculo-renal', destination: '/blog/como-funciona-e-quando-e-indicada-para-prostata-ou-calculo-renal', permanent: true },
+      { source: '/como-funciona-e-quando-e-indicada-para-prostata-ou-calculo-renal/', destination: '/blog/como-funciona-e-quando-e-indicada-para-prostata-ou-calculo-renal', permanent: true },
+      { source: '/recuperacao-apos-cirurgia-robotica',                               destination: '/blog/recuperacao-apos-cirurgia-robotica',                               permanent: true },
+      { source: '/recuperacao-apos-cirurgia-robotica/',                              destination: '/blog/recuperacao-apos-cirurgia-robotica',                               permanent: true },
+      { source: '/5-motivos-para-escolher-a-cirurgia-robotica',                      destination: '/blog/5-motivos-para-escolher-a-cirurgia-robotica',                      permanent: true },
+      { source: '/5-motivos-para-escolher-a-cirurgia-robotica/',                     destination: '/blog/5-motivos-para-escolher-a-cirurgia-robotica',                      permanent: true },
+      { source: '/cirurgia-robotica-x-laparoscopia',                                 destination: '/blog/cirurgia-robotica-x-laparoscopia',                                 permanent: true },
+      { source: '/cirurgia-robotica-x-laparoscopia/',                                destination: '/blog/cirurgia-robotica-x-laparoscopia',                                 permanent: true },
+      { source: '/por-que-o-homem-deve-consultar-o-urologista-todo-ano',             destination: '/blog/por-que-o-homem-deve-consultar-o-urologista-todo-ano',             permanent: true },
+      { source: '/por-que-o-homem-deve-consultar-o-urologista-todo-ano/',            destination: '/blog/por-que-o-homem-deve-consultar-o-urologista-todo-ano',             permanent: true },
+      { source: '/psa-alterado-o-que-significa',                                     destination: '/blog/psa-alterado-o-que-significa',                                     permanent: true },
+      { source: '/psa-alterado-o-que-significa/',                                    destination: '/blog/psa-alterado-o-que-significa',                                     permanent: true },
+      { source: '/cancer-de-prostata-sintomas-diagnostico',                          destination: '/blog/cancer-de-prostata-sintomas-diagnostico',                          permanent: true },
+      { source: '/cancer-de-prostata-sintomas-diagnostico/',                         destination: '/blog/cancer-de-prostata-sintomas-diagnostico',                          permanent: true },
+      { source: '/7-sinais-que-indicam-que-voce-deve-procurar-um-urologista',        destination: '/blog/7-sinais-que-indicam-que-voce-deve-procurar-um-urologista',        permanent: true },
+      { source: '/7-sinais-que-indicam-que-voce-deve-procurar-um-urologista/',       destination: '/blog/7-sinais-que-indicam-que-voce-deve-procurar-um-urologista',        permanent: true },
+      { source: '/exame-de-prostata-o-que-e',                                        destination: '/blog/exame-de-prostata-o-que-e',                                        permanent: true },
+      { source: '/exame-de-prostata-o-que-e/',                                       destination: '/blog/exame-de-prostata-o-que-e',                                        permanent: true },
+      { source: '/cirurgia-robotica-de-prostata-vantagens-indicacoes-e-recuperacao', destination: '/blog/cirurgia-robotica-de-prostata-vantagens-indicacoes-e-recuperacao', permanent: true },
+      { source: '/cirurgia-robotica-de-prostata-vantagens-indicacoes-e-recuperacao/', destination: '/blog/cirurgia-robotica-de-prostata-vantagens-indicacoes-e-recuperacao', permanent: true },
     ]
   },
 }
