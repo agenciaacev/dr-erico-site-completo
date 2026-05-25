@@ -6,9 +6,9 @@ import ContactMini from '@/components/sections/ContactMini'
 import { MedicalWebPageSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Cirurgia Robótica de Próstata em Fortaleza',
+  title: { absolute: 'Cirurgia Robótica Fortaleza | Próstata, Rim e Bexiga' },
   description:
-    'Cirurgia Robótica de Próstata em Fortaleza com o Dr. Érico Diógenes. Tecnologia Da Vinci, menor sangramento, recuperação rápida e mais precisão. Agende sua consulta.',
+    'Cirurgia Robótica em Fortaleza com o Dr. Érico Diógenes. Tecnologia Da Vinci para próstata, rim e bexiga: menos dor, recuperação rápida. Agende sua consulta.',
   alternates: { canonical: '/cirurgia-robotica' },
   openGraph: {
     title: 'Cirurgia Robótica de Próstata em Fortaleza | Dr. Érico Diógenes',

@@ -1,14 +1,14 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Blog — Urologia e Saúde Masculina',
+  title: { absolute: 'Blog de Urologia Fortaleza | Próstata e Saúde Masculina' },
   description:
-    'Artigos sobre urologia, próstata, câncer de próstata, cirurgia robótica, HoLEP e saúde masculina. Conteúdo médico de qualidade com o Dr. Érico Diógenes.',
+    'Artigos sobre urologia em Fortaleza: cirurgia robótica, HoLEP, próstata, cálculo renal e saúde masculina. Informação de qualidade pelo Dr. Érico Diógenes.',
   alternates: { canonical: '/blog' },
   openGraph: {
-    title: 'Blog de Urologia | Dr. Érico Diógenes',
+    title: 'Blog de Urologia Fortaleza | Próstata e Saúde Masculina',
     description:
-      'Artigos sobre próstata, câncer, cirurgia robótica, HoLEP e saúde masculina.',
+      'Artigos sobre urologia em Fortaleza: cirurgia robótica, HoLEP, próstata, cálculo renal e saúde masculina. Informação de qualidade pelo Dr. Érico Diógenes.',
     url: '/blog',
   },
 }

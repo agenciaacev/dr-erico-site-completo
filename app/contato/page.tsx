@@ -4,9 +4,9 @@ import { Phone, Mail, MessageCircle } from 'lucide-react'
 import { site } from '@/data/site'
 
 export const metadata: Metadata = {
-  title: 'Contato — Agendar Consulta em Fortaleza',
+  title: { absolute: 'Agendar Consulta com Urologista Fortaleza | Contato' },
   description:
-    'Entre em contato com o Dr. Érico Diógenes para agendar sua consulta em Fortaleza. Atendimento via WhatsApp, telefone e e-mail. Pátio Dom Luís, Fortaleza – CE.',
+    'Agende sua consulta com o urologista Dr. Érico Diógenes em Fortaleza. Atendimento via WhatsApp e telefone. Pátio Dom Luís, Fortaleza – CE. Fale agora.',
   alternates: { canonical: '/contato' },
   openGraph: {
     title: 'Contato | Dr. Érico Diógenes — Urologista em Fortaleza',

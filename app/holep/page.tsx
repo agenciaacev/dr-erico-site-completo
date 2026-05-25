@@ -7,9 +7,9 @@ import ContactMini from '@/components/sections/ContactMini'
 import { MedicalWebPageSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'HoLEP — Cirurgia a Laser para Próstata Aumentada em Fortaleza',
+  title: { absolute: 'HoLEP em Fortaleza | Cirurgia a Laser para Próstata' },
   description:
-    'HoLEP em Fortaleza com o Dr. Érico Diógenes. Cirurgia a laser minimamente invasiva para próstata aumentada. Sem cortes, menor sangramento, alta em 24h. Agende sua avaliação.',
+    'HoLEP em Fortaleza com Dr. Érico Diógenes: cirurgia a laser minimamente invasiva para próstata aumentada, sem cortes, alta em 24h. Agende sua avaliação.',
   alternates: { canonical: '/holep' },
   openGraph: {
     title: 'HoLEP — Cirurgia a Laser para Próstata | Dr. Érico Diógenes',

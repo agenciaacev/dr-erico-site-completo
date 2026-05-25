@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Test-Path \"f:\\\\GitHub\\\\dr-erico-site-completo\\\\app\\\\blog\\\\layout.tsx\")"
+    ]
+  }
+}
