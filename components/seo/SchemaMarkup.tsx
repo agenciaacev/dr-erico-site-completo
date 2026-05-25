@@ -77,6 +77,76 @@ const physicianSchema = {
         },
       },
     },
+    {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'postgraduate',
+      name: 'Pós-Graduação em Cirurgia Robótica',
+      recognizedBy: {
+        '@type': 'Organization',
+        name: 'Hospital Albert Einstein',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'São Paulo',
+          addressCountry: 'BR',
+        },
+      },
+    },
+    {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'observership',
+      name: 'Observership em Cirurgia Robótica e Laparoscopia',
+      recognizedBy: {
+        '@type': 'Organization',
+        name: 'Cleveland Clinic',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Michigan',
+          addressCountry: 'US',
+        },
+      },
+    },
+    {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'observership',
+      name: 'Observership em Cirurgia Robótica e Laparoscopia',
+      recognizedBy: {
+        '@type': 'Organization',
+        name: 'University of Southern California',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Los Angeles',
+          addressCountry: 'US',
+        },
+      },
+    },
+    {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'residency',
+      name: 'Residência Médica em Cirurgia Geral Avançada',
+      recognizedBy: {
+        '@type': 'Organization',
+        name: 'SUS',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'São Paulo',
+          addressCountry: 'BR',
+        },
+      },
+    },
+    {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'internship',
+      name: 'Internato em Urologia e Cirurgia Geral',
+      recognizedBy: {
+        '@type': 'Organization',
+        name: 'Detroit Medical Center',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Michigan',
+          addressCountry: 'US',
+        },
+      },
+    },
   ],
 
   // Associações médicas
@@ -102,10 +172,49 @@ const physicianSchema = {
     { '@type': 'MedicalProcedure', name: 'Uro-oncologia' },
   ],
 
-  worksFor: {
-    '@type': 'MedicalOrganization',
-    '@id': `${SITE_URL}/#medicalorg`,
-  },
+  worksFor: [
+    { '@id': `${SITE_URL}/#medicalorg` },
+    {
+      '@type': 'MedicalOrganization',
+      name: 'Instituto de Urologia e Robótica — IURO',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Fortaleza',
+        addressRegion: 'CE',
+        addressCountry: 'BR',
+      },
+    },
+    {
+      '@type': 'Hospital',
+      name: 'Hospital Monte Klinikum',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Fortaleza',
+        addressRegion: 'CE',
+        addressCountry: 'BR',
+      },
+    },
+    {
+      '@type': 'Hospital',
+      name: 'Hospital Instituto Dr. José Frota',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Fortaleza',
+        addressRegion: 'CE',
+        addressCountry: 'BR',
+      },
+    },
+    {
+      '@type': 'Hospital',
+      name: 'Hospital Walter Cantídio — UFC',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Fortaleza',
+        addressRegion: 'CE',
+        addressCountry: 'BR',
+      },
+    },
+  ],
 
   address: {
     '@type': 'PostalAddress',
@@ -116,7 +225,10 @@ const physicianSchema = {
     addressCountry: 'BR',
   },
 
-  sameAs: ['https://instagram.com/drericodiogenes'],
+  sameAs: [
+    'https://instagram.com/drericodiogenes',
+    'https://www.doctoralia.com.br/erico-diogenes/urologista/fortaleza',
+  ],
 }
 
 // ─── 2. MedicalOrganization (consultório) ─────────────────────────────────────
