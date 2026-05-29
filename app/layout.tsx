@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import './globals.css'
 import TopBar from '@/components/layout/TopBar'
 import Navbar from '@/components/layout/Navbar'
@@ -107,7 +108,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         {/* ── Meta Pixel ──────────────────────────────────────────────── */}
         {META_PIXEL_ID && (
-          <script
+          <Script
+            id="meta-pixel"
+            strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `!function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
