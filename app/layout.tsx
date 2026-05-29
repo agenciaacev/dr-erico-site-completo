@@ -76,9 +76,9 @@ export const metadata: Metadata = {
   },
 }
 
-// ─── IDs de rastreamento (configurar no .env.local) ──────────────────────────
-const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID        // ex: GTM-XXXXXXX
-const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID  // ex: 1234567890
+// ─── IDs de rastreamento ─────────────────────────────────────────────────────
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID
+const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID ?? '1674270383425337'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
