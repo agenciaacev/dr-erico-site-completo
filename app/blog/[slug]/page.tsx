@@ -6,6 +6,7 @@ import { getPostBySlug, getRecentPosts, posts } from '@/data/posts'
 import PostCard from '@/components/ui/PostCard'
 import CtaBanner from '@/components/ui/CtaBanner'
 import ContactMini from '@/components/sections/ContactMini'
+import AuthorCard from '@/components/blog/AuthorCard'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -284,10 +285,10 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Article */}
       <section className="py-12 bg-white">
-        <div className="container-site max-w-5xl">
-          <div className="lg:grid lg:grid-cols-[200px_1fr] lg:gap-14">
+        <div className="container-site max-w-7xl">
+          <div className="lg:grid lg:grid-cols-[180px_1fr_240px] lg:gap-10">
 
-            {/* Sidebar */}
+            {/* Sidebar esquerda */}
             <aside className="hidden lg:block">
               <div className="sticky top-24 space-y-8">
                 {headings.length > 0 && (
@@ -326,7 +327,7 @@ export default async function BlogPostPage({ params }: Props) {
               </div>
             </aside>
 
-            {/* Content */}
+            {/* Conteúdo */}
             <div data-aos="fade-up">
               {/* Cover image */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -354,8 +355,13 @@ export default async function BlogPostPage({ params }: Props) {
                 </div>
               ))}
 
+              {/* AuthorCard só aparece aqui no mobile */}
+              <div className="lg:hidden">
+                <AuthorCard />
+              </div>
+
               {/* Back link */}
-              <div className="mt-14 pt-8 border-t border-brand-beige flex items-center justify-between flex-wrap gap-4">
+              <div className="mt-10 pt-8 border-t border-brand-beige flex items-center justify-between flex-wrap gap-4">
                 <Link
                   href="/blog"
                   className="inline-flex items-center gap-2 text-brand-muted hover:text-brand-gold text-sm transition-colors"
@@ -372,6 +378,14 @@ export default async function BlogPostPage({ params }: Props) {
                 </a>
               </div>
             </div>
+
+            {/* Sidebar direita — AuthorCard sticky */}
+            <aside className="hidden lg:block">
+              <div className="sticky top-24">
+                <AuthorCard sidebar />
+              </div>
+            </aside>
+
           </div>
         </div>
       </section>
