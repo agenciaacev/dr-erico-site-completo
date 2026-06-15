@@ -80,6 +80,7 @@ export const metadata: Metadata = {
 // ─── IDs de rastreamento ─────────────────────────────────────────────────────
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID
 const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID ?? '1674270383425337'
+const GA_ID = 'G-QRERHJS3LW'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -105,6 +106,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }}
           />
         )}
+
+        {/* ── Google Analytics 4 ──────────────────────────────────────── */}
+        <Script
+          id="ga4"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script
+          id="ga4-config"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`,
+          }}
+        />
 
         {/* ── Meta Pixel ──────────────────────────────────────────────── */}
         {META_PIXEL_ID && (
