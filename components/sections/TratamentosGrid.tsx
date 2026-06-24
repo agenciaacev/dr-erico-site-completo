@@ -84,7 +84,7 @@ const tratamentos: TratamentoItem[] = [
 
 export default function TratamentosGrid() {
   return (
-    <section className="py-16 bg-white">
+    <section id="tratamentos" className="py-16 bg-white">
       <div className="container-site">
         <div className="text-center mb-12" data-aos="fade-up">
           <p className="eyebrow">Conheça nossos</p>

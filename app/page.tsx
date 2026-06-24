@@ -19,12 +19,16 @@ import BlogPreview from '@/components/sections/BlogPreview'
 import CtaBanner from '@/components/ui/CtaBanner'
 import ContactMini from '@/components/sections/ContactMini'
 import TratamentosGrid from '@/components/sections/TratamentosGrid'
+import CirurgiaRoboticaHighlight from '@/components/sections/CirurgiaRoboticaHighlight'
+import LaserHighlight from '@/components/sections/LaserHighlight'
 
 export default function Home() {
   return (
     <>
       <HeroHome />
+      <CirurgiaRoboticaHighlight />
       <TratamentosGrid />
+      <LaserHighlight />
       <SobreDoutor />
       <VideoSection />
       <BlogPreview />

@@ -9,6 +9,7 @@ import Logo from './Logo'
 const navItems = [
   { to: '/', label: 'Início' },
   { to: '/dr-erico-diogenes', label: 'Dr. Érico Diógenes' },
+  { to: '/#tratamentos', label: 'Tratamentos' },
   { to: '/holep', label: 'HoLEP' },
   { to: '/cirurgia-robotica', label: 'Cirurgia Robótica' },
   { to: '/blog', label: 'Blog' },
