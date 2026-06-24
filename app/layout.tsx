@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     'Dr. Érico Diógenes, Urologista em Fortaleza especialista em Cirurgia Robótica, HoLEP e Uro-oncologia. Atendimento humanizado com tecnologia de ponta no Ceará.',
   keywords: [
     'urologista fortaleza',
+    'urologista em fortaleza',
     'cirurgia robótica fortaleza',
     'holep próstata',
     'próstata aumentada',
