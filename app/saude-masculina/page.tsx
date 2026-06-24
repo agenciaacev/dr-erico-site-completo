@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import ContactMini from '@/components/sections/ContactMini'
 import CtaBanner from '@/components/ui/CtaBanner'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Saúde Masculina Fortaleza | Andrologia — Dr. Érico Diógenes' },
+  title: { absolute: 'Saúde Masculina Fortaleza | Andrologia, Dr. Érico Diógenes' },
   description: 'Saúde masculina em Fortaleza: disfunção erétil, ejaculação precoce, baixa testosterona, vasectomia e infertilidade. Dr. Érico Diógenes.',
   alternates: { canonical: '/saude-masculina' },
 }

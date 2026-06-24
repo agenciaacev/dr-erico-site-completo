@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Image from 'next/image'
 import CtaBanner from '@/components/ui/CtaBanner'
 import ContactMini from '@/components/sections/ContactMini'
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'Urologista em Fortaleza formado pela UFC, com doutorado pela USP e fellowship no Sírio-Libanês. Referência em Cirurgia Robótica e HoLEP. Conheça sua trajetória.',
   alternates: { canonical: '/dr-erico-diogenes' },
   openGraph: {
-    title: 'Dr. Érico Diógenes — Urologista em Fortaleza',
+    title: 'Dr. Érico Diógenes, Urologista em Fortaleza',
     description:
       'Urologista formado pela UFC com especialização em Uro-oncologia. Referência em cirurgia robótica e HoLEP no Ceará.',
     url: '/dr-erico-diogenes',

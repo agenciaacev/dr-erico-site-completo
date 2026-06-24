@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Check, X as XIcon } from 'lucide-react'
 import CtaBanner from '@/components/ui/CtaBanner'
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     'HPB em Fortaleza: o que é hiperplasia prostática benigna, sintomas, diagnóstico e tratamentos modernos incluindo HoLEP e medicamentos. Dr. Érico Diógenes.',
   alternates: { canonical: '/condicoes-urologicas/prostata/hiperplasia-prostatica' },
   openGraph: {
-    title: 'Hiperplasia Prostática Benigna (HPB) | Dr. Érico Diógenes — Fortaleza',
+    title: 'Hiperplasia Prostática Benigna (HPB) | Dr. Érico Diógenes, Fortaleza',
     description: 'Entenda a HPB: causas, sintomas e os melhores tratamentos disponíveis em Fortaleza com Dr. Érico Diógenes.',
     url: '/condicoes-urologicas/prostata/hiperplasia-prostatica',
   },
@@ -23,7 +23,7 @@ const sintomas = [
   'Necessidade de fazer força para urinar',
   'Interrupção do jato durante a micção',
   'Sensação de bexiga cheia mesmo após urinar',
-  'Urgência — vontade súbita e difícil de segurar',
+  'Urgência, vontade súbita e difícil de segurar',
   'Frequência aumentada, especialmente à noite (noctúria)',
   'Gotejamento após urinar',
   'Em casos avançados: retenção urinária completa',
@@ -37,14 +37,14 @@ const tratamentos = [
     img: '/img/post/imgid09_01.webp',
   },
   {
-    titulo: 'HoLEP — Cirurgia a Laser',
+    titulo: 'HoLEP, Cirurgia a Laser',
     desc: 'Padrão ouro mundial para HPB. Remove o tecido prostático obstrutivo via uretra, sem cortes, com laser de Holmium. Alta em 24h, resultados definitivos.',
     ideal: 'Próstatas de qualquer tamanho, especialmente grandes',
     img: '/img/post/imgid05_01.webp',
   },
   {
     titulo: 'RTU de Próstata (RTUP)',
-    desc: 'Ressecção transuretral clássica — técnica consolidada que retira o tecido obstrutivo por via endoscópica com alça elétrica. Indicada em casos selecionados.',
+    desc: 'Ressecção transuretral clássica, técnica consolidada que retira o tecido obstrutivo por via endoscópica com alça elétrica. Indicada em casos selecionados.',
     ideal: 'Próstatas de volume médio',
     img: '/img/post/imgid08_01.webp',
   },
@@ -53,7 +53,7 @@ const tratamentos = [
 const faq = [
   {
     q: 'HPB é a mesma coisa que câncer de próstata?',
-    a: 'Não. A hiperplasia prostática benigna é um processo natural e não canceroso de crescimento da próstata. O câncer de próstata é uma doença distinta. Ter HPB não aumenta o risco de desenvolver câncer — mas as duas condições podem coexistir e exigem investigação separada.',
+    a: 'Não. A hiperplasia prostática benigna é um processo natural e não canceroso de crescimento da próstata. O câncer de próstata é uma doença distinta. Ter HPB não aumenta o risco de desenvolver câncer, mas as duas condições podem coexistir e exigem investigação separada.',
   },
   {
     q: 'Todo homem com HPB precisa de cirurgia?',
@@ -65,7 +65,7 @@ const faq = [
   },
   {
     q: 'A HPB pode piorar com o tempo?',
-    a: 'Sim. A próstata continua a crescer com a idade, e os sintomas tendem a se agravar progressivamente sem tratamento. Em casos avançados, pode ocorrer retenção urinária aguda (incapacidade de urinar) — situação de emergência que exige cateterismo imediato.',
+    a: 'Sim. A próstata continua a crescer com a idade, e os sintomas tendem a se agravar progressivamente sem tratamento. Em casos avançados, pode ocorrer retenção urinária aguda (incapacidade de urinar), situação de emergência que exige cateterismo imediato.',
   },
   {
     q: 'O tratamento da HPB afeta a função sexual?',
@@ -109,7 +109,7 @@ export default function HiperplasiaProstata() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      {/* SEÇÃO 1 — HERO */}
+      {/* SEÇÃO 1, HERO */}
       <section className="relative bg-brand-beige overflow-hidden">
         <div className="grid lg:grid-cols-2 items-stretch min-h-[70vh]">
           <div className="flex items-center px-6 md:px-12 lg:px-16 xl:px-20 py-14 lg:py-20" data-aos="fade-right">
@@ -120,7 +120,7 @@ export default function HiperplasiaProstata() {
                 <span className="text-brand-gold">entenda o que acontece com a próstata e como tratar.</span>
               </h1>
               <p className="mt-5 text-brand-muted text-base md:text-lg max-w-xl">
-                A hiperplasia prostática benigna (HPB) é o aumento não canceroso da próstata — condição tão comum que afeta mais de 50% dos homens acima de 60 anos e quase 90% dos que chegam aos 85. Apesar de benigna, a HPB pode comprometer significativamente a qualidade de vida e, sem tratamento, levar a complicações sérias.
+                A hiperplasia prostática benigna (HPB) é o aumento não canceroso da próstata, condição tão comum que afeta mais de 50% dos homens acima de 60 anos e quase 90% dos que chegam aos 85. Apesar de benigna, a HPB pode comprometer significativamente a qualidade de vida e, sem tratamento, levar a complicações sérias.
               </p>
               <div className="mt-8">
                 <a href="https://wa.me/5585981781020" target="_blank" rel="noopener noreferrer" className="btn-silver">
@@ -133,7 +133,7 @@ export default function HiperplasiaProstata() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/img/dr-erico-foto-5b.webp"
-              alt="Hiperplasia Prostática Benigna — tratamento em Fortaleza"
+              alt="Hiperplasia Prostática Benigna, tratamento em Fortaleza"
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-brand-beige to-transparent" />
@@ -142,14 +142,14 @@ export default function HiperplasiaProstata() {
         </div>
       </section>
 
-      {/* SEÇÃO 2 — SINTOMAS */}
+      {/* SEÇÃO 2, SINTOMAS */}
       <section className="py-16 bg-white">
         <div className="container-site" data-aos="fade-up">
           <div className="text-center mb-12">
             <p className="eyebrow">Como identificar</p>
             <h2 className="section-title mt-2">SINTOMAS DA HPB</h2>
             <p className="text-brand-muted mt-4 max-w-3xl mx-auto">
-              A próstata aumentada comprime a uretra — o canal por onde a urina passa — causando sintomas progressivos do trato urinário inferior (STUI). Muitos homens normalizam esses sintomas como "coisa da idade", adiando o diagnóstico. Reconhecê-los é essencial para agir a tempo.
+              A próstata aumentada comprime a uretra, o canal por onde a urina passa, causando sintomas progressivos do trato urinário inferior (STUI). Muitos homens normalizam esses sintomas como "coisa da idade", adiando o diagnóstico. Reconhecê-los é essencial para agir a tempo.
             </p>
           </div>
           <ul className="grid md:grid-cols-2 gap-3 max-w-3xl mx-auto">
@@ -168,7 +168,7 @@ export default function HiperplasiaProstata() {
         </div>
       </section>
 
-      {/* SEÇÃO 3 — TRATAMENTOS */}
+      {/* SEÇÃO 3, TRATAMENTOS */}
       <section className="py-16 bg-brand-beige-light">
         <div className="container-site">
           <div className="text-center mb-12" data-aos="fade-up">
@@ -204,13 +204,13 @@ export default function HiperplasiaProstata() {
         </div>
       </section>
 
-      {/* SEÇÃO 4 — DR. ÉRICO */}
+      {/* SEÇÃO 4, DR. ÉRICO */}
       <section className="py-16 bg-white">
         <div className="container-site grid lg:grid-cols-2 gap-10 items-center">
           <div className="relative" data-aos="fade-right">
             <div className="aspect-[4/5] max-w-md rounded-3xl overflow-hidden shadow-soft">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/img/dr-erico-foto-7.webp" alt="Dr. Érico Diógenes — HPB e HoLEP em Fortaleza" className="w-full h-full object-cover" />
+              <img src="/img/dr-erico-foto-7.webp" alt="Dr. Érico Diógenes, HPB e HoLEP em Fortaleza" className="w-full h-full object-cover" />
             </div>
           </div>
           <div data-aos="fade-left">
@@ -218,13 +218,13 @@ export default function HiperplasiaProstata() {
             <h2 className="section-title mt-2">DR. ÉRICO DIÓGENES</h2>
             <div className="mt-5 space-y-4 text-brand-muted">
               <p>
-                O tratamento da HPB passou por uma revolução nos últimos anos. O HoLEP — cirurgia a laser para próstata — tornou-se o padrão ouro mundial por oferecer resultados equivalentes às cirurgias abertas, mas com mínimo sangramento, alta em 24 horas e indicação mesmo para próstatas muito grandes.
+                O tratamento da HPB passou por uma revolução nos últimos anos. O HoLEP, cirurgia a laser para próstata, tornou-se o padrão ouro mundial por oferecer resultados equivalentes às cirurgias abertas, mas com mínimo sangramento, alta em 24 horas e indicação mesmo para próstatas muito grandes.
               </p>
               <p>
                 Em Fortaleza, o Dr. Érico Diógenes foi um dos primeiros especialistas a introduzir o HoLEP no Ceará, tornando-se referência na técnica e oferecendo a homens cearenses acesso a um tratamento antes disponível apenas nos grandes centros do país.
               </p>
               <p>
-                Formado pela Universidade Federal do Ceará e com especialização em endourologia e cirurgia minimamente invasiva, o Dr. Érico avalia cada caso individualmente — determinando se o tratamento ideal é medicamentoso ou cirúrgico, e qual a técnica mais indicada para cada paciente.
+                Formado pela Universidade Federal do Ceará e com especialização em endourologia e cirurgia minimamente invasiva, o Dr. Érico avalia cada caso individualmente, determinando se o tratamento ideal é medicamentoso ou cirúrgico, e qual a técnica mais indicada para cada paciente.
               </p>
             </div>
             <div className="mt-8 flex flex-wrap gap-4">
@@ -243,7 +243,7 @@ export default function HiperplasiaProstata() {
       </section>
 
       <ContactMini />
-      <CtaBanner title="Não normalize os sintomas urinários — agende sua avaliação em Fortaleza" />
+      <CtaBanner title="Não normalize os sintomas urinários, agende sua avaliação em Fortaleza" />
     </>
   )
 }

@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import ContactMini from '@/components/sections/ContactMini'
 import CtaBanner from '@/components/ui/CtaBanner'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Orientações Pós-Operatórias | Dr. Érico Diógenes — Fortaleza' },
+  title: { absolute: 'Orientações Pós-Operatórias | Dr. Érico Diógenes, Fortaleza' },
   description: 'Cuidados após a cirurgia urológica com Dr. Érico Diógenes em Fortaleza: recuperação, atividades, sinais de alerta e retorno.',
   alternates: { canonical: '/exames-orientacoes/orientacoes/pos-operatorio' },
 }

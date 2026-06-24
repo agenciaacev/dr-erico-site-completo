@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import ContactMini from '@/components/sections/ContactMini'
 import CtaBanner from '@/components/ui/CtaBanner'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Câncer de Próstata Fortaleza | Uro-Oncologia — Dr. Érico Diógenes' },
+  title: { absolute: 'Câncer de Próstata Fortaleza | Uro-Oncologia, Dr. Érico Diógenes' },
   description: 'Diagnóstico e tratamento do câncer de próstata em Fortaleza com cirurgia robótica. Dr. Érico Diógenes, referência em uro-oncologia no Ceará.',
   alternates: { canonical: '/condicoes-urologicas/uro-oncologia/cancer-prostata' },
 }

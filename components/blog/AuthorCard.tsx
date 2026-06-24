@@ -1,4 +1,4 @@
-import Image from 'next/image'
+﻿import Image from 'next/image'
 import Link from 'next/link'
 
 interface Props {
@@ -13,7 +13,7 @@ export default function AuthorCard({ sidebar = false }: Props) {
           <div className="w-40 h-40 rounded-full overflow-hidden relative shadow-card mb-3">
             <Image
               src="/img/dr-erico-foto-3.webp"
-              alt="Dr. Érico Diógenes — Urologista em Fortaleza"
+              alt="Dr. Érico Diógenes, Urologista em Fortaleza"
               fill
               sizes="160px"
               className="object-cover"
@@ -65,7 +65,7 @@ export default function AuthorCard({ sidebar = false }: Props) {
           <div className="w-44 h-44 rounded-full overflow-hidden relative shadow-card">
             <Image
               src="/img/dr-erico-foto-3.webp"
-              alt="Dr. Érico Diógenes — Urologista em Fortaleza"
+              alt="Dr. Érico Diógenes, Urologista em Fortaleza"
               fill
               sizes="176px"
               className="object-cover"
@@ -81,7 +81,7 @@ export default function AuthorCard({ sidebar = false }: Props) {
             Dr. Érico Diógenes
           </h3>
           <p className="text-sm font-medium text-brand-muted mt-0.5">
-            Urologista em Fortaleza — CRM-CE 12.370
+            Urologista em Fortaleza, CRM-CE 12.370
           </p>
 
           <p className="text-sm text-brand-muted mt-3 leading-relaxed">

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Phone, Mail, MessageCircle } from 'lucide-react'
 import { site } from '@/data/site'
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'Agende sua consulta com o urologista Dr. Érico Diógenes em Fortaleza. Atendimento via WhatsApp e telefone. Pátio Dom Luís, Fortaleza – CE. Fale agora.',
   alternates: { canonical: '/contato' },
   openGraph: {
-    title: 'Contato | Dr. Érico Diógenes — Urologista em Fortaleza',
+    title: 'Contato | Dr. Érico Diógenes, Urologista em Fortaleza',
     description:
       'Agende sua consulta com o Dr. Érico Diógenes. Clínica localizada no Pátio Dom Luís, Fortaleza, CE.',
     url: '/contato',
@@ -82,7 +82,7 @@ export default function Contato() {
             <div className="aspect-[4/5] max-w-md ml-auto rounded-full overflow-hidden shadow-soft relative">
               <Image
                 src="/img/dr-erico-foto-3.webp"
-                alt="Dr. Érico Diógenes — Urologista em Fortaleza"
+                alt="Dr. Érico Diógenes, Urologista em Fortaleza"
                 fill
                 sizes="(max-width: 1024px) 100vw, 28rem"
                 className="object-cover"

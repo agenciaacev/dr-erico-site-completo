@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import ContactMini from '@/components/sections/ContactMini'
 import CtaBanner from '@/components/ui/CtaBanner'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Bexiga e Vias Urinárias | Dr. Érico Diógenes — Fortaleza' },
+  title: { absolute: 'Bexiga e Vias Urinárias | Dr. Érico Diógenes, Fortaleza' },
   description: 'Tratamento de doenças da bexiga em Fortaleza: infecção urinária, sangue na urina, incontinência e bexiga hiperativa. Dr. Érico Diógenes.',
   alternates: { canonical: '/condicoes-urologicas/bexiga' },
 }

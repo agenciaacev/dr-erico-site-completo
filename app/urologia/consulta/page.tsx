@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Check } from 'lucide-react'
 import CtaBanner from '@/components/ui/CtaBanner'
@@ -20,11 +20,11 @@ export const metadata: Metadata = {
 
 const motivosConsulta = [
   { sintoma: 'Dificuldade para urinar ou jato fraco', detalhe: 'Pode indicar próstata aumentada, obstrução uretral ou bexiga hiperativa.' },
-  { sintoma: 'Sangue na urina (hematúria)', detalhe: 'Sinal que nunca deve ser ignorado — pode indicar cálculo, infecção ou tumor.' },
+  { sintoma: 'Sangue na urina (hematúria)', detalhe: 'Sinal que nunca deve ser ignorado, pode indicar cálculo, infecção ou tumor.' },
   { sintoma: 'Dor lombar ou cólica intensa', detalhe: 'Frequentemente relacionada a cálculo renal em trânsito pelo ureter.' },
   { sintoma: 'Infecções urinárias frequentes', detalhe: 'Repetição de ITU pode indicar causa estrutural que exige investigação urológica.' },
   { sintoma: 'PSA alterado em exame de rotina', detalhe: 'Resultado elevado deve ser avaliado por urologista para excluir câncer de próstata.' },
-  { sintoma: 'Disfunção erétil', detalhe: 'Pode ter causas vasculares, hormonais ou psicológicas — todas tratáveis com abordagem correta.' },
+  { sintoma: 'Disfunção erétil', detalhe: 'Pode ter causas vasculares, hormonais ou psicológicas, todas tratáveis com abordagem correta.' },
   { sintoma: 'Urgência ou incontinência urinária', detalhe: 'Perda de urina involuntária afeta a qualidade de vida e tem tratamento eficaz.' },
   { sintoma: 'Check-up preventivo masculino', detalhe: 'Homens acima de 40 anos devem realizar avaliação urológica anual mesmo sem sintomas.' },
 ]
@@ -43,19 +43,19 @@ const etapas = [
   {
     num: '03',
     titulo: 'Exames Complementares',
-    desc: 'Conforme a queixa, podem ser solicitados PSA, ultrassom de vias urinárias, urofluxometria, análise de urina, tomografia ou outros. A solicitação é sempre direcionada — não genérica.',
+    desc: 'Conforme a queixa, podem ser solicitados PSA, ultrassom de vias urinárias, urofluxometria, análise de urina, tomografia ou outros. A solicitação é sempre direcionada, não genérica.',
   },
   {
     num: '04',
     titulo: 'Diagnóstico e Plano Terapêutico',
-    desc: 'Com base na avaliação completa, o especialista apresenta o diagnóstico em linguagem clara e as opções de tratamento disponíveis — sempre com espaço para perguntas e decisão compartilhada.',
+    desc: 'Com base na avaliação completa, o especialista apresenta o diagnóstico em linguagem clara e as opções de tratamento disponíveis, sempre com espaço para perguntas e decisão compartilhada.',
   },
 ]
 
 const preparacao = [
   'Listar os sintomas e há quanto tempo os percebe',
   'Levar exames anteriores (PSA, ultrassom, urofluxometria)',
-  'Anotar todos os medicamentos em uso — inclusive suplementos',
+  'Anotar todos os medicamentos em uso, inclusive suplementos',
   'Informar histórico familiar de câncer urológico ou renal',
   'Chegar bem hidratado, pois pode ser necessária amostra de urina',
   'Trazer acompanhante se preferir (é bem-vindo)',
@@ -80,7 +80,7 @@ const faq = [
   },
   {
     q: 'Posso consultar um urologista mesmo sem sintomas?',
-    a: 'Sim — e é recomendado. Homens a partir dos 40 anos devem realizar rastreamento anual do câncer de próstata (PSA + toque retal) mesmo sem sintomas. Condições como câncer de próstata em estágio inicial raramente causam dor ou desconforto.',
+    a: 'Sim, e é recomendado. Homens a partir dos 40 anos devem realizar rastreamento anual do câncer de próstata (PSA + toque retal) mesmo sem sintomas. Condições como câncer de próstata em estágio inicial raramente causam dor ou desconforto.',
   },
   {
     q: 'Como funciona a consulta de retorno?',
@@ -112,7 +112,7 @@ export default function ConsultaUrologista() {
   return (
     <>
       <MedicalWebPageSchema
-        name="Consulta com Urologista em Fortaleza — Dr. Érico Diógenes"
+        name="Consulta com Urologista em Fortaleza, Dr. Érico Diógenes"
         description="Como funciona uma consulta urológica, quando você precisa de uma e como se preparar. Agende com Dr. Érico Diógenes em Fortaleza."
         url="https://drericodiogenes.com.br/urologia/consulta"
         specialty="Urology"
@@ -120,7 +120,7 @@ export default function ConsultaUrologista() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      {/* SEÇÃO 1 — HERO */}
+      {/* SEÇÃO 1, HERO */}
       <section className="relative bg-brand-navy overflow-hidden">
         <div className="grid lg:grid-cols-2 items-stretch min-h-[70vh]">
           <div className="flex items-center px-6 md:px-12 lg:px-16 xl:px-20 py-14 lg:py-20" data-aos="fade-right">
@@ -131,7 +131,7 @@ export default function ConsultaUrologista() {
                 <span className="text-brand-gold">o que é, como funciona e quando você precisa.</span>
               </h1>
               <p className="mt-5 text-brand-beige/70 text-base md:text-lg max-w-xl">
-                Muitos pacientes chegam ao consultório urológico sem saber o que esperar — e isso gera adiamentos desnecessários. Entender como funciona a consulta urológica ajuda a dar o primeiro passo com mais segurança e menos dúvidas.
+                Muitos pacientes chegam ao consultório urológico sem saber o que esperar, e isso gera adiamentos desnecessários. Entender como funciona a consulta urológica ajuda a dar o primeiro passo com mais segurança e menos dúvidas.
               </p>
               <div className="mt-8">
                 <a href="https://wa.me/5585981781020" target="_blank" rel="noopener noreferrer" className="btn-silver">
@@ -153,14 +153,14 @@ export default function ConsultaUrologista() {
         </div>
       </section>
 
-      {/* SEÇÃO 2 — QUANDO CONSULTAR */}
+      {/* SEÇÃO 2, QUANDO CONSULTAR */}
       <section className="py-16 bg-white">
         <div className="container-site" data-aos="fade-up">
           <div className="text-center mb-12">
             <p className="eyebrow">Sinais de alerta</p>
             <h2 className="section-title mt-2">QUANDO VOCÊ PRECISA DE UMA CONSULTA UROLÓGICA?</h2>
             <p className="text-brand-muted mt-4 max-w-3xl mx-auto">
-              Sintomas urológicos muitas vezes são minimizados ou confundidos com problemas passageiros. Alguns desaparecem sozinhos — mas outros sinalizam condições que, sem tratamento, evoluem para complicações sérias. Abaixo, os sinais mais comuns que indicam a necessidade de consulta especializada.
+              Sintomas urológicos muitas vezes são minimizados ou confundidos com problemas passageiros. Alguns desaparecem sozinhos, mas outros sinalizam condições que, sem tratamento, evoluem para complicações sérias. Abaixo, os sinais mais comuns que indicam a necessidade de consulta especializada.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
@@ -182,7 +182,7 @@ export default function ConsultaUrologista() {
         </div>
       </section>
 
-      {/* SEÇÃO 3 — COMO FUNCIONA */}
+      {/* SEÇÃO 3, COMO FUNCIONA */}
       <section className="py-16 bg-brand-beige-light">
         <div className="container-site">
           <div className="text-center mb-12" data-aos="fade-up">
@@ -225,7 +225,7 @@ export default function ConsultaUrologista() {
         </div>
       </section>
 
-      {/* SEÇÃO 4 — DR. ÉRICO */}
+      {/* SEÇÃO 4, DR. ÉRICO */}
       <section className="py-16 bg-white">
         <div className="container-site grid lg:grid-cols-2 gap-10 items-center">
           <div className="relative" data-aos="fade-right">
@@ -233,7 +233,7 @@ export default function ConsultaUrologista() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/img/dr-erico-foto-7.webp"
-                alt="Dr. Érico Diógenes em consulta — Fortaleza"
+                alt="Dr. Érico Diógenes em consulta, Fortaleza"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -249,7 +249,7 @@ export default function ConsultaUrologista() {
                 Formado pela Universidade Federal do Ceará e com especialização em urologia minimamente invasiva e oncológica, o Dr. Érico Diógenes conduz cada consulta com atenção integral ao paciente: ouve com cuidado, explica com clareza e respeita o tempo necessário para cada caso.
               </p>
               <p className="italic">
-                "Simplesmente encantado na consulta do Dr. Érico, com certeza uma das melhores visitas médicas. Muito atencioso e calmo, me passou segurança." — Fernando Torres, paciente.
+                "Simplesmente encantado na consulta do Dr. Érico, com certeza uma das melhores visitas médicas. Muito atencioso e calmo, me passou segurança.", Fernando Torres, paciente.
               </p>
             </div>
             <Link href="/dr-erico-diogenes" className="btn-primary mt-8">

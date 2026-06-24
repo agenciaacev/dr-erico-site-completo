@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Check } from 'lucide-react'
 import CtaBanner from '@/components/ui/CtaBanner'
@@ -7,7 +7,7 @@ import ContactMini from '@/components/sections/ContactMini'
 import { MedicalWebPageSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Próstata Aumentada Fortaleza | Sintomas e Tratamento — Dr. Érico Diógenes' },
+  title: { absolute: 'Próstata Aumentada Fortaleza | Sintomas e Tratamento, Dr. Érico Diógenes' },
   description:
     'Tudo sobre a saúde da próstata: o que é, sintomas de alerta, principais condições e tratamentos modernos em Fortaleza com Dr. Érico Diógenes.',
   alternates: { canonical: '/condicoes-urologicas/prostata' },
@@ -40,7 +40,7 @@ const condicoes = [
     href: '/condicoes-urologicas/prostata/exame-prostata',
   },
   {
-    titulo: 'HoLEP — Cirurgia a Laser',
+    titulo: 'HoLEP, Cirurgia a Laser',
     desc: 'A técnica mais moderna para tratamento da próstata aumentada. Sem cortes, recuperação em 24h e resultados duradouros.',
     href: '/holep',
   },
@@ -51,7 +51,7 @@ const sintomas = [
   'Jato urinário fraco ou interrompido',
   'Sensação de bexiga não esvaziada completamente',
   'Necessidade de urinar com muita frequência',
-  'Urgência urinária — vontade súbita e intensa de urinar',
+  'Urgência urinária, vontade súbita e intensa de urinar',
   'Levantar várias vezes à noite para urinar (noctúria)',
   'Dor ou ardência ao urinar',
   'Sangue na urina ou no sêmen',
@@ -60,11 +60,11 @@ const sintomas = [
 const faq = [
   {
     q: 'Próstata aumentada é a mesma coisa que câncer de próstata?',
-    a: 'Não. A hiperplasia prostática benigna (HPB) é o aumento natural da próstata com a idade — um processo benigno e muito comum. O câncer de próstata é uma doença distinta, com causas e tratamentos diferentes. É possível ter HPB sem câncer, e vice-versa.',
+    a: 'Não. A hiperplasia prostática benigna (HPB) é o aumento natural da próstata com a idade, um processo benigno e muito comum. O câncer de próstata é uma doença distinta, com causas e tratamentos diferentes. É possível ter HPB sem câncer, e vice-versa.',
   },
   {
     q: 'A partir de que idade a próstata começa a dar problema?',
-    a: 'Os sintomas da HPB costumam aparecer a partir dos 50 anos, mas o rastreamento do câncer de próstata deve começar aos 40 anos — ou aos 35 em homens com histórico familiar. A próstata começa a crescer naturalmente após os 40 anos em resposta às mudanças hormonais.',
+    a: 'Os sintomas da HPB costumam aparecer a partir dos 50 anos, mas o rastreamento do câncer de próstata deve começar aos 40 anos, ou aos 35 em homens com histórico familiar. A próstata começa a crescer naturalmente após os 40 anos em resposta às mudanças hormonais.',
   },
   {
     q: 'Próstata aumentada tem cura?',
@@ -72,7 +72,7 @@ const faq = [
   },
   {
     q: 'Todos os problemas de próstata causam disfunção erétil?',
-    a: 'Não diretamente. A HPB em si não causa disfunção erétil, mas alguns medicamentos usados no tratamento podem. O câncer de próstata e seu tratamento cirúrgico podem afetar a função sexual — por isso a escolha da técnica cirúrgica (como a robótica, que preserva nervos) é fundamental.',
+    a: 'Não diretamente. A HPB em si não causa disfunção erétil, mas alguns medicamentos usados no tratamento podem. O câncer de próstata e seu tratamento cirúrgico podem afetar a função sexual, por isso a escolha da técnica cirúrgica (como a robótica, que preserva nervos) é fundamental.',
   },
   {
     q: 'HoLEP e cirurgia robótica são para o mesmo problema?',
@@ -104,7 +104,7 @@ export default function Prostata() {
   return (
     <>
       <MedicalWebPageSchema
-        name="Próstata Aumentada em Fortaleza — Sintomas e Tratamento"
+        name="Próstata Aumentada em Fortaleza, Sintomas e Tratamento"
         description="Guia completo sobre saúde da próstata em Fortaleza: HPB, câncer, PSA alterado e tratamentos modernos com Dr. Érico Diógenes."
         url="https://drericodiogenes.com.br/condicoes-urologicas/prostata"
         specialty="Urology"
@@ -112,7 +112,7 @@ export default function Prostata() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      {/* SEÇÃO 1 — HERO */}
+      {/* SEÇÃO 1, HERO */}
       <section className="relative bg-brand-beige overflow-hidden">
         <div className="grid lg:grid-cols-2 items-stretch min-h-[70vh]">
           <div className="flex items-center px-6 md:px-12 lg:px-16 xl:px-20 py-14 lg:py-20" data-aos="fade-right">
@@ -123,7 +123,7 @@ export default function Prostata() {
                 <span className="text-brand-gold">sintomas, causas e tratamentos modernos em Fortaleza.</span>
               </h1>
               <p className="mt-5 text-brand-muted text-base md:text-lg max-w-xl">
-                A próstata é uma glândula exclusivamente masculina — e com o passar dos anos, torna-se a principal fonte de preocupação urológica do homem adulto. Entender como ela funciona, quando ela causa sintomas e quais as opções de tratamento é o primeiro passo para cuidar da saúde com segurança.
+                A próstata é uma glândula exclusivamente masculina, e com o passar dos anos, torna-se a principal fonte de preocupação urológica do homem adulto. Entender como ela funciona, quando ela causa sintomas e quais as opções de tratamento é o primeiro passo para cuidar da saúde com segurança.
               </p>
               <div className="mt-8">
                 <a href="https://wa.me/5585981781020" target="_blank" rel="noopener noreferrer" className="btn-silver">
@@ -145,14 +145,14 @@ export default function Prostata() {
         </div>
       </section>
 
-      {/* SEÇÃO 2 — SINTOMAS */}
+      {/* SEÇÃO 2, SINTOMAS */}
       <section className="py-16 bg-white">
         <div className="container-site" data-aos="fade-up">
           <div className="text-center mb-12">
             <p className="eyebrow">Quando consultar</p>
             <h2 className="section-title mt-2">SINTOMAS QUE PEDEM ATENÇÃO</h2>
             <p className="text-brand-muted mt-4 max-w-3xl mx-auto">
-              Os problemas de próstata raramente causam dor nos estágios iniciais — o que leva muitos homens a adiarem a consulta. Os sintomas mais comuns estão relacionados à função urinária e surgem gradualmente. Se você reconhece algum dos sinais abaixo, consulte um urologista.
+              Os problemas de próstata raramente causam dor nos estágios iniciais, o que leva muitos homens a adiarem a consulta. Os sintomas mais comuns estão relacionados à função urinária e surgem gradualmente. Se você reconhece algum dos sinais abaixo, consulte um urologista.
             </p>
           </div>
           <ul className="grid md:grid-cols-2 gap-3 max-w-3xl mx-auto">
@@ -174,14 +174,14 @@ export default function Prostata() {
         </div>
       </section>
 
-      {/* SEÇÃO 3 — CONDIÇÕES */}
+      {/* SEÇÃO 3, CONDIÇÕES */}
       <section className="py-16 bg-brand-beige-light">
         <div className="container-site">
           <div className="text-center mb-12" data-aos="fade-up">
             <p className="eyebrow">Diagnóstico e tratamento</p>
             <h2 className="section-title mt-2">PRINCIPAIS CONDIÇÕES DA PRÓSTATA</h2>
             <p className="text-brand-muted mt-4 max-w-2xl mx-auto">
-              Em Fortaleza, o Dr. Érico Diógenes é referência no diagnóstico e tratamento das doenças da próstata, com acesso às técnicas mais avançadas disponíveis — do HoLEP à cirurgia robótica Da Vinci.
+              Em Fortaleza, o Dr. Érico Diógenes é referência no diagnóstico e tratamento das doenças da próstata, com acesso às técnicas mais avançadas disponíveis, do HoLEP à cirurgia robótica Da Vinci.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
@@ -202,7 +202,7 @@ export default function Prostata() {
         </div>
       </section>
 
-      {/* SEÇÃO 4 — DR. ÉRICO */}
+      {/* SEÇÃO 4, DR. ÉRICO */}
       <section className="py-16 bg-white">
         <div className="container-site grid lg:grid-cols-2 gap-10 items-center">
           <div data-aos="fade-right">
@@ -210,10 +210,10 @@ export default function Prostata() {
             <h2 className="section-title mt-2">DR. ÉRICO DIÓGENES</h2>
             <div className="mt-5 space-y-4 text-brand-muted">
               <p>
-                O tratamento das doenças da próstata evoluiu enormemente nas últimas décadas. Hoje, condições que antes exigiam cirurgias abertas com longos períodos de internação são tratadas por via endoscópica, com laser ou com robótica — com alta hospitalar em 24 horas e retorno rápido às atividades.
+                O tratamento das doenças da próstata evoluiu enormemente nas últimas décadas. Hoje, condições que antes exigiam cirurgias abertas com longos períodos de internação são tratadas por via endoscópica, com laser ou com robótica, com alta hospitalar em 24 horas e retorno rápido às atividades.
               </p>
               <p>
-                Em Fortaleza, o Dr. Érico Diógenes foi um dos pioneiros nessa transformação. Com formação pela Universidade Federal do Ceará e especialização em cirurgia minimamente invasiva, foi o responsável por introduzir o HoLEP no Ceará — técnica considerada o padrão ouro mundial para HPB — e realiza rotineiramente a prostatectomia robótica com o sistema Da Vinci para o câncer de próstata.
+                Em Fortaleza, o Dr. Érico Diógenes foi um dos pioneiros nessa transformação. Com formação pela Universidade Federal do Ceará e especialização em cirurgia minimamente invasiva, foi o responsável por introduzir o HoLEP no Ceará, técnica considerada o padrão ouro mundial para HPB, e realiza rotineiramente a prostatectomia robótica com o sistema Da Vinci para o câncer de próstata.
               </p>
               <p>
                 Independente do diagnóstico, o Dr. Érico avalia cada caso individualmente, apresenta todas as opções disponíveis e define, junto com o paciente, o melhor caminho para o tratamento.
@@ -227,7 +227,7 @@ export default function Prostata() {
           <div className="relative" data-aos="fade-left">
             <div className="aspect-[4/5] max-w-md rounded-3xl overflow-hidden shadow-soft">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/img/dr-erico-foto-1.webp" alt="Dr. Érico Diógenes — especialista em próstata em Fortaleza" className="w-full h-full object-cover" />
+              <img src="/img/dr-erico-foto-1.webp" alt="Dr. Érico Diógenes, especialista em próstata em Fortaleza" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>

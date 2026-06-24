@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Check } from 'lucide-react'
 import CtaBanner from '@/components/ui/CtaBanner'
@@ -22,7 +22,7 @@ const condicoes = [
   { nome: 'Próstata Aumentada (HPB)', desc: 'Afeta cerca de 50% dos homens acima de 50 anos. Causa dificuldade para urinar, jato fraco e urgência urinária.', href: '/condicoes-urologicas/prostata' },
   { nome: 'Cálculo Renal', desc: 'Depósitos minerais nos rins que causam cólica intensa. O Brasil tem alta prevalência, especialmente em regiões quentes como o Nordeste.', href: '/condicoes-urologicas/calculo-renal' },
   { nome: 'Câncer de Próstata', desc: 'O câncer mais comum em homens no Brasil. Com rastreamento adequado, a taxa de cura supera 90% nos estágios iniciais.', href: '/condicoes-urologicas/uro-oncologia/cancer-prostata' },
-  { nome: 'Infecção Urinária', desc: 'Mais comum em mulheres, mas também afeta homens — especialmente aqueles com próstata aumentada ou cálculo renal.', href: '/condicoes-urologicas/bexiga/infeccao-urinaria' },
+  { nome: 'Infecção Urinária', desc: 'Mais comum em mulheres, mas também afeta homens, especialmente aqueles com próstata aumentada ou cálculo renal.', href: '/condicoes-urologicas/bexiga/infeccao-urinaria' },
   { nome: 'Disfunção Erétil', desc: 'Estima-se que 50% dos homens acima de 40 anos tenham algum grau de disfunção erétil. Tem causas físicas, hormonais e psicológicas tratáveis.', href: '/saude-masculina/disfuncao-eretil' },
   { nome: 'Bexiga Hiperativa', desc: 'Urgência urinária frequente que impacta diretamente a qualidade de vida. Tem tratamento medicamentoso e cirúrgico eficaz.', href: '/condicoes-urologicas/bexiga/bexiga-hiperativa' },
 ]
@@ -57,7 +57,7 @@ const faq = [
   },
   {
     q: 'Qual é o exame mais importante em urologia?',
-    a: 'Não existe um único exame universal — depende da condição investigada. Para a próstata, o PSA e o toque retal são fundamentais. Para cálculo renal, o ultrassom e a tomografia. Para função urinária, a urofluxometria. O urologista define os exames conforme a queixa de cada paciente.',
+    a: 'Não existe um único exame universal, depende da condição investigada. Para a próstata, o PSA e o toque retal são fundamentais. Para cálculo renal, o ultrassom e a tomografia. Para função urinária, a urofluxometria. O urologista define os exames conforme a queixa de cada paciente.',
   },
   {
     q: 'Urologia trata problemas de rim?',
@@ -69,7 +69,7 @@ const faq = [
   },
   {
     q: 'A urologia trata incontinência urinária?',
-    a: 'Sim. A incontinência urinária — perda involuntária de urina — é tratada pela urologia. As causas variam desde bexiga hiperativa até sequelas pós-cirúrgicas. O tratamento pode ser fisioterapêutico, medicamentoso ou cirúrgico, conforme o tipo e a gravidade.',
+    a: 'Sim. A incontinência urinária, perda involuntária de urina, é tratada pela urologia. As causas variam desde bexiga hiperativa até sequelas pós-cirúrgicas. O tratamento pode ser fisioterapêutico, medicamentoso ou cirúrgico, conforme o tipo e a gravidade.',
   },
   {
     q: 'Vasectomia é feita pelo urologista?',
@@ -101,7 +101,7 @@ export default function UrologiaGeral() {
   return (
     <>
       <MedicalWebPageSchema
-        name="Urologia Geral em Fortaleza — Dr. Érico Diógenes"
+        name="Urologia Geral em Fortaleza, Dr. Érico Diógenes"
         description="Urologia geral em Fortaleza: o que é, quais doenças trata, como funciona o diagnóstico e quando consultar. Informação confiável com Dr. Érico Diógenes."
         url="https://drericodiogenes.com.br/urologia/urologia-geral"
         specialty="Urology"
@@ -109,7 +109,7 @@ export default function UrologiaGeral() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      {/* SEÇÃO 1 — HERO */}
+      {/* SEÇÃO 1, HERO */}
       <section className="relative bg-brand-beige overflow-hidden">
         <div className="grid lg:grid-cols-2 items-stretch min-h-[70vh]">
           <div className="flex items-center px-6 md:px-12 lg:px-16 xl:px-20 py-14 lg:py-20" data-aos="fade-right">
@@ -120,7 +120,7 @@ export default function UrologiaGeral() {
                 <span className="text-brand-gold">e quais condições ela trata?</span>
               </h1>
               <p className="mt-5 text-brand-muted text-base md:text-lg max-w-xl">
-                A urologia é a especialidade médico-cirúrgica dedicada ao diagnóstico e tratamento de doenças do sistema urinário — rins, ureteres, bexiga e uretra — e do aparelho reprodutor masculino. É uma das especialidades com maior impacto na qualidade de vida dos pacientes.
+                A urologia é a especialidade médico-cirúrgica dedicada ao diagnóstico e tratamento de doenças do sistema urinário, rins, ureteres, bexiga e uretra, e do aparelho reprodutor masculino. É uma das especialidades com maior impacto na qualidade de vida dos pacientes.
               </p>
               <div className="mt-8">
                 <a href="https://wa.me/5585981781020" target="_blank" rel="noopener noreferrer" className="btn-silver">
@@ -142,14 +142,14 @@ export default function UrologiaGeral() {
         </div>
       </section>
 
-      {/* SEÇÃO 2 — CONDIÇÕES */}
+      {/* SEÇÃO 2, CONDIÇÕES */}
       <section className="py-16 bg-white">
         <div className="container-site" data-aos="fade-up">
           <div className="text-center mb-12">
             <p className="eyebrow">Doenças mais comuns</p>
             <h2 className="section-title mt-2">PRINCIPAIS CONDIÇÕES UROLÓGICAS</h2>
             <p className="text-brand-muted mt-4 max-w-3xl mx-auto">
-              As doenças urológicas estão entre as mais prevalentes na população masculina adulta. Muitas evoluem de forma silenciosa nos estágios iniciais — o que torna o acompanhamento preventivo tão importante quanto o tratamento das queixas agudas.
+              As doenças urológicas estão entre as mais prevalentes na população masculina adulta. Muitas evoluem de forma silenciosa nos estágios iniciais, o que torna o acompanhamento preventivo tão importante quanto o tratamento das queixas agudas.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
@@ -170,14 +170,14 @@ export default function UrologiaGeral() {
         </div>
       </section>
 
-      {/* SEÇÃO 3 — COMO É O DIAGNÓSTICO */}
+      {/* SEÇÃO 3, COMO É O DIAGNÓSTICO */}
       <section className="py-16 bg-brand-beige-light">
         <div className="container-site">
           <div className="text-center mb-12" data-aos="fade-up">
             <p className="eyebrow">Metodologia</p>
             <h2 className="section-title mt-2">COMO FUNCIONA O DIAGNÓSTICO UROLÓGICO</h2>
             <p className="text-brand-muted mt-4 max-w-2xl mx-auto">
-              Um diagnóstico urológico preciso não depende de um único exame — mas de uma avaliação completa que combina histórico clínico, exame físico e exames complementares direcionados à queixa do paciente.
+              Um diagnóstico urológico preciso não depende de um único exame, mas de uma avaliação completa que combina histórico clínico, exame físico e exames complementares direcionados à queixa do paciente.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
@@ -201,7 +201,7 @@ export default function UrologiaGeral() {
         </div>
       </section>
 
-      {/* SEÇÃO 4 — DR. ÉRICO */}
+      {/* SEÇÃO 4, DR. ÉRICO */}
       <section className="py-16 bg-white">
         <div className="container-site grid lg:grid-cols-2 gap-10 items-center">
           <div data-aos="fade-right">
@@ -229,7 +229,7 @@ export default function UrologiaGeral() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/img/dr-erico-foto-6.webp"
-                alt="Dr. Érico Diógenes — Urologista referência em Fortaleza"
+                alt="Dr. Érico Diógenes, Urologista referência em Fortaleza"
                 className="w-full h-full object-cover"
               />
             </div>

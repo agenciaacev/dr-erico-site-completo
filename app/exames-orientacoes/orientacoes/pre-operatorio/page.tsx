@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import ContactMini from '@/components/sections/ContactMini'
 import CtaBanner from '@/components/ui/CtaBanner'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Orientações Pré-Operatórias | Dr. Érico Diógenes — Fortaleza' },
+  title: { absolute: 'Orientações Pré-Operatórias | Dr. Érico Diógenes, Fortaleza' },
   description: 'Cuidados antes da cirurgia urológica com Dr. Érico Diógenes em Fortaleza: jejum, medicamentos e o que esperar no pré-operatório.',
   alternates: { canonical: '/exames-orientacoes/orientacoes/pre-operatorio' },
 }

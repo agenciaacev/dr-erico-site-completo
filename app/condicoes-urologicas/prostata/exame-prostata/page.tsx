@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Check } from 'lucide-react'
 import CtaBanner from '@/components/ui/CtaBanner'
@@ -7,7 +7,7 @@ import ContactMini from '@/components/sections/ContactMini'
 import { MedicalWebPageSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Exame de Próstata Fortaleza | PSA e Toque Retal — Dr. Érico Diógenes' },
+  title: { absolute: 'Exame de Próstata Fortaleza | PSA e Toque Retal, Dr. Érico Diógenes' },
   description:
     'Tudo sobre o exame de próstata em Fortaleza: o que é o PSA, como funciona o toque retal, quando fazer e como se preparar. Dr. Érico Diógenes explica.',
   alternates: { canonical: '/condicoes-urologicas/prostata/exame-prostata' },
@@ -57,7 +57,7 @@ const preparacao = [
 const faq = [
   {
     q: 'O toque retal é doloroso?',
-    a: 'O toque retal é um exame rápido — dura menos de 1 minuto — e causa apenas leve desconforto. Não é doloroso. O médico sempre explica o procedimento antes de realizá-lo e respeita o ritmo do paciente. O desconforto psicológico de antecipar o exame costuma ser muito maior do que o exame em si.',
+    a: 'O toque retal é um exame rápido, dura menos de 1 minuto, e causa apenas leve desconforto. Não é doloroso. O médico sempre explica o procedimento antes de realizá-lo e respeita o ritmo do paciente. O desconforto psicológico de antecipar o exame costuma ser muito maior do que o exame em si.',
   },
   {
     q: 'Posso fazer o PSA sem o toque retal?',
@@ -101,7 +101,7 @@ export default function ExameProstata() {
   return (
     <>
       <MedicalWebPageSchema
-        name="Exame de Próstata em Fortaleza — PSA e Toque Retal"
+        name="Exame de Próstata em Fortaleza, PSA e Toque Retal"
         description="Tudo sobre exame de próstata em Fortaleza: PSA, toque retal, quando fazer e como se preparar. Dr. Érico Diógenes explica com clareza."
         url="https://drericodiogenes.com.br/condicoes-urologicas/prostata/exame-prostata"
         specialty="Urology"
@@ -109,7 +109,7 @@ export default function ExameProstata() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      {/* SEÇÃO 1 — HERO */}
+      {/* SEÇÃO 1, HERO */}
       <section className="relative bg-brand-beige overflow-hidden">
         <div className="grid lg:grid-cols-2 items-stretch min-h-[70vh]">
           <div className="flex items-center px-6 md:px-12 lg:px-16 xl:px-20 py-14 lg:py-20" data-aos="fade-right">
@@ -120,7 +120,7 @@ export default function ExameProstata() {
                 <span className="text-brand-gold">o que é, como funciona e por que não adiar.</span>
               </h1>
               <p className="mt-5 text-brand-muted text-base md:text-lg max-w-xl">
-                O exame de próstata é a principal ferramenta de rastreamento do câncer de próstata — a neoplasia mais comum no homem brasileiro. Quando feito regularmente a partir dos 40 anos, permite detectar a doença em estágios iniciais, quando a taxa de cura supera 90%.
+                O exame de próstata é a principal ferramenta de rastreamento do câncer de próstata, a neoplasia mais comum no homem brasileiro. Quando feito regularmente a partir dos 40 anos, permite detectar a doença em estágios iniciais, quando a taxa de cura supera 90%.
               </p>
               <div className="mt-8">
                 <a href="https://wa.me/5585981781020" target="_blank" rel="noopener noreferrer" className="btn-silver">
@@ -133,7 +133,7 @@ export default function ExameProstata() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/img/dr-erico-foto-6.webp"
-              alt="Exame de próstata em Fortaleza — Dr. Érico Diógenes"
+              alt="Exame de próstata em Fortaleza, Dr. Érico Diógenes"
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-brand-beige to-transparent" />
@@ -142,7 +142,7 @@ export default function ExameProstata() {
         </div>
       </section>
 
-      {/* SEÇÃO 2 — EXAMES */}
+      {/* SEÇÃO 2, EXAMES */}
       <section className="py-16 bg-white">
         <div className="container-site">
           <div className="text-center mb-12" data-aos="fade-up">
@@ -173,7 +173,7 @@ export default function ExameProstata() {
         </div>
       </section>
 
-      {/* SEÇÃO 3 — PREPARAÇÃO */}
+      {/* SEÇÃO 3, PREPARAÇÃO */}
       <section className="py-16 bg-brand-beige-light">
         <div className="container-site grid lg:grid-cols-2 gap-10 items-center">
           <div data-aos="fade-right">
@@ -205,13 +205,13 @@ export default function ExameProstata() {
         </div>
       </section>
 
-      {/* SEÇÃO 4 — DR. ÉRICO */}
+      {/* SEÇÃO 4, DR. ÉRICO */}
       <section className="py-16 bg-white">
         <div className="container-site grid lg:grid-cols-2 gap-10 items-center">
           <div className="relative" data-aos="fade-right">
             <div className="aspect-[4/5] max-w-md rounded-3xl overflow-hidden shadow-soft">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/img/dr-erico-foto-3.webp" alt="Dr. Érico Diógenes — exame de próstata Fortaleza" className="w-full h-full object-cover" />
+              <img src="/img/dr-erico-foto-3.webp" alt="Dr. Érico Diógenes, exame de próstata Fortaleza" className="w-full h-full object-cover" />
             </div>
           </div>
           <div data-aos="fade-left">
@@ -219,10 +219,10 @@ export default function ExameProstata() {
             <h2 className="section-title mt-2">DR. ÉRICO DIÓGENES</h2>
             <div className="mt-5 space-y-4 text-brand-muted">
               <p>
-                O rastreamento do câncer de próstata não é apenas sobre fazer um exame de sangue. É sobre interpretar corretamente os resultados, conhecer os fatores de risco individuais e saber quando aprofundar a investigação — e quando tranquilizar o paciente.
+                O rastreamento do câncer de próstata não é apenas sobre fazer um exame de sangue. É sobre interpretar corretamente os resultados, conhecer os fatores de risco individuais e saber quando aprofundar a investigação, e quando tranquilizar o paciente.
               </p>
               <p>
-                Em Fortaleza, o Dr. Érico Diógenes conduz o rastreamento prostático de forma completa e individualizada. Com formação pela Universidade Federal do Ceará e especialização em uro-oncologia, ele associa PSA, toque retal, ressonância magnética e biópsia guiada por imagem quando necessário — garantindo diagnósticos precisos e evitando tanto o subtratamento quanto intervenções desnecessárias.
+                Em Fortaleza, o Dr. Érico Diógenes conduz o rastreamento prostático de forma completa e individualizada. Com formação pela Universidade Federal do Ceará e especialização em uro-oncologia, ele associa PSA, toque retal, ressonância magnética e biópsia guiada por imagem quando necessário, garantindo diagnósticos precisos e evitando tanto o subtratamento quanto intervenções desnecessárias.
               </p>
               <p>
                 <strong className="text-brand-navy">Não adie o exame de próstata.</strong> O câncer de próstata detectado precocemente tem taxa de cura superior a 90%. Detectado tardiamente, as opções são mais limitadas e o tratamento, mais complexo.

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Script from 'next/script'
 import './globals.css'
 import TopBar from '@/components/layout/TopBar'
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
         url: '/img/dr-erico-foto-1.webp',
         width: 1200,
         height: 630,
-        alt: 'Dr. Érico Diógenes — Urologista em Fortaleza',
+        alt: 'Dr. Érico Diógenes, Urologista em Fortaleza',
       },
     ],
   },

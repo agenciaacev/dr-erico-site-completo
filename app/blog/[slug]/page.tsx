@@ -347,7 +347,7 @@ export default async function BlogPostPage({ params }: Props) {
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={post.image2}
-                        alt={`${post.title} — imagem complementar`}
+                        alt={`${post.title}, imagem complementar`}
                         className="w-full aspect-[16/9] object-cover rounded-2xl shadow-card"
                       />
                     </figure>
@@ -379,7 +379,7 @@ export default async function BlogPostPage({ params }: Props) {
               </div>
             </div>
 
-            {/* Sidebar direita — AuthorCard sticky */}
+            {/* Sidebar direita - AuthorCard sticky */}
             <aside className="hidden lg:block">
               <div className="sticky top-24">
                 <AuthorCard sidebar />

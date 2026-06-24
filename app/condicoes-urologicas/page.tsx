@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import ContactMini from '@/components/sections/ContactMini'
 import CtaBanner from '@/components/ui/CtaBanner'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Condições Urológicas | Dr. Érico Diógenes — Urologista Fortaleza' },
+  title: { absolute: 'Condições Urológicas | Dr. Érico Diógenes, Urologista Fortaleza' },
   description: 'Conheça as principais condições urológicas tratadas pelo Dr. Érico Diógenes em Fortaleza: próstata, cálculo renal, bexiga, uro-oncologia e mais.',
   alternates: { canonical: '/condicoes-urologicas' },
 }

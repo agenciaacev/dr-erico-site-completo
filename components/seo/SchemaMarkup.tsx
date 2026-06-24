@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SchemaMarkup.tsx
  *
  * Componente de dados estruturados (JSON-LD) para o site do Dr. Érico Diógenes.
@@ -9,7 +9,7 @@
  * Uso em páginas específicas (adiciona MedicalWebPage):
  *   <SchemaMarkup
  *     webPage={{
- *       name: 'HoLEP — Cirurgia a Laser para Próstata',
+ *       name: 'HoLEP, Cirurgia a Laser para Próstata',
  *       description: 'Saiba tudo sobre o HoLEP...',
  *       url: 'https://drericodiogenes.com.br/holep',
  *       specialty: 'Urology',
@@ -166,7 +166,7 @@ const physicianSchema = {
   // Procedimentos disponíveis
   availableService: [
     { '@type': 'MedicalProcedure', name: 'Cirurgia Robótica da Próstata' },
-    { '@type': 'MedicalProcedure', name: 'HoLEP — Enucleação da Próstata a Laser' },
+    { '@type': 'MedicalProcedure', name: 'HoLEP, Enucleação da Próstata a Laser' },
     { '@type': 'MedicalProcedure', name: 'Tratamento de Câncer de Próstata' },
     { '@type': 'MedicalProcedure', name: 'Cirurgia a Laser para Cálculo Renal' },
     { '@type': 'MedicalProcedure', name: 'Uro-oncologia' },
@@ -176,7 +176,7 @@ const physicianSchema = {
     { '@id': `${SITE_URL}/#medicalorg` },
     {
       '@type': 'MedicalOrganization',
-      name: 'Instituto de Urologia e Robótica — IURO',
+      name: 'Instituto de Urologia e Robótica, IURO',
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Fortaleza',
@@ -206,7 +206,7 @@ const physicianSchema = {
     },
     {
       '@type': 'Hospital',
-      name: 'Hospital Walter Cantídio — UFC',
+      name: 'Hospital Walter Cantídio, UFC',
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Fortaleza',
@@ -236,7 +236,7 @@ const medicalOrgSchema = {
   '@context': 'https://schema.org',
   '@type': 'MedicalOrganization',
   '@id': `${SITE_URL}/#medicalorg`,
-  name: 'Dr. Érico Diógenes — Urologia',
+  name: 'Dr. Érico Diógenes, Urologia',
   description:
     'Consultório urológico especializado em Cirurgia Robótica, HoLEP e Uro-oncologia em Fortaleza, Ceará.',
   url: SITE_URL,
@@ -275,7 +275,7 @@ const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   '@id': `${SITE_URL}/#localbusiness`,
-  name: 'Dr. Érico Diógenes — Urologista em Fortaleza',
+  name: 'Dr. Érico Diógenes, Urologista em Fortaleza',
   description:
     'Urologista em Fortaleza especialista em Cirurgia Robótica, HoLEP e Uro-oncologia.',
   url: SITE_URL,
@@ -328,7 +328,7 @@ const localBusinessSchema = {
 
 // ─── Tipos ────────────────────────────────────────────────────────────────────
 interface MedicalWebPageData {
-  /** Título da página exibido no schema (ex: "HoLEP — Cirurgia a Laser para Próstata") */
+  /** Título da página exibido no schema (ex: "HoLEP, Cirurgia a Laser para Próstata") */
   name: string
   /** Descrição da página para o schema (pode ser a mesma do metadata.description) */
   description: string
@@ -394,7 +394,7 @@ export default function SchemaMarkup({ webPage }: SchemaMarkupProps) {
  *
  * Exemplo em /holep/page.tsx:
  *   <MedicalWebPageSchema
- *     name="HoLEP — Cirurgia a Laser para Próstata Aumentada"
+ *     name="HoLEP, Cirurgia a Laser para Próstata Aumentada"
  *     description="..."
  *     url="https://drericodiogenes.com.br/holep"
  *   />

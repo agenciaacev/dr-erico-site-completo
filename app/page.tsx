@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import HeroHome from '@/components/sections/HeroHome'
 
 export const metadata: Metadata = {
@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     'Dr. Érico Diógenes, urologista em Fortaleza especialista em Cirurgia Robótica, HoLEP e Uro-oncologia no Ceará. Tecnologia avançada. Agende sua consulta.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Dr. Érico Diógenes | Urologista em Fortaleza — Cirurgia Robótica e HoLEP',
+    title: 'Dr. Érico Diógenes | Urologista em Fortaleza, Cirurgia Robótica e HoLEP',
     description:
       'Especialista em Cirurgia Robótica, HoLEP e tratamentos urológicos avançados em Fortaleza, CE.',
     url: '/',

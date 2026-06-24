@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Check } from 'lucide-react'
 import CtaBanner from '@/components/ui/CtaBanner'
@@ -53,7 +53,7 @@ const atua = [
 const faq = [
   {
     q: 'O urologista trata só homens?',
-    a: 'Não. O urologista cuida de doenças do trato urinário — rins, ureteres, bexiga e uretra — em homens e mulheres. No entanto, também é o especialista responsável pelo aparelho reprodutor masculino (próstata, testículos, pênis), o que torna a especialidade predominantemente masculina na prática clínica.',
+    a: 'Não. O urologista cuida de doenças do trato urinário, rins, ureteres, bexiga e uretra, em homens e mulheres. No entanto, também é o especialista responsável pelo aparelho reprodutor masculino (próstata, testículos, pênis), o que torna a especialidade predominantemente masculina na prática clínica.',
   },
   {
     q: 'Qual a diferença entre urologista e nefrologista?',
@@ -73,7 +73,7 @@ const faq = [
   },
   {
     q: 'O toque retal é obrigatório?',
-    a: 'O toque retal é parte do exame físico urológico para avaliação da próstata — rápido, seguro e indolor. Em conjunto com o PSA, é o principal método de rastreamento do câncer de próstata. O médico sempre explica o procedimento antes de realizá-lo.',
+    a: 'O toque retal é parte do exame físico urológico para avaliação da próstata, rápido, seguro e indolor. Em conjunto com o PSA, é o principal método de rastreamento do câncer de próstata. O médico sempre explica o procedimento antes de realizá-lo.',
   },
 ]
 
@@ -101,7 +101,7 @@ export default function UrologistaFortaleza() {
   return (
     <>
       <MedicalWebPageSchema
-        name="Urologista em Fortaleza — Dr. Érico Diógenes"
+        name="Urologista em Fortaleza, Dr. Érico Diógenes"
         description="Urologista em Fortaleza: entenda quando consultar, o que a especialidade trata e como escolher o médico certo. Dr. Érico Diógenes é referência no Ceará."
         url="https://drericodiogenes.com.br/urologia/urologista-fortaleza"
         specialty="Urology"
@@ -109,7 +109,7 @@ export default function UrologistaFortaleza() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      {/* SEÇÃO 1 — HERO */}
+      {/* SEÇÃO 1, HERO */}
       <section className="relative bg-brand-navy overflow-hidden">
         <div className="grid lg:grid-cols-2 items-stretch min-h-[70vh]">
           <div className="flex items-center px-6 md:px-12 lg:px-16 xl:px-20 py-14 lg:py-20" data-aos="fade-right">
@@ -133,7 +133,7 @@ export default function UrologistaFortaleza() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/img/dr-erico-foto-2.webp"
-              alt="Urologista em Fortaleza — consultório médico"
+              alt="Urologista em Fortaleza, consultório médico"
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-brand-navy to-transparent" />
@@ -142,14 +142,14 @@ export default function UrologistaFortaleza() {
         </div>
       </section>
 
-      {/* SEÇÃO 2 — O QUE TRATA */}
+      {/* SEÇÃO 2, O QUE TRATA */}
       <section className="py-16 bg-white">
         <div className="container-site" data-aos="fade-up">
           <div className="text-center mb-12">
             <p className="eyebrow">Área de atuação</p>
             <h2 className="section-title mt-2">O QUE O UROLOGISTA TRATA?</h2>
             <p className="text-brand-muted mt-4 max-w-3xl mx-auto">
-              A urologia é uma das especialidades médicas mais amplas. Ela abrange desde condições comuns — como infecção urinária e cálculo renal — até doenças complexas, como tumores do sistema urinário e genital masculino. O urologista atua tanto clinicamente quanto cirurgicamente, sendo um dos especialistas com maior variedade de procedimentos disponíveis.
+              A urologia é uma das especialidades médicas mais amplas. Ela abrange desde condições comuns, como infecção urinária e cálculo renal, até doenças complexas, como tumores do sistema urinário e genital masculino. O urologista atua tanto clinicamente quanto cirurgicamente, sendo um dos especialistas com maior variedade de procedimentos disponíveis.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -166,19 +166,19 @@ export default function UrologistaFortaleza() {
             ))}
           </div>
           <p className="text-center mt-10 text-brand-muted max-w-3xl mx-auto" data-aos="fade-up">
-            No Brasil, estima-se que cerca de <strong>30% dos homens acima de 50 anos</strong> apresentem alguma condição urológica que exige acompanhamento especializado — muitas das quais são silenciosas em seus estágios iniciais, tornando o rastreamento preventivo essencial.
+            No Brasil, estima-se que cerca de <strong>30% dos homens acima de 50 anos</strong> apresentem alguma condição urológica que exige acompanhamento especializado, muitas das quais são silenciosas em seus estágios iniciais, tornando o rastreamento preventivo essencial.
           </p>
         </div>
       </section>
 
-      {/* SEÇÃO 3 — QUANDO CONSULTAR */}
+      {/* SEÇÃO 3, QUANDO CONSULTAR */}
       <section className="py-16 bg-brand-beige-light">
         <div className="container-site" data-aos="fade-up">
           <div className="text-center mb-12">
             <p className="eyebrow">Sinais de alerta</p>
             <h2 className="section-title mt-2">QUANDO PROCURAR UM UROLOGISTA?</h2>
             <p className="text-brand-muted italic mt-3 max-w-2xl mx-auto">
-              Muitos pacientes adiam a consulta urológica por desconhecimento ou por associar a especialidade apenas a cirurgias. Na prática, a maior parte das condições urológicas tem tratamento clínico eficaz — e quanto mais cedo o diagnóstico, mais simples e eficiente é o tratamento.
+              Muitos pacientes adiam a consulta urológica por desconhecimento ou por associar a especialidade apenas a cirurgias. Na prática, a maior parte das condições urológicas tem tratamento clínico eficaz, e quanto mais cedo o diagnóstico, mais simples e eficiente é o tratamento.
             </p>
           </div>
           <ul className="grid md:grid-cols-2 gap-3 max-w-3xl mx-auto">
@@ -200,7 +200,7 @@ export default function UrologistaFortaleza() {
         </div>
       </section>
 
-      {/* SEÇÃO 4 — REFERÊNCIA EM FORTALEZA */}
+      {/* SEÇÃO 4, REFERÊNCIA EM FORTALEZA */}
       <section className="py-16 bg-white">
         <div className="container-site grid lg:grid-cols-2 gap-10 items-center">
           <div className="relative" data-aos="fade-right">
@@ -208,7 +208,7 @@ export default function UrologistaFortaleza() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/img/dr-erico-foto-4.webp"
-                alt="Dr. Érico Diógenes — Urologista referência em Fortaleza"
+                alt="Dr. Érico Diógenes, Urologista referência em Fortaleza"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -218,10 +218,10 @@ export default function UrologistaFortaleza() {
             <h2 className="section-title mt-2">DR. ÉRICO DIÓGENES</h2>
             <div className="mt-5 space-y-4 text-brand-muted">
               <p>
-                Escolher um urologista vai além de encontrar alguém que resolva o problema imediato. É fundamental buscar um especialista com formação sólida, atualização contínua e acesso às tecnologias mais modernas — especialmente quando o diagnóstico envolve cirurgia ou oncologia.
+                Escolher um urologista vai além de encontrar alguém que resolva o problema imediato. É fundamental buscar um especialista com formação sólida, atualização contínua e acesso às tecnologias mais modernas, especialmente quando o diagnóstico envolve cirurgia ou oncologia.
               </p>
               <p>
-                O Dr. Érico Diógenes é formado pela Universidade Federal do Ceará e referência no Ceará em cirurgia urológica minimamente invasiva. Foi um dos primeiros a trazer para Fortaleza procedimentos como o HoLEP (cirurgia a laser para próstata) e a cirurgia robótica com o sistema Da Vinci — técnicas que reduzem dor, sangramento e tempo de recuperação.
+                O Dr. Érico Diógenes é formado pela Universidade Federal do Ceará e referência no Ceará em cirurgia urológica minimamente invasiva. Foi um dos primeiros a trazer para Fortaleza procedimentos como o HoLEP (cirurgia a laser para próstata) e a cirurgia robótica com o sistema Da Vinci, técnicas que reduzem dor, sangramento e tempo de recuperação.
               </p>
               <p>
                 Mais do que tecnologia, o Dr. Érico é reconhecido pelo atendimento humanizado: tempo dedicado a cada paciente, linguagem acessível e respeito pela decisão compartilhada no tratamento.

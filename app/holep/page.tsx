@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Check, X as XIcon } from 'lucide-react'
 import CtaBanner from '@/components/ui/CtaBanner'
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     'HoLEP em Fortaleza com Dr. Érico Diógenes: cirurgia a laser minimamente invasiva para próstata aumentada, sem cortes, alta em 24h. Agende sua avaliação.',
   alternates: { canonical: '/holep' },
   openGraph: {
-    title: 'HoLEP — Cirurgia a Laser para Próstata | Dr. Érico Diógenes',
+    title: 'HoLEP, Cirurgia a Laser para Próstata | Dr. Érico Diógenes',
     description:
       'Cirurgia HoLEP a laser para próstata aumentada. Padrão ouro mundial, sem cortes, recuperação rápida.',
     url: '/holep',
@@ -164,7 +164,7 @@ export default function HoLEP() {
   return (
     <>
       <MedicalWebPageSchema
-        name="HoLEP — Cirurgia a Laser para Próstata Aumentada em Fortaleza"
+        name="HoLEP, Cirurgia a Laser para Próstata Aumentada em Fortaleza"
         description="HoLEP em Fortaleza com o Dr. Érico Diógenes. Cirurgia a laser minimamente invasiva para próstata aumentada. Sem cortes, menor sangramento, alta em 24h. Agende sua avaliação."
         url="https://drericodiogenes.com.br/holep"
         specialty="Urology"

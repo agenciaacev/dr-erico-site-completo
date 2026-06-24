@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Check } from 'lucide-react'
 import CtaBanner from '@/components/ui/CtaBanner'
@@ -7,12 +7,12 @@ import ContactMini from '@/components/sections/ContactMini'
 import { MedicalWebPageSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: { absolute: 'PSA Alterado: O que Fazer? | Dr. Érico Diógenes — Fortaleza' },
+  title: { absolute: 'PSA Alterado: O que Fazer? | Dr. Érico Diógenes, Fortaleza' },
   description:
     'PSA alterado em Fortaleza: entenda o que significa, quais as causas além do câncer e quais são os próximos passos. Avaliação com Dr. Érico Diógenes.',
   alternates: { canonical: '/condicoes-urologicas/prostata/psa-alterado' },
   openGraph: {
-    title: 'PSA Alterado: O que Fazer? | Dr. Érico Diógenes — Fortaleza',
+    title: 'PSA Alterado: O que Fazer? | Dr. Érico Diógenes, Fortaleza',
     description: 'PSA elevado não significa necessariamente câncer. Entenda as causas e os próximos passos com Dr. Érico Diógenes em Fortaleza.',
     url: '/condicoes-urologicas/prostata/psa-alterado',
   },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 const causas = [
   { causa: 'Hiperplasia Prostática Benigna (HPB)', detalhe: 'O aumento benigno da próstata eleva naturalmente o PSA. É a causa mais comum de PSA elevado em homens acima de 50 anos.' },
-  { causa: 'Prostatite', detalhe: 'Inflamação ou infecção da próstata pode elevar significativamente o PSA — às vezes a valores muito altos — de forma temporária.' },
+  { causa: 'Prostatite', detalhe: 'Inflamação ou infecção da próstata pode elevar significativamente o PSA, às vezes a valores muito altos, de forma temporária.' },
   { causa: 'Câncer de Próstata', detalhe: 'Tumores prostáticos produzem PSA em maior quantidade. Por isso o PSA é o principal marcador de rastreamento do câncer de próstata.' },
   { causa: 'Ejaculação recente', detalhe: 'A atividade sexual pode elevar o PSA temporariamente. O exame deve ser feito com abstinência de 48 horas.' },
   { causa: 'Exercício físico intenso', detalhe: 'Atividades como ciclismo ou corrida de longa distância podem elevar o PSA transitoriamente.' },
@@ -31,12 +31,12 @@ const proximosPassos = [
   {
     num: '01',
     titulo: 'Não entre em pânico',
-    desc: 'PSA elevado não é sinônimo de câncer. A maioria dos homens com PSA alterado tem HPB ou prostatite — condições benígnas e tratáveis.',
+    desc: 'PSA elevado não é sinônimo de câncer. A maioria dos homens com PSA alterado tem HPB ou prostatite, condições benígnas e tratáveis.',
   },
   {
     num: '02',
     titulo: 'Consulte um Urologista',
-    desc: 'Apenas o urologista pode interpretar o PSA no contexto clínico correto — levando em conta idade, histórico, exame físico e outros fatores.',
+    desc: 'Apenas o urologista pode interpretar o PSA no contexto clínico correto, levando em conta idade, histórico, exame físico e outros fatores.',
   },
   {
     num: '03',
@@ -53,11 +53,11 @@ const proximosPassos = [
 const faq = [
   {
     q: 'Qual é o valor normal do PSA?',
-    a: 'O PSA "normal" varia com a idade. Em linhas gerais: até 2,5 ng/mL para homens entre 40-49 anos; até 3,5 ng/mL entre 50-59 anos; até 4,5 ng/mL entre 60-69 anos; até 6,5 ng/mL acima de 70 anos. Porém, esses valores são referências — o urologista interpreta o PSA sempre em conjunto com outros fatores.',
+    a: 'O PSA "normal" varia com a idade. Em linhas gerais: até 2,5 ng/mL para homens entre 40-49 anos; até 3,5 ng/mL entre 50-59 anos; até 4,5 ng/mL entre 60-69 anos; até 6,5 ng/mL acima de 70 anos. Porém, esses valores são referências, o urologista interpreta o PSA sempre em conjunto com outros fatores.',
   },
   {
     q: 'PSA de 5 significa câncer?',
-    a: 'Não necessariamente. Um PSA de 5 ng/mL pode ser causado por HPB, prostatite ou outros fatores benignos. A probabilidade de câncer aumenta com valores mais altos, mas apenas a investigação completa — incluindo toque retal, ressonância e eventualmente biópsia — confirma ou exclui o diagnóstico.',
+    a: 'Não necessariamente. Um PSA de 5 ng/mL pode ser causado por HPB, prostatite ou outros fatores benignos. A probabilidade de câncer aumenta com valores mais altos, mas apenas a investigação completa, incluindo toque retal, ressonância e eventualmente biópsia, confirma ou exclui o diagnóstico.',
   },
   {
     q: 'O que é PSA livre e PSA total?',
@@ -101,7 +101,7 @@ export default function PsaAlterado() {
   return (
     <>
       <MedicalWebPageSchema
-        name="PSA Alterado: O que Fazer — Dr. Érico Diógenes, Fortaleza"
+        name="PSA Alterado: O que Fazer, Dr. Érico Diógenes, Fortaleza"
         description="PSA alterado em Fortaleza: entenda o que significa, as causas além do câncer e os próximos passos. Avaliação especializada com Dr. Érico Diógenes."
         url="https://drericodiogenes.com.br/condicoes-urologicas/prostata/psa-alterado"
         specialty="Urology"
@@ -109,7 +109,7 @@ export default function PsaAlterado() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      {/* SEÇÃO 1 — HERO */}
+      {/* SEÇÃO 1, HERO */}
       <section className="relative bg-brand-navy overflow-hidden">
         <div className="grid lg:grid-cols-2 items-stretch min-h-[70vh]">
           <div className="flex items-center px-6 md:px-12 lg:px-16 xl:px-20 py-14 lg:py-20" data-aos="fade-right">
@@ -120,7 +120,7 @@ export default function PsaAlterado() {
                 <span className="text-brand-gold">o que significa, o que fazer e quando se preocupar.</span>
               </h1>
               <p className="mt-5 text-brand-beige/70 text-base md:text-lg max-w-xl">
-                Receber um resultado de PSA elevado costuma gerar ansiedade imediata. Mas PSA alto não significa, necessariamente, câncer — e entender o que esse exame realmente indica é o primeiro passo para tomar as decisões certas sobre a sua saúde.
+                Receber um resultado de PSA elevado costuma gerar ansiedade imediata. Mas PSA alto não significa, necessariamente, câncer, e entender o que esse exame realmente indica é o primeiro passo para tomar as decisões certas sobre a sua saúde.
               </p>
               <div className="mt-8">
                 <a href="https://wa.me/5585981781020" target="_blank" rel="noopener noreferrer" className="btn-silver">
@@ -133,7 +133,7 @@ export default function PsaAlterado() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/img/dr-erico-foto-2.webp"
-              alt="Avaliação de PSA alterado em Fortaleza — Dr. Érico Diógenes"
+              alt="Avaliação de PSA alterado em Fortaleza, Dr. Érico Diógenes"
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-brand-navy to-transparent" />
@@ -142,14 +142,14 @@ export default function PsaAlterado() {
         </div>
       </section>
 
-      {/* SEÇÃO 2 — CAUSAS */}
+      {/* SEÇÃO 2, CAUSAS */}
       <section className="py-16 bg-white">
         <div className="container-site" data-aos="fade-up">
           <div className="text-center mb-12">
             <p className="eyebrow">Entenda o exame</p>
             <h2 className="section-title mt-2">O QUE PODE ELEVAR O PSA?</h2>
             <p className="text-brand-muted mt-4 max-w-3xl mx-auto">
-              O PSA (Antígeno Prostático Específico) é uma proteína produzida pelas células da próstata e detectada por exame de sangue. Ele aumenta naturalmente com a idade e pode ser elevado por diversas condições — a maioria delas benigna. Conheça as causas mais comuns:
+              O PSA (Antígeno Prostático Específico) é uma proteína produzida pelas células da próstata e detectada por exame de sangue. Ele aumenta naturalmente com a idade e pode ser elevado por diversas condições, a maioria delas benigna. Conheça as causas mais comuns:
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
@@ -171,14 +171,14 @@ export default function PsaAlterado() {
         </div>
       </section>
 
-      {/* SEÇÃO 3 — PRÓXIMOS PASSOS */}
+      {/* SEÇÃO 3, PRÓXIMOS PASSOS */}
       <section className="py-16 bg-brand-beige-light">
         <div className="container-site">
           <div className="text-center mb-12" data-aos="fade-up">
             <p className="eyebrow">Passo a passo</p>
             <h2 className="section-title mt-2">O QUE FAZER COM PSA ALTERADO</h2>
             <p className="text-brand-muted mt-4 max-w-2xl mx-auto">
-              Um PSA elevado é um sinal de alerta — não um diagnóstico. A investigação correta, conduzida por um urologista experiente, define o caminho adequado para cada caso.
+              Um PSA elevado é um sinal de alerta, não um diagnóstico. A investigação correta, conduzida por um urologista experiente, define o caminho adequado para cada caso.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
@@ -202,7 +202,7 @@ export default function PsaAlterado() {
         </div>
       </section>
 
-      {/* SEÇÃO 4 — DR. ÉRICO */}
+      {/* SEÇÃO 4, DR. ÉRICO */}
       <section className="py-16 bg-white">
         <div className="container-site grid lg:grid-cols-2 gap-10 items-center">
           <div data-aos="fade-right">
@@ -213,7 +213,7 @@ export default function PsaAlterado() {
                 A interpretação correta do PSA exige muito mais do que comparar um número com uma tabela de referência. Fatores como idade, volume prostático, velocidade de ascensão do PSA, histórico familiar e achados ao toque retal compõem um quadro que apenas um especialista pode avaliar com precisão.
               </p>
               <p>
-                Em Fortaleza, o Dr. Érico Diógenes realiza a investigação completa do PSA alterado — incluindo PSA livre/total, ressonância magnética multiparamétrica da próstata e, quando indicada, biópsia guiada por imagem — garantindo o diagnóstico mais preciso possível e evitando tanto o subtratamento quanto intervenções desnecessárias.
+                Em Fortaleza, o Dr. Érico Diógenes realiza a investigação completa do PSA alterado, incluindo PSA livre/total, ressonância magnética multiparamétrica da próstata e, quando indicada, biópsia guiada por imagem, garantindo o diagnóstico mais preciso possível e evitando tanto o subtratamento quanto intervenções desnecessárias.
               </p>
               <p>
                 Com formação pela Universidade Federal do Ceará e especialização em uro-oncologia, o Dr. Érico conduz cada investigação com rigor técnico e transparência, explicando cada etapa ao paciente e à família.
@@ -227,7 +227,7 @@ export default function PsaAlterado() {
           <div className="relative" data-aos="fade-left">
             <div className="aspect-[4/5] max-w-md rounded-3xl overflow-hidden shadow-soft">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/img/dr-erico-foto-4.webp" alt="Dr. Érico Diógenes — PSA alterado Fortaleza" className="w-full h-full object-cover" />
+              <img src="/img/dr-erico-foto-4.webp" alt="Dr. Érico Diógenes, PSA alterado Fortaleza" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>

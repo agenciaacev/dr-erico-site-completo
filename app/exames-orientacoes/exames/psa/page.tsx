@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import ContactMini from '@/components/sections/ContactMini'
 import CtaBanner from '@/components/ui/CtaBanner'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Exame de PSA Fortaleza | O que é e para que serve — Dr. Érico Diógenes' },
+  title: { absolute: 'Exame de PSA Fortaleza | O que é e para que serve, Dr. Érico Diógenes' },
   description: 'Tudo sobre o exame de PSA em Fortaleza: o que mede, valores normais e quando solicitar. Dr. Érico Diógenes orienta.',
   alternates: { canonical: '/exames-orientacoes/exames/psa' },
 }

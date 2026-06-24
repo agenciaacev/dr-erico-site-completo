@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import ContactMini from '@/components/sections/ContactMini'
 import CtaBanner from '@/components/ui/CtaBanner'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Baixa Testosterona Fortaleza | Hipogonadismo — Dr. Érico Diógenes' },
+  title: { absolute: 'Baixa Testosterona Fortaleza | Hipogonadismo, Dr. Érico Diógenes' },
   description: 'Tratamento de baixa testosterona (hipogonadismo) em Fortaleza com Dr. Érico Diógenes. Diagnóstico hormonal e reposição segura.',
   alternates: { canonical: '/saude-masculina/baixa-testosterona' },
 }

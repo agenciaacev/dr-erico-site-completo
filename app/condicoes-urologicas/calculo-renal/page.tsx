@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Check } from 'lucide-react'
 import CtaBanner from '@/components/ui/CtaBanner'
@@ -7,12 +7,12 @@ import ContactMini from '@/components/sections/ContactMini'
 import { MedicalWebPageSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Cálculo Renal Fortaleza | Pedra nos Rins — Dr. Érico Diógenes' },
+  title: { absolute: 'Cálculo Renal Fortaleza | Pedra nos Rins, Dr. Érico Diógenes' },
   description:
     'Tratamento de cálculo renal e pedra nos rins em Fortaleza com Dr. Érico Diógenes. Ureteroscopia, litotripsia e cirurgia minimamente invasiva. Agende sua consulta.',
   alternates: { canonical: '/condicoes-urologicas/calculo-renal' },
   openGraph: {
-    title: 'Cálculo Renal Fortaleza | Pedra nos Rins — Dr. Érico Diógenes',
+    title: 'Cálculo Renal Fortaleza | Pedra nos Rins, Dr. Érico Diógenes',
     description:
       'Especialista em cálculo renal em Fortaleza. Diagnóstico preciso e tratamento moderno para pedra nos rins.',
     url: '/condicoes-urologicas/calculo-renal',
@@ -51,7 +51,7 @@ const tratamentos = [
 const faq = [
   {
     q: 'Cálculo renal e pedra nos rins são a mesma coisa?',
-    a: 'Sim. "Pedra nos rins" é o nome popular para cálculo renal — depósitos sólidos de minerais e sais que se formam nos rins ou nas vias urinárias.',
+    a: 'Sim. "Pedra nos rins" é o nome popular para cálculo renal, depósitos sólidos de minerais e sais que se formam nos rins ou nas vias urinárias.',
   },
   {
     q: 'Qual o tamanho que exige cirurgia?',
@@ -107,7 +107,7 @@ export default function CalculoRenal() {
   return (
     <>
       <MedicalWebPageSchema
-        name="Cálculo Renal em Fortaleza — Pedra nos Rins"
+        name="Cálculo Renal em Fortaleza, Pedra nos Rins"
         description="Tratamento de cálculo renal e pedra nos rins em Fortaleza com Dr. Érico Diógenes. Ureteroscopia com laser, litotripsia e cirurgia minimamente invasiva. Agende sua consulta."
         url="https://drericodiogenes.com.br/condicoes-urologicas/calculo-renal"
         specialty="Urology"
@@ -149,7 +149,7 @@ export default function CalculoRenal() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/img/post/imgid04_01.webp"
-              alt="Cálculo renal — pedra nos rins"
+              alt="Cálculo renal, pedra nos rins"
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-brand-beige to-transparent" />
@@ -164,7 +164,7 @@ export default function CalculoRenal() {
           <h2 className="section-title">O QUE É CÁLCULO RENAL?</h2>
           <div className="mt-6 text-brand-muted space-y-4 text-left md:text-justify">
             <p>
-              Cálculo renal — popularmente chamado de pedra nos rins — é um depósito sólido de
+              Cálculo renal, popularmente chamado de pedra nos rins, é um depósito sólido de
               minerais e sais que se forma dentro dos rins ou ao longo das vias urinárias. Quando
               pequenos, podem ser eliminados espontaneamente pela urina. Quando maiores, causam
               obstrução, dor intensa (cólica renal) e, se não tratados, podem comprometer a função
@@ -174,7 +174,7 @@ export default function CalculoRenal() {
               O Brasil está entre os países com maior prevalência de litíase urinária, estimada em
               até 5% da população. Fatores como baixa ingestão hídrica, dieta rica em sal e
               proteínas animais, além de predisposição genética, aumentam o risco. O tratamento
-              moderno é altamente eficaz — e quanto mais precoce, menor a necessidade de
+              moderno é altamente eficaz, e quanto mais precoce, menor a necessidade de
               procedimentos complexos.
             </p>
           </div>
@@ -245,7 +245,7 @@ export default function CalculoRenal() {
             </h2>
             <ul className="mt-6 space-y-3">
               {[
-                'Sem grandes cortes — acesso pela via urinária natural',
+                'Sem grandes cortes, acesso pela via urinária natural',
                 'Alta hospitalar no mesmo dia na maioria dos casos',
                 'Retorno às atividades em poucos dias',
                 'Fragmentação precisa com laser de Holmium',
@@ -285,7 +285,7 @@ export default function CalculoRenal() {
               </p>
               <p>
                 Sua atuação no tratamento de cálculos renais combina o uso de tecnologias de ponta
-                — como o laser de Holmium — com uma avaliação individualizada de cada paciente,
+               , como o laser de Holmium, com uma avaliação individualizada de cada paciente,
                 determinando a melhor abordagem para o tamanho, localização e composição do cálculo.
               </p>
               <p>
@@ -303,7 +303,7 @@ export default function CalculoRenal() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/img/dr-erico-foto-3.webp"
-                alt="Dr. Érico Diógenes — Urologista em Fortaleza"
+                alt="Dr. Érico Diógenes, Urologista em Fortaleza"
                 className="w-full h-full object-cover"
               />
             </div>

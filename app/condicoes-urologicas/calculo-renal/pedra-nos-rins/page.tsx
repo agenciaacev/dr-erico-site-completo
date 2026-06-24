@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import ContactMini from '@/components/sections/ContactMini'
 import CtaBanner from '@/components/ui/CtaBanner'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Pedra nos Rins Fortaleza | Tratamento — Dr. Érico Diógenes' },
+  title: { absolute: 'Pedra nos Rins Fortaleza | Tratamento, Dr. Érico Diógenes' },
   description: 'Pedra nos rins em Fortaleza: sintomas, causas e tratamento com ureteroscopia a laser. Dr. Érico Diógenes, urologista especialista.',
   alternates: { canonical: '/condicoes-urologicas/calculo-renal/pedra-nos-rins' },
 }
